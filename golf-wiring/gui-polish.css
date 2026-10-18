@@ -1,0 +1,39 @@
+/* AutoTek Golf atlas GUI polish — drop-in after ui18.css
+   1. Jobs home is the first screen
+   2. Map opens on modules, not every wire
+   3. Privacy notice is compact and dismissible
+   4. Chrome is quieter so the job is the focus */
+
+.atlas-privacy{
+  position:fixed;left:12px;right:12px;bottom:10px;z-index:40;
+  margin:0;padding:8px 36px 8px 12px;border-radius:10px;
+  background:rgba(7,11,16,.88);border:1px solid #24384a;color:#8fa3b5;
+  font-size:11px;line-height:1.4;backdrop-filter:blur(10px);
+}
+.atlas-privacy[hidden]{display:none}
+.atlas-privacy .x{
+  position:absolute;right:6px;top:4px;border:0;background:none;color:#8fa3b5;
+  font-size:16px;line-height:1;padding:4px 8px;cursor:pointer;
+}
+
+body.u18home .mast,
+body.u18home .mobile-tabs,
+body.u18home .workspace{opacity:.14;pointer-events:none}
+body.u18home #u18HomeScr{background:rgba(7,11,16,.92)}
+
+.u18hw{max-width:1040px}
+.u18hw h2{letter-spacing:-.02em}
+.u18jobs{grid-template-columns:repeat(2,1fr)}
+@media(min-width:860px){.u18jobs{grid-template-columns:repeat(4,1fr)}}
+.u18jobs button{
+  min-height:118px;border-radius:16px;transition:border-color .15s,background .15s,transform .15s;
+}
+.u18jobs button:hover{transform:translateY(-1px)}
+.u18jobs button:focus-visible{outline:2px solid #c4ed76;outline-offset:3px}
+.u18link{min-height:44px}
+
+#u18Bar .allcars{color:#c4ed76}
+#u18Home,#u18Back,#u18Ask,#u18Fav,#u18Mode{min-height:40px}
+#u18Q{min-height:40px}
+
+body.gui-modules-default #mapTitle{letter-spacing:-.02em}

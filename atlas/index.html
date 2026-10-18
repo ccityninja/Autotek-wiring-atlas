@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070b10">
+<title>AUTOTEK · Wiring Atlas</title>
+<meta name="description" content="Select a car. Each atlas shows the modules, pins and wires for that vehicle.">
+<style>
+:root{
+  --bg:#070b10; --panel:#101820; --glass:rgba(18,28,38,.72); --line:#24384a;
+  --text:#eaf2f8; --muted:#8fa3b5; --soft:#c6d3de;
+  --acc:#55d6ff; --acc-ink:#04121c; --good:#48d597; --warn:#f6c85f; --idle:#7d8fa0;
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+body{background:
+  radial-gradient(1100px 520px at 12% -12%,#14304a 0,transparent 58%),
+  radial-gradient(800px 420px at 110% 0,#1a2a3a 0,transparent 52%),
+  var(--bg)}
+a{color:inherit}
+button,input{font:inherit}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+
+.mast{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:14px 18px;border-bottom:1px solid var(--line);
+  background:rgba(7,11,16,.82);backdrop-filter:blur(14px);position:sticky;top:0;z-index:5}
+.brand{display:flex;align-items:center;gap:12px}
+.mark{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;font-weight:900;
+  background:linear-gradient(135deg,#55d6ff,#2b6f9a);color:var(--acc-ink)}
+.brand b{letter-spacing:.14em}.brand b span{font-weight:300}
+.brand small{display:block;color:var(--muted);font-size:11px;letter-spacing:.1em}
+.mast-meta{color:var(--muted);font-size:12px}
+
+main{max-width:1120px;margin:auto;padding:28px 16px 80px}
+h1{font-size:clamp(26px,5vw,40px);margin:0 0 8px;letter-spacing:-.02em}
+.lead{color:var(--muted);margin:0 0 22px;line-height:1.55;max-width:62ch}
+
+.bar{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+.bar input{flex:1 1 280px;background:var(--glass);border:1px solid var(--line);border-radius:12px;
+  color:#fff;padding:13px 14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--glass);border:1px solid var(--line);color:var(--muted);border-radius:999px;
+  padding:8px 14px;cursor:pointer}
+.chip.on{color:var(--acc-ink);background:var(--acc);border-color:var(--acc)}
+
+.section{margin:28px 0 0}
+.section h2{margin:0 0 4px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.section .sub{margin:0 0 14px;color:var(--muted);font-size:14px}
+
+.grid{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:760px){.grid.ready{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.grid.progress{grid-template-columns:repeat(2,1fr)}}
+
+.card{background:var(--glass);border:1px solid var(--line);border-radius:18px;padding:18px 18px 16px;
+  backdrop-filter:blur(12px);box-shadow:0 18px 50px rgba(0,0,0,.28);
+  display:flex;flex-direction:column;gap:10px;min-height:100%}
+.card.ready{border-color:#2b5c72}
+.top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.make{color:var(--muted);font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.card h3{margin:2px 0 0;font-size:22px}
+.spec{color:var(--acc);font-size:13px;font-weight:700}
+.card p{margin:0;color:var(--soft);line-height:1.5;font-size:14px}
+.note{font-size:13px;color:var(--warn)!important;border-left:3px solid var(--warn);padding-left:10px}
+.stats{display:flex;gap:18px;color:var(--muted);font-size:13px}
+.stats b{color:#fff;font-size:18px;display:block}
+.badge{border-radius:999px;padding:5px 10px;font-size:11px;font-weight:800;letter-spacing:.08em;white-space:nowrap}
+.live{background:rgba(72,213,151,.15);color:var(--good);border:1px solid rgba(72,213,151,.4)}
+.beta{background:rgba(246,200,95,.13);color:var(--warn);border:1px solid rgba(246,200,95,.4)}
+.workspace{background:rgba(141,163,180,.1);color:var(--idle);border:1px solid rgba(141,163,180,.28)}
+.open{margin-top:auto;align-self:flex-start;background:var(--acc);color:var(--acc-ink);font-weight:800;
+  text-decoration:none;border-radius:12px;padding:11px 18px}
+.card.ready .open{padding:12px 20px}
+.open.ghost{background:transparent;color:var(--acc);border:1px solid var(--line)}
+
+.rows{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--panel)}
+.row{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;
+  padding:12px 16px;border-top:1px solid var(--line);text-decoration:none}
+.row:first-child{border-top:0}
+.row:hover{background:rgba(85,214,255,.05)}
+.row b{display:block;font-size:15px}
+.row small{color:var(--muted)}
+.row .meta{color:var(--muted);font-size:13px;text-align:right}
+.row .go{color:var(--acc);font-size:13px;font-weight:700;white-space:nowrap}
+.family{padding:10px 16px 4px;color:var(--muted);font-size:12px;letter-spacing:.1em;text-transform:uppercase;
+  background:#0c141c;border-top:1px solid var(--line)}
+.family:first-child{border-top:0}
+
+.toggle{background:none;border:0;color:var(--acc);padding:0;cursor:pointer;font-weight:700}
+.empty{color:var(--muted);text-align:center;padding:36px 12px}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:8px 16px 28px}
+
+@media(max-width:620px){
+  .row{grid-template-columns:1fr auto}
+  .row .meta{display:none}
+  .mast-meta{display:none}
+}
+@media(prefers-reduced-motion:reduce){* {scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="mast">
+  <div class="brand"><span class="mark">A</span><div><b>WIRING <span>ATLAS</span></b><small>AUTOTEK · ALL CARS</small></div></div>
+  <div class="mast-meta" id="mastMeta"></div>
+</header>
+<main>
+  <h1>Select a car</h1>
+  <p class="lead">Open a ready atlas to find modules, pins and wires. Cars that are still in the source workspace stay in a short list until they have data.</p>
+  <div class="bar">
+    <input id="q" type="search" placeholder="Search a car, chassis or engine" aria-label="Search cars">
+    <div class="chips" id="makes"></div>
+  </div>
+  <div class="chips" id="readiness" role="tablist" aria-label="Readiness"></div>
+  <div id="board"></div>
+</main>
+<footer>Make sure that the data agrees with the factory manual before you do work on the car.</footer>
+<script>
+const READY_LABEL={ready:['live','READY'],beta:['beta','IN PROGRESS'],workspace:['workspace','WORKSPACE']};
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const norm=s=>(s||'').toLowerCase().replace(/[^a-z0-9]+/g,' ');
+
+function band(c){
+  const st=String(c.status||'').toLowerCase();
+  const modules=Number(c.modules||0), circuits=Number(c.circuits||0);
+  if(st==='live' || modules>=40) return 'ready';
+  if(st==='beta' || modules>0 || circuits>0) return 'beta';
+  return 'workspace';
+}
+function badge(c){
+  const b=band(c);
+  if(b==='ready' && String(c.status).toLowerCase()==='live') return ['live','LIVE'];
+  if(b==='ready') return ['beta','BETA'];
+  return READY_LABEL[b];
+}
+function family(c){
+  const n=c.name||'';
+  if(/outback/i.test(n)) return 'Subaru Outback';
+  if(/legacy/i.test(n) && /wagon|touring/i.test(n+' '+ (c.body||''))) return 'Subaru Legacy wagon';
+  if(/legacy/i.test(n)) return 'Subaru Legacy sedan';
+  return c.make;
+}
+function match(c,q,make,ready){
+  if(make!=='All' && c.make!==make) return false;
+  if(ready!=='All' && band(c)!==ready) return false;
+  if(!q) return true;
+  return [c.make,c.name,c.chassis,c.engine,c.body,c.years].join(' ').toLowerCase().includes(q);
+}
+
+let cars=[], make='All', ready='All', showAllWorkspace=false;
+
+function specLine(c){
+  const engine=/confirm engine/i.test(c.engine||'')?'':c.engine;
+  return [c.chassis,c.years,engine].filter(Boolean).join(' · ');
+}
+function card(c, featured){
+  const s=badge(c);
+  const stats=[
+    c.modules?`<span><b>${esc(c.modules)}</b>modules</span>`:'',
+    c.circuits?`<span><b>${esc(c.circuits)}</b>circuits</span>`:''
+  ].filter(Boolean).join('');
+  return `<article class="card ${featured?'ready':''}">
+    <div class="top"><div>
+      <div class="make">${esc(c.make)}</div>
+      <h3>${esc(c.name)}</h3>
+      <div class="spec">${esc(specLine(c))}</div>
+    </div><span class="badge ${s[0]}">${s[1]}</span></div>
+    <p>${esc(c.line||'')}</p>
+    ${c.note?`<p class="note">${esc(c.note)}</p>`:''}
+    ${stats?`<div class="stats">${stats}</div>`:''}
+    <a class="open" href="${esc(c.url)}">${featured?'Open atlas →':'Open →'}</a>
+  </article>`;
+}
+function rows(list){
+  const groups={};
+  list.forEach(c=>{(groups[family(c)]=groups[family(c)]||[]).push(c)});
+  return `<div class="rows">${Object.entries(groups).map(([g,items])=>`
+    <div class="family">${esc(g)}</div>
+    ${items.map(c=>`<a class="row" href="${esc(c.url)}">
+      <div><b>${esc(c.name)}</b><small>${esc([c.chassis,c.years||c.engine].filter(Boolean).join(' · '))}</small></div>
+      <div class="meta">${c.modules||c.circuits?`${c.modules||0} / ${c.circuits||0}`:'No index yet'}</div>
+      <div class="go">Open</div>
+    </a>`).join('')}
+  `).join('')}</div>`;
+}
+
+function draw(){
+  const q=document.getElementById('q').value.toLowerCase().trim();
+  const list=cars.filter(c=>match(c,q,make,ready));
+  const readyCars=list.filter(c=>band(c)==='ready');
+  const betaCars=list.filter(c=>band(c)==='beta');
+  const workCars=list.filter(c=>band(c)==='workspace');
+  const makes=['All',...new Set(cars.map(c=>c.make))];
+  const readiness=[['All','Any status'],['ready','Ready'],['beta','In progress'],['workspace','Workspace']];
+  document.getElementById('makes').innerHTML=makes.map(m=>`<button class="chip ${m===make?'on':''}" data-m="${esc(m)}">${esc(m)}</button>`).join('');
+  document.getElementById('readiness').innerHTML=readiness.map(([k,l])=>`<button class="chip ${k===ready?'on':''}" data-r="${k}">${l}</button>`).join('');
+  document.getElementById('mastMeta').textContent=`${readyCars.length} ready · ${betaCars.length} in progress · ${workCars.length} workspace`;
+
+  if(!list.length){
+    document.getElementById('board').innerHTML='<div class="empty">No car agrees with the filters. Clear the search or select All.</div>';
+    return;
+  }
+  let html='';
+  if(readyCars.length){
+    html+=`<section class="section"><h2>Ready to use</h2><p class="sub">These atlases have enough mapped circuits for shop work.</p><div class="grid ready">${readyCars.map(c=>card(c,true)).join('')}</div></section>`;
+  }
+  if(betaCars.length){
+    html+=`<section class="section"><h2>In progress</h2><p class="sub">Source-linked data is started. Confirm each fact before you probe.</p><div class="grid progress">${betaCars.map(c=>card(c,false)).join('')}</div></section>`;
+  }
+  if(workCars.length){
+    const limit=showAllWorkspace||q||ready==='workspace'?workCars:workCars.slice(0,0);
+    const extra=workCars.length;
+    html+=`<section class="section"><h2>Source workspace</h2><p class="sub">${extra} cars are placeholders. They use the shared atlas shell until a wiring index exists.</p>`;
+    if(showAllWorkspace||q||ready==='workspace'){
+      html+=rows(workCars)+`<p style="margin:12px 0 0"><button class="toggle" id="hideWs" type="button">Hide workspace cars</button></p>`;
+    }else{
+      html+=`<button class="toggle" id="showWs" type="button">Show ${extra} workspace cars</button>`;
+    }
+    html+='</section>';
+  }
+  document.getElementById('board').innerHTML=html;
+}
+
+document.getElementById('makes').onclick=e=>{if(e.target.dataset.m){make=e.target.dataset.m;draw()}};
+document.getElementById('readiness').onclick=e=>{if(e.target.dataset.r){ready=e.target.dataset.r;showAllWorkspace=ready==='workspace';draw()}};
+document.getElementById('q').oninput=()=>{showAllWorkspace=!!document.getElementById('q').value.trim();draw()};
+document.getElementById('board').onclick=e=>{
+  if(e.target.id==='showWs'){showAllWorkspace=true;draw()}
+  if(e.target.id==='hideWs'){showAllWorkspace=false;draw()}
+};
+fetch('cars.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{cars=d;draw()}).catch(()=>{
+  document.getElementById('board').innerHTML='<div class="empty">The car list did not load. Refresh the page.</div>';
+});
+</script>
+</body>
+</html>
