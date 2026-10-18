@@ -1,0 +1,4065 @@
+{
+  "vehicle": {
+    "name": "Nissan Skyline GT-R R32 / BNR32",
+    "engine": "RB26DETT",
+    "transmission": "5-speed manual · ATTESA E-TS 4WD",
+    "year": "1989-1994",
+    "steering": "RHD view",
+    "coverage": "ECU pin functions from Nissan BNR32 FSM ECCS EN-171/EN-172 (PLMS reprint). Map positions use factory or dual-source locations where available; remaining items stay estimated."
+  },
+  "nodes": [
+    {
+      "id": "ECU",
+      "name": "ECCS engine control unit (ECU)",
+      "kind": "module",
+      "p3": [
+        1900,
+        380,
+        -640
+      ],
+      "top": [
+        442.1,
+        200.3
+      ],
+      "side": [
+        442.1,
+        405.6
+      ],
+      "cut": [
+        442.1,
+        200.3
+      ],
+      "location": "Behind the passenger (left) kick panel, in the front footwell.",
+      "notes": "Nissan ECCS ECU with 76 pins (pins 1-60 and 101-116). The R32 has no immobiliser.",
+      "loc_status": "confirmed",
+      "loc_src": "Haltech Nexus plug-in install (passenger kick panel) · GTR UK ECU location thread · GTR USA ECCS wiring"
+    },
+    {
+      "id": "ECCSRLY",
+      "name": "ECCS relay",
+      "kind": "module",
+      "p3": [
+        320,
+        720,
+        -520
+      ],
+      "top": [
+        160,
+        210
+      ],
+      "side": [
+        160,
+        340
+      ],
+      "cut": [
+        160,
+        210
+      ],
+      "location": "Engine-bay relay box (with the fusible links), not at the ECU.",
+      "notes": "ECU pin 16 drives the coil. Pins 49 and 59 are the ECU power feed from this relay. Pin 109 is injector power, not this relay.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS circuit (EN-171) · GTR USA factory fuse/relay label chart"
+    },
+    {
+      "id": "FPRLY",
+      "name": "Fuel pump relay",
+      "kind": "module",
+      "p3": [
+        4330,
+        620,
+        60
+      ],
+      "top": [
+        879.3,
+        326.3
+      ],
+      "side": [
+        879.3,
+        362.4
+      ],
+      "cut": [
+        879.3,
+        326.3
+      ],
+      "location": "In the boot, near the boot lock (green relay on GT-R).",
+      "notes": "ECU pin 18 controls the coil.",
+      "loc_status": "confirmed",
+      "loc_src": "GTR UK R32 GT-R fuel pump relay location · SAU R32 boot relay reports"
+    },
+    {
+      "id": "FPCM",
+      "name": "Fuel pump control module (FPCM)",
+      "kind": "module",
+      "p3": [
+        3350,
+        520,
+        660
+      ],
+      "top": [
+        702.7,
+        434.3
+      ],
+      "side": [
+        702.7,
+        380.4
+      ],
+      "cut": [
+        702.7,
+        434.3
+      ],
+      "location": "Behind the right (driver) rear quarter trim, beside the rear seat.",
+      "notes": "ECU pins 104 and 106 command high/low pump speed. Nissan 17001-05U01.",
+      "loc_status": "confirmed",
+      "loc_src": "GTR USA FPCM article · Minkara R32 FPCM location"
+    },
+    {
+      "id": "FPUMP",
+      "name": "Fuel pump",
+      "kind": "sensor",
+      "p3": [
+        3750,
+        300,
+        0
+      ],
+      "top": [
+        774.8,
+        315.5
+      ],
+      "side": [
+        774.8,
+        420.0
+      ],
+      "cut": [
+        774.8,
+        315.5
+      ],
+      "location": "In the fuel tank under the boot floor (in-tank pump).",
+      "notes": "Driven by the FPCM. Access panel is in the boot, not a cabin rear-seat hatch.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM fuel system · GTR USA fuel pump inspection sheet"
+    },
+    {
+      "id": "PTU",
+      "name": "Power transistor unit (ignition)",
+      "kind": "module",
+      "p3": [
+        1200,
+        880,
+        -150
+      ],
+      "top": [
+        316.3,
+        288.5
+      ],
+      "side": [
+        316.3,
+        315.6
+      ],
+      "cut": [
+        316.3,
+        288.5
+      ],
+      "location": "Engine bay, intake side of the RB26, driving the six coil-on-plug units.",
+      "notes": "ECU pins 1, 2, 3, 11, 12, 13 are the six ignition signals (cyl 1, 5, 3, 6, 2, 4).",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS system figure EN-169 to EN-171"
+    },
+    {
+      "id": "ATTESA",
+      "name": "ATTESA E-TS 4WD control unit",
+      "kind": "module",
+      "p3": [
+        4150,
+        650,
+        -500
+      ],
+      "top": [
+        846.8,
+        225.5
+      ],
+      "side": [
+        846.8,
+        357.0
+      ],
+      "cut": [
+        846.8,
+        225.5
+      ],
+      "location": "In the boot, under the parcel shelf (left side).",
+      "notes": "LED on the unit shows fault codes. ECU pin 56 is the engine-speed/torque signal to ATTESA.",
+      "loc_status": "confirmed",
+      "loc_src": "UP Garage ATTESA codes · GTR USA ATTESA ECU location"
+    },
+    {
+      "id": "HICAS",
+      "name": "HICAS control unit (rear steer)",
+      "kind": "module",
+      "p3": [
+        3700,
+        950,
+        0
+      ],
+      "top": [
+        765.7,
+        315.5
+      ],
+      "side": [
+        765.7,
+        303.0
+      ],
+      "cut": [
+        765.7,
+        315.5
+      ],
+      "location": "Under the rear parcel shelf.",
+      "notes": "Self-diagnosis uses the HICAS warning light.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ST/HICAS control unit location · R32 GT-R workshop rear-steer section"
+    },
+    {
+      "id": "CLUSTER",
+      "name": "Combination meter",
+      "kind": "module",
+      "p3": [
+        1950,
+        900,
+        370
+      ],
+      "top": [
+        451.1,
+        382.1
+      ],
+      "side": [
+        451.1,
+        312.0
+      ],
+      "cut": [
+        451.1,
+        382.1
+      ],
+      "location": "Instrument panel, in front of the driver (RHD right).",
+      "notes": "Tachometer from ECU pin 7; check-engine/monitor lamp from pin 32.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM combination meter · ECCS EN-171 pin 7/32"
+    },
+    {
+      "id": "CONSULT",
+      "name": "CONSULT diagnosis connector",
+      "kind": "connector",
+      "p3": [
+        1950,
+        450,
+        450
+      ],
+      "top": [
+        451.1,
+        396.5
+      ],
+      "side": [
+        451.1,
+        393.0
+      ],
+      "cut": [
+        451.1,
+        396.5
+      ],
+      "location": "Under the dashboard, driver (right) side. 14-pin CONSULT, not OBD-II.",
+      "notes": "ECU pins 21 RX, 22 TX, 31 CLK, 47 CHK.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS diagnosis connector · EN-171 terminal symbols"
+    },
+    {
+      "id": "IGNSW",
+      "name": "Ignition switch",
+      "kind": "sensor",
+      "p3": [
+        2050,
+        700,
+        370
+      ],
+      "top": [
+        469.1,
+        382.1
+      ],
+      "side": [
+        469.1,
+        348.0
+      ],
+      "cut": [
+        469.1,
+        382.1
+      ],
+      "location": "On the steering column, driver side.",
+      "notes": "START to ECU pin 43; IGN to pin 45.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM starting system · ECCS EN-171"
+    },
+    {
+      "id": "AFM_F",
+      "name": "Air flow meter, front",
+      "kind": "sensor",
+      "p3": [
+        520,
+        780,
+        -480
+      ],
+      "top": [
+        193.8,
+        229.1
+      ],
+      "side": [
+        193.8,
+        333.6
+      ],
+      "cut": [
+        193.8,
+        229.1
+      ],
+      "location": "In the front-bank intake pipe after the front air cleaner, engine bay.",
+      "notes": "Quantity signal ECU pin 35; AFM ground pin 34.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS system figure (dual AFM) EN-16/EN-171"
+    },
+    {
+      "id": "AFM_R",
+      "name": "Air flow meter, rear",
+      "kind": "sensor",
+      "p3": [
+        700,
+        780,
+        -500
+      ],
+      "top": [
+        226.3,
+        225.5
+      ],
+      "side": [
+        226.3,
+        333.6
+      ],
+      "cut": [
+        226.3,
+        225.5
+      ],
+      "location": "In the rear-bank intake pipe after the rear air cleaner, engine bay.",
+      "notes": "Quantity signal ECU pin 27; AFM ground pin 26.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS system figure (dual AFM) EN-16/EN-171"
+    },
+    {
+      "id": "CAS",
+      "name": "Crank angle sensor (CAS)",
+      "kind": "sensor",
+      "p3": [
+        430,
+        900,
+        120
+      ],
+      "top": [
+        177.6,
+        337.1
+      ],
+      "side": [
+        177.6,
+        312.0
+      ],
+      "cut": [
+        177.6,
+        337.1
+      ],
+      "location": "Front of the cylinder head, on the exhaust camshaft.",
+      "notes": "1° and 120° signals. Not a crankshaft sensor.",
+      "loc_status": "confirmed",
+      "loc_src": "PLMS R32 GTR ECCS · GTR USA ECCS wiring"
+    },
+    {
+      "id": "TPS",
+      "name": "Throttle sensor",
+      "kind": "sensor",
+      "p3": [
+        1000,
+        820,
+        -260
+      ],
+      "top": [
+        280.4,
+        268.7
+      ],
+      "side": [
+        280.4,
+        326.4
+      ],
+      "cut": [
+        280.4,
+        268.7
+      ],
+      "location": "On the throttle body (intake side of the plenum).",
+      "notes": "Signal ECU pin 38; 5 V from pin 48; sensor ground pin 30.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS throttle sensor · EN-171"
+    },
+    {
+      "id": "IDLESW",
+      "name": "Throttle valve switch (idle)",
+      "kind": "sensor",
+      "p3": [
+        1040,
+        820,
+        -260
+      ],
+      "top": [
+        287.6,
+        268.7
+      ],
+      "side": [
+        287.6,
+        326.4
+      ],
+      "cut": [
+        287.6,
+        268.7
+      ],
+      "location": "On the throttle body, integral with the throttle sensor assembly.",
+      "notes": "Idle contact ECU pin 54; switch power pin 57.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS throttle valve switch · EN-171"
+    },
+    {
+      "id": "CTS",
+      "name": "Engine coolant temperature sensor",
+      "kind": "sensor",
+      "p3": [
+        520,
+        880,
+        -60
+      ],
+      "top": [
+        193.8,
+        304.7
+      ],
+      "side": [
+        193.8,
+        315.6
+      ],
+      "cut": [
+        193.8,
+        304.7
+      ],
+      "location": "Front of the engine, coolant outlet / thermostat housing.",
+      "notes": "ECU pin 28. Ground shares pin 30.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM engine temperature sensor location · ECCS EN-171"
+    },
+    {
+      "id": "IAT",
+      "name": "Intake air temperature sensor",
+      "kind": "sensor",
+      "p3": [
+        800,
+        900,
+        -150
+      ],
+      "top": [
+        244.4,
+        288.5
+      ],
+      "side": [
+        244.4,
+        312.0
+      ],
+      "cut": [
+        244.4,
+        288.5
+      ],
+      "location": "In the intake tract (factory IAT; GT-R may use the AFM-integrated sensor).",
+      "notes": "ECU pin 36.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS · Haltech R32 IAT note"
+    },
+    {
+      "id": "O2F",
+      "name": "Exhaust gas (O2) sensor, front",
+      "kind": "sensor",
+      "p3": [
+        700,
+        600,
+        380
+      ],
+      "top": [
+        226.3,
+        383.9
+      ],
+      "side": [
+        226.3,
+        366.0
+      ],
+      "cut": [
+        226.3,
+        383.9
+      ],
+      "location": "Front turbocharger outlet / front exhaust manifold collector.",
+      "notes": "ECU pin 29.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS system figure EN-16"
+    },
+    {
+      "id": "O2R",
+      "name": "Exhaust gas (O2) sensor, rear",
+      "kind": "sensor",
+      "p3": [
+        1050,
+        600,
+        380
+      ],
+      "top": [
+        289.4,
+        383.9
+      ],
+      "side": [
+        289.4,
+        366.0
+      ],
+      "cut": [
+        289.4,
+        383.9
+      ],
+      "location": "Rear turbocharger outlet / rear exhaust manifold collector.",
+      "notes": "ECU pin 55.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS system figure EN-16"
+    },
+    {
+      "id": "KS1",
+      "name": "Knock sensor, cylinders 1-3",
+      "kind": "sensor",
+      "p3": [
+        650,
+        550,
+        -150
+      ],
+      "top": [
+        217.3,
+        288.5
+      ],
+      "side": [
+        217.3,
+        375.0
+      ],
+      "cut": [
+        217.3,
+        288.5
+      ],
+      "location": "Left side of the cylinder block, under the intake manifold, front (cyl 1-3).",
+      "notes": "ECU pin 23.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS detonation sensor · EN-171"
+    },
+    {
+      "id": "KS2",
+      "name": "Knock sensor, cylinders 4-6",
+      "kind": "sensor",
+      "p3": [
+        1000,
+        550,
+        -150
+      ],
+      "top": [
+        280.4,
+        288.5
+      ],
+      "side": [
+        280.4,
+        375.0
+      ],
+      "cut": [
+        280.4,
+        288.5
+      ],
+      "location": "Left side of the cylinder block, under the intake manifold, rear (cyl 4-6).",
+      "notes": "ECU pin 24.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS detonation sensor · EN-171"
+    },
+    {
+      "id": "VSS",
+      "name": "Vehicle speed sensor",
+      "kind": "sensor",
+      "p3": [
+        1700,
+        450,
+        0
+      ],
+      "top": [
+        406.2,
+        315.5
+      ],
+      "side": [
+        406.2,
+        393.0
+      ],
+      "cut": [
+        406.2,
+        315.5
+      ],
+      "location": "On the transmission / transfer case.",
+      "notes": "ECU pin 53.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS vehicle speed sensor · EN-171"
+    },
+    {
+      "id": "NSW",
+      "name": "Neutral position switch",
+      "kind": "sensor",
+      "p3": [
+        1500,
+        350,
+        60
+      ],
+      "top": [
+        370.2,
+        326.3
+      ],
+      "side": [
+        370.2,
+        411.0
+      ],
+      "cut": [
+        370.2,
+        326.3
+      ],
+      "location": "On the transmission (neutral switch).",
+      "notes": "ECU pin 44.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS · starting system"
+    },
+    {
+      "id": "PSW",
+      "name": "Power steering oil pressure switch",
+      "kind": "sensor",
+      "p3": [
+        450,
+        700,
+        -350
+      ],
+      "top": [
+        181.2,
+        252.5
+      ],
+      "side": [
+        181.2,
+        348.0
+      ],
+      "cut": [
+        181.2,
+        252.5
+      ],
+      "location": "On the power-steering high-pressure line / pump, engine bay.",
+      "notes": "ECU pin 19.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS power steering oil pressure switch · EN-171"
+    },
+    {
+      "id": "ACSW",
+      "name": "Air conditioner switch",
+      "kind": "sensor",
+      "p3": [
+        1950,
+        850,
+        0
+      ],
+      "top": [
+        451.1,
+        315.5
+      ],
+      "side": [
+        451.1,
+        321.0
+      ],
+      "cut": [
+        451.1,
+        315.5
+      ],
+      "location": "Heater / A/C control panel in the dashboard.",
+      "notes": "ECU pin 46.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS air conditioner switch · EN-171"
+    },
+    {
+      "id": "INJ1",
+      "name": "Injector No. 1",
+      "kind": "sensor",
+      "p3": [
+        560,
+        860,
+        -180
+      ],
+      "top": [
+        201.1,
+        283.1
+      ],
+      "side": [
+        201.1,
+        319.2
+      ],
+      "cut": [
+        201.1,
+        283.1
+      ],
+      "location": "Intake side of cylinder 1 (front of engine).",
+      "notes": "ECU pin 101.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS injector layout · EN-172"
+    },
+    {
+      "id": "INJ2",
+      "name": "Injector No. 2",
+      "kind": "sensor",
+      "p3": [
+        660,
+        860,
+        -180
+      ],
+      "top": [
+        219.1,
+        283.1
+      ],
+      "side": [
+        219.1,
+        319.2
+      ],
+      "cut": [
+        219.1,
+        283.1
+      ],
+      "location": "Intake side of cylinder 2.",
+      "notes": "ECU pin 105.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS injector layout · EN-172"
+    },
+    {
+      "id": "INJ3",
+      "name": "Injector No. 3",
+      "kind": "sensor",
+      "p3": [
+        760,
+        860,
+        -180
+      ],
+      "top": [
+        237.1,
+        283.1
+      ],
+      "side": [
+        237.1,
+        319.2
+      ],
+      "cut": [
+        237.1,
+        283.1
+      ],
+      "location": "Intake side of cylinder 3.",
+      "notes": "ECU pin 103.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS injector layout · EN-172"
+    },
+    {
+      "id": "INJ4",
+      "name": "Injector No. 4",
+      "kind": "sensor",
+      "p3": [
+        860,
+        860,
+        -180
+      ],
+      "top": [
+        255.2,
+        283.1
+      ],
+      "side": [
+        255.2,
+        319.2
+      ],
+      "cut": [
+        255.2,
+        283.1
+      ],
+      "location": "Intake side of cylinder 4.",
+      "notes": "ECU pin 114.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS injector layout · EN-172"
+    },
+    {
+      "id": "INJ5",
+      "name": "Injector No. 5",
+      "kind": "sensor",
+      "p3": [
+        960,
+        860,
+        -180
+      ],
+      "top": [
+        273.2,
+        283.1
+      ],
+      "side": [
+        273.2,
+        319.2
+      ],
+      "cut": [
+        273.2,
+        283.1
+      ],
+      "location": "Intake side of cylinder 5.",
+      "notes": "ECU pin 110.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS injector layout · EN-172"
+    },
+    {
+      "id": "INJ6",
+      "name": "Injector No. 6",
+      "kind": "sensor",
+      "p3": [
+        1060,
+        860,
+        -180
+      ],
+      "top": [
+        291.1,
+        283.1
+      ],
+      "side": [
+        291.1,
+        319.2
+      ],
+      "cut": [
+        291.1,
+        283.1
+      ],
+      "location": "Intake side of cylinder 6 (firewall end).",
+      "notes": "ECU pin 112.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS injector layout · EN-172"
+    },
+    {
+      "id": "COILS",
+      "name": "Ignition coils (6, one on each plug)",
+      "kind": "sensor",
+      "p3": [
+        810,
+        960,
+        0
+      ],
+      "top": [
+        246.2,
+        315.5
+      ],
+      "side": [
+        246.2,
+        301.2
+      ],
+      "cut": [
+        246.2,
+        315.5
+      ],
+      "location": "Coil-on-plug on the cylinder head, one per cylinder.",
+      "notes": "Driven by the power transistor unit, not directly by the ECU.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS ignition · EN-169"
+    },
+    {
+      "id": "AAC",
+      "name": "AAC valve (idle air control)",
+      "kind": "sensor",
+      "p3": [
+        1100,
+        850,
+        -350
+      ],
+      "top": [
+        298.3,
+        252.5
+      ],
+      "side": [
+        298.3,
+        321.0
+      ],
+      "cut": [
+        298.3,
+        252.5
+      ],
+      "location": "On the intake collector / AAC idle air path.",
+      "notes": "ECU pin 4.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS AAC valve · EN-171"
+    },
+    {
+      "id": "WGS",
+      "name": "Wastegate valve control solenoid (boost)",
+      "kind": "sensor",
+      "p3": [
+        420,
+        780,
+        -300
+      ],
+      "top": [
+        175.8,
+        261.5
+      ],
+      "side": [
+        175.8,
+        333.6
+      ],
+      "cut": [
+        175.8,
+        261.5
+      ],
+      "location": "Engine bay, boost-control solenoid on the wastegate pressure line.",
+      "notes": "ECU pin 25.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS wastegate solenoid · EN-171"
+    },
+    {
+      "id": "FANRLY",
+      "name": "Sub electric fan relay",
+      "kind": "module",
+      "p3": [
+        350,
+        700,
+        -600
+      ],
+      "top": [
+        163.2,
+        207.5
+      ],
+      "side": [
+        163.2,
+        348.0
+      ],
+      "cut": [
+        163.2,
+        207.5
+      ],
+      "location": "Engine-bay relay box.",
+      "notes": "ECU pin 6.",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS sub electric fan relay · factory relay-box label"
+    },
+    {
+      "id": "ACRLY",
+      "name": "Air conditioner relay",
+      "kind": "module",
+      "p3": [
+        380,
+        720,
+        -640
+      ],
+      "top": [
+        168.6,
+        200.3
+      ],
+      "side": [
+        168.6,
+        344.4
+      ],
+      "cut": [
+        168.6,
+        200.3
+      ],
+      "location": "Engine-bay relay box (AIR CON on the lid chart).",
+      "notes": "ECU pin 9 (A/C cut signal).",
+      "loc_status": "confirmed",
+      "loc_src": "Nissan BNR32 FSM ECCS · GTR USA factory fuse/relay label chart"
+    },
+    {
+      "id": "BAT",
+      "name": "Battery",
+      "kind": "power",
+      "p3": [
+        350,
+        650,
+        -560
+      ],
+      "top": [
+        163.2,
+        214.7
+      ],
+      "side": [
+        163.2,
+        357.0
+      ],
+      "cut": [
+        163.2,
+        214.7
+      ],
+      "location": "Engine bay, passenger (left) side next to the relay box.",
+      "notes": "Which side is the factory left-hand (passenger on RHD) tray.",
+      "loc_status": "confirmed",
+      "loc_src": "GTR USA replacement battery · ImportaVehicle battery fitment · FSM charging system"
+    },
+    {
+      "id": "FUSE",
+      "name": "Fuse block (passenger compartment, fuses 1-26)",
+      "kind": "power",
+      "p3": [
+        1950,
+        500,
+        250
+      ],
+      "top": [
+        451.1,
+        360.5
+      ],
+      "side": [
+        451.1,
+        384.0
+      ],
+      "cut": [
+        451.1,
+        360.5
+      ],
+      "location": "Passenger-compartment fuse block, under the dash on the driver (right) side.",
+      "notes": "Fuse 7 engine control 10 A; fuse 8 fuel pump 15 A.",
+      "loc_status": "confirmed",
+      "loc_src": "GTR USA R32 factory fuse label chart (passenger box)"
+    },
+    {
+      "id": "RELAYBOX",
+      "name": "Engine relay box (fusible links I-VII, fuses 31-33)",
+      "kind": "power",
+      "p3": [
+        300,
+        700,
+        -450
+      ],
+      "top": [
+        154.1,
+        234.5
+      ],
+      "side": [
+        154.1,
+        348.0
+      ],
+      "cut": [
+        154.1,
+        234.5
+      ],
+      "location": "Engine bay, passenger (left) side, beside the battery.",
+      "notes": "Fusible link I MAIN 75 A; link VI ENG CONT 25 A to ECCS relay.",
+      "loc_status": "confirmed",
+      "loc_src": "GTR USA R32 factory fuse label chart (engine relay box)"
+    },
+    {
+      "id": "GND_ECU",
+      "name": "ECU ground point",
+      "kind": "ground",
+      "p3": [
+        1600,
+        600,
+        -200
+      ],
+      "top": [
+        388.2,
+        279.5
+      ],
+      "side": [
+        388.2,
+        366.0
+      ],
+      "cut": [
+        388.2,
+        279.5
+      ],
+      "location": "ECU pins 50 and 60 are control-unit grounds. Body-bolt location is not on the indexed FSM pages.",
+      "notes": "Do not treat the map marker as a specific chassis bolt.",
+      "loc_status": "estimated",
+      "loc_src": "Nissan BNR32 FSM EN-171 (function only; bolt not shown)"
+    },
+    {
+      "id": "GND_IGN",
+      "name": "Ignition system ground",
+      "kind": "ground",
+      "p3": [
+        1150,
+        800,
+        -60
+      ],
+      "top": [
+        307.3,
+        304.7
+      ],
+      "side": [
+        307.3,
+        330.0
+      ],
+      "cut": [
+        307.3,
+        304.7
+      ],
+      "location": "ECU pins 10 and 20, ignition-signal ground. Engine-bolt location not indexed.",
+      "notes": "",
+      "loc_status": "estimated",
+      "loc_src": "Nissan BNR32 FSM EN-171 (function only)"
+    },
+    {
+      "id": "GND_INJ",
+      "name": "Injector ground",
+      "kind": "ground",
+      "p3": [
+        1250,
+        800,
+        -260
+      ],
+      "top": [
+        325.3,
+        268.7
+      ],
+      "side": [
+        325.3,
+        330.0
+      ],
+      "cut": [
+        325.3,
+        268.7
+      ],
+      "location": "ECU pins 107, 108 and 116. Engine-bolt location not indexed.",
+      "notes": "",
+      "loc_status": "estimated",
+      "loc_src": "Nissan BNR32 FSM EN-172 (function only)"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ecu-ptu-ignition",
+      "a": "ECU",
+      "b": "PTU",
+      "name": "ECU → PTU",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/1",
+          "to": "Power transistor unit (ignition)",
+          "colour": "L/O",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Ignition signal No. 1"
+        },
+        {
+          "from": "ECU/2",
+          "to": "Power transistor unit (ignition)",
+          "colour": "L",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Ignition signal No. 5"
+        },
+        {
+          "from": "ECU/3",
+          "to": "Power transistor unit (ignition)",
+          "colour": "L/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Ignition signal No. 3"
+        },
+        {
+          "from": "ECU/11",
+          "to": "Power transistor unit (ignition)",
+          "colour": "L/W",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Ignition signal No. 6"
+        },
+        {
+          "from": "ECU/12",
+          "to": "Power transistor unit (ignition)",
+          "colour": "L/B",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Ignition signal No. 2"
+        },
+        {
+          "from": "ECU/13",
+          "to": "Power transistor unit (ignition)",
+          "colour": "L/Y",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Ignition signal No. 4"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-aac-eccs",
+      "a": "ECU",
+      "b": "AAC",
+      "name": "ECU → AAC",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/4",
+          "to": "AAC valve (idle air control)",
+          "colour": "L/G",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "AAC valve (idle air control)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-fanrly-cooling",
+      "a": "ECU",
+      "b": "FANRLY",
+      "name": "ECU → FANRLY",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/6",
+          "to": "Sub electric fan relay",
+          "colour": "B",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Sub electric fan relay (engine temperature)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-cluster-eccs",
+      "a": "ECU",
+      "b": "CLUSTER",
+      "name": "ECU → CLUSTER",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/7",
+          "to": "Combination meter",
+          "colour": "Y/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Tachometer signal"
+        },
+        {
+          "from": "ECU/32",
+          "to": "Combination meter",
+          "colour": "O/B",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Malfunction indicator lamp (check engine)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-acrly-hvac",
+      "a": "ECU",
+      "b": "ACRLY",
+      "name": "ECU → ACRLY",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/9",
+          "to": "Air conditioner relay",
+          "colour": "L/G",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Air conditioner relay (A/C cut)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-gnd_ign-ground",
+      "a": "ECU",
+      "b": "GND_IGN",
+      "name": "ECU → GND_IGN",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/10",
+          "to": "Ignition system ground",
+          "colour": "B/Y",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Ignition signal system ground"
+        },
+        {
+          "from": "ECU/20",
+          "to": "Ignition system ground",
+          "colour": "B/Y",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Ignition signal system ground"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-eccsrly-power",
+      "a": "ECU",
+      "b": "ECCSRLY",
+      "name": "ECU → ECCSRLY",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/16",
+          "to": "ECCS relay",
+          "colour": "O",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "ECCS relay control"
+        },
+        {
+          "from": "ECU/49",
+          "to": "ECCS relay",
+          "colour": "B/W",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Control unit power supply"
+        },
+        {
+          "from": "ECU/59",
+          "to": "ECCS relay",
+          "colour": "B/W",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Control unit power supply"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ECU-INJ1-109",
+      "a": "ECU",
+      "b": "INJ1",
+      "name": "ECU → INJ1",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/109",
+          "to": "Injector power / counter-EMF bus",
+          "colour": "B/W",
+          "size": "",
+          "status": "estimated",
+          "fn_status": "confirmed",
+          "function": "Injector power supply (counter-EMF circuit)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-fprly-fuel",
+      "a": "ECU",
+      "b": "FPRLY",
+      "name": "ECU → FPRLY",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/18",
+          "to": "Fuel pump relay",
+          "colour": "B/P",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Fuel pump relay control"
+        },
+        {
+          "from": "ECU/18",
+          "to": "Fuel pump relay",
+          "colour": "B/P",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Coil (−), controlled by ECU pin 18"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-psw-eccs",
+      "a": "ECU",
+      "b": "PSW",
+      "name": "ECU → PSW",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/19",
+          "to": "Power steering oil pressure switch",
+          "colour": "SB",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Power steering oil pressure switch"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-consult-diag",
+      "a": "ECU",
+      "b": "CONSULT",
+      "name": "ECU → CONSULT",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/21",
+          "to": "CONSULT diagnosis connector",
+          "colour": "Y/G",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "CONSULT RX (data in)"
+        },
+        {
+          "from": "ECU/22",
+          "to": "CONSULT diagnosis connector",
+          "colour": "Y",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "CONSULT TX (data out)"
+        },
+        {
+          "from": "ECU/31",
+          "to": "CONSULT diagnosis connector",
+          "colour": "Y/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "CONSULT CLK (synchronisation)"
+        },
+        {
+          "from": "ECU/47",
+          "to": "CONSULT diagnosis connector",
+          "colour": "Y/PU",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "CONSULT CHK (diagnosis activation)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-ks1-eccs",
+      "a": "ECU",
+      "b": "KS1",
+      "name": "ECU → KS1",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/23",
+          "to": "Knock sensor, cylinders 1-3",
+          "colour": "W/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Knock (detonation) sensor, cylinders 1-3"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-ks2-eccs",
+      "a": "ECU",
+      "b": "KS2",
+      "name": "ECU → KS2",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/24",
+          "to": "Knock sensor, cylinders 4-6",
+          "colour": "W/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Knock (detonation) sensor, cylinders 4-6"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-wgs-boost",
+      "a": "ECU",
+      "b": "WGS",
+      "name": "ECU → WGS",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/25",
+          "to": "Wastegate valve control solenoid (boost)",
+          "colour": "L/Y",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Wastegate valve control solenoid (boost)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-afm_r-eccs",
+      "a": "ECU",
+      "b": "AFM_R",
+      "name": "ECU → AFM_R",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/26",
+          "to": "Air flow meter, rear",
+          "colour": "W/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Air flow meter ground"
+        },
+        {
+          "from": "ECU/27",
+          "to": "Air flow meter, rear",
+          "colour": "B",
+          "size": "",
+          "status": "estimated",
+          "fn_status": "confirmed",
+          "function": "Air flow meter signal, rear"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-cts-eccs",
+      "a": "ECU",
+      "b": "CTS",
+      "name": "ECU → CTS",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/28",
+          "to": "Engine coolant temperature sensor",
+          "colour": "Y/G",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Engine coolant temperature sensor signal"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-o2f-eccs",
+      "a": "ECU",
+      "b": "O2F",
+      "name": "ECU → O2F",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/29",
+          "to": "Exhaust gas (O2) sensor, front",
+          "colour": "",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Exhaust gas (O2) sensor signal, front"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-tps-ground",
+      "a": "ECU",
+      "b": "TPS",
+      "name": "ECU → TPS",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/30",
+          "to": "Throttle sensor",
+          "colour": "B",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Sensor ground (throttle sensor, coolant sensor)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-afm_f-eccs",
+      "a": "ECU",
+      "b": "AFM_F",
+      "name": "ECU → AFM_F",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/34",
+          "to": "Air flow meter, front",
+          "colour": "W",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Air flow meter ground"
+        },
+        {
+          "from": "ECU/35",
+          "to": "Air flow meter, front",
+          "colour": "O",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Air flow meter signal, front"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-iat-eccs",
+      "a": "ECU",
+      "b": "IAT",
+      "name": "ECU → IAT",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/36",
+          "to": "Intake air temperature sensor",
+          "colour": "SB",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Intake air temperature sensor signal"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-tps-eccs",
+      "a": "ECU",
+      "b": "TPS",
+      "name": "ECU → TPS",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/38",
+          "to": "Throttle sensor",
+          "colour": "W",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Throttle sensor signal"
+        },
+        {
+          "from": "ECU/48",
+          "to": "Throttle sensor",
+          "colour": "Y",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Throttle sensor power supply (+5 V)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-cas-eccs",
+      "a": "ECU",
+      "b": "CAS",
+      "name": "ECU → CAS",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/41",
+          "to": "Crank angle sensor (CAS)",
+          "colour": "G/B",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Crank angle sensor, 120 degree signal"
+        },
+        {
+          "from": "ECU/42",
+          "to": "Crank angle sensor (CAS)",
+          "colour": "G/Y",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Crank angle sensor, 1 degree signal"
+        },
+        {
+          "from": "ECU/51",
+          "to": "Crank angle sensor (CAS)",
+          "colour": "G/B",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Crank angle sensor, 120 degree signal"
+        },
+        {
+          "from": "ECU/52",
+          "to": "Crank angle sensor (CAS)",
+          "colour": "G/Y",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Crank angle sensor, 1 degree signal"
+        },
+        {
+          "from": "CAS/1",
+          "to": "not in source data",
+          "colour": "",
+          "size": "",
+          "status": "estimated",
+          "fn_status": "estimated",
+          "function": "Ground"
+        },
+        {
+          "from": "CAS/2",
+          "to": "not in source data",
+          "colour": "",
+          "size": "",
+          "status": "estimated",
+          "fn_status": "estimated",
+          "function": "12 V supply"
+        },
+        {
+          "from": "CAS/3",
+          "to": "ECU 42/52",
+          "colour": "",
+          "size": "",
+          "status": "estimated",
+          "fn_status": "estimated",
+          "function": "1 degree signal"
+        },
+        {
+          "from": "CAS/4",
+          "to": "ECU 41/51",
+          "colour": "",
+          "size": "",
+          "status": "estimated",
+          "fn_status": "estimated",
+          "function": "120 degree signal"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-ignsw-start",
+      "a": "ECU",
+      "b": "IGNSW",
+      "name": "ECU → IGNSW",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/43",
+          "to": "Ignition switch",
+          "colour": "B/Y",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Ignition switch START signal"
+        },
+        {
+          "from": "ECU/45",
+          "to": "Ignition switch",
+          "colour": "B/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Ignition switch IGN (R32)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-nsw-start",
+      "a": "ECU",
+      "b": "NSW",
+      "name": "ECU → NSW",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/44",
+          "to": "Neutral position switch",
+          "colour": "G/O",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Neutral position switch"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-acsw-hvac",
+      "a": "ECU",
+      "b": "ACSW",
+      "name": "ECU → ACSW",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/46",
+          "to": "Air conditioner switch",
+          "colour": "LG/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Air conditioner switch signal"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-gnd_ecu-ground",
+      "a": "ECU",
+      "b": "GND_ECU",
+      "name": "ECU → GND_ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/50",
+          "to": "ECU ground point",
+          "colour": "B",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Ground (control unit)"
+        },
+        {
+          "from": "ECU/60",
+          "to": "ECU ground point",
+          "colour": "B",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Ground (control unit)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-vss-eccs",
+      "a": "ECU",
+      "b": "VSS",
+      "name": "ECU → VSS",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/53",
+          "to": "Vehicle speed sensor",
+          "colour": "Y/G",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Vehicle speed sensor"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-idlesw-eccs",
+      "a": "ECU",
+      "b": "IDLESW",
+      "name": "ECU → IDLESW",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/54",
+          "to": "Throttle valve switch (idle)",
+          "colour": "LG",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Throttle valve switch, idle contact"
+        },
+        {
+          "from": "ECU/57",
+          "to": "Throttle valve switch (idle)",
+          "colour": "G/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Throttle valve switch power supply"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-o2r-eccs",
+      "a": "ECU",
+      "b": "O2R",
+      "name": "ECU → O2R",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/55",
+          "to": "Exhaust gas (O2) sensor, rear",
+          "colour": "",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Exhaust gas (O2) sensor signal, rear"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-attesa-attesa",
+      "a": "ECU",
+      "b": "ATTESA",
+      "name": "ECU → ATTESA",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/56",
+          "to": "ATTESA E-TS 4WD control unit",
+          "colour": "PU",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "estimated",
+          "function": "Throttle sensor output signal (to ATTESA / ABS)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-bat-power",
+      "a": "ECU",
+      "b": "BAT",
+      "name": "ECU → BAT",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/58",
+          "to": "Battery",
+          "colour": "W/B",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Battery power supply (memory)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-inj1-fuel",
+      "a": "ECU",
+      "b": "INJ1",
+      "name": "ECU → INJ1",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/101",
+          "to": "Injector No. 1",
+          "colour": "W/L",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Injector No. 1 control"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-inj3-fuel",
+      "a": "ECU",
+      "b": "INJ3",
+      "name": "ECU → INJ3",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/103",
+          "to": "Injector No. 3",
+          "colour": "W/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Injector No. 3 control"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-fpcm-fuel",
+      "a": "ECU",
+      "b": "FPCM",
+      "name": "ECU → FPCM",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/104",
+          "to": "Fuel pump control module (FPCM)",
+          "colour": "LG",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Fuel pump control module command 1 (FPCM)"
+        },
+        {
+          "from": "ECU/106",
+          "to": "Fuel pump control module (FPCM)",
+          "colour": "G/W",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Fuel pump control module command 2 (FPCM)"
+        },
+        {
+          "from": "ECU/104",
+          "to": "Fuel pump control module (FPCM)",
+          "colour": "LG",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "FPC1 command from ECU pin 104"
+        },
+        {
+          "from": "ECU/106",
+          "to": "Fuel pump control module (FPCM)",
+          "colour": "G/W",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "FPC2 command from ECU pin 106"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-inj2-fuel",
+      "a": "ECU",
+      "b": "INJ2",
+      "name": "ECU → INJ2",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/105",
+          "to": "Injector No. 2",
+          "colour": "Y",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Injector No. 2 control"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-gnd_inj-ground",
+      "a": "ECU",
+      "b": "GND_INJ",
+      "name": "ECU → GND_INJ",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/107",
+          "to": "Injector ground",
+          "colour": "B/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Injector ground"
+        },
+        {
+          "from": "ECU/108",
+          "to": "Injector ground",
+          "colour": "B/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Injector ground"
+        },
+        {
+          "from": "ECU/116",
+          "to": "Injector ground",
+          "colour": "B/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Injector ground"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-inj5-fuel",
+      "a": "ECU",
+      "b": "INJ5",
+      "name": "ECU → INJ5",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/110",
+          "to": "Injector No. 5",
+          "colour": "W/G",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Injector No. 5 control"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-inj6-fuel",
+      "a": "ECU",
+      "b": "INJ6",
+      "name": "ECU → INJ6",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/112",
+          "to": "Injector No. 6",
+          "colour": "W/B",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Injector No. 6 control"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ecu-inj4-fuel",
+      "a": "ECU",
+      "b": "INJ4",
+      "name": "ECU → INJ4",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/114",
+          "to": "Injector No. 4",
+          "colour": "W/L",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Injector No. 4 control"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ECU-None-5",
+      "a": "ECU",
+      "b": null,
+      "name": "ECU → None",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/5",
+          "to": null,
+          "colour": "",
+          "size": "",
+          "status": "n/a",
+          "fn_status": "confirmed",
+          "function": "Not used"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ECU-None-8",
+      "a": "ECU",
+      "b": null,
+      "name": "ECU → None",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/8",
+          "to": null,
+          "colour": "",
+          "size": "",
+          "status": "n/a",
+          "fn_status": "confirmed",
+          "function": "Not used"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ECU-None-14",
+      "a": "ECU",
+      "b": null,
+      "name": "ECU → None",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/14",
+          "to": null,
+          "colour": "",
+          "size": "",
+          "status": "n/a",
+          "fn_status": "confirmed",
+          "function": "Not used"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ECU-None-15",
+      "a": "ECU",
+      "b": null,
+      "name": "ECU → None",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/15",
+          "to": null,
+          "colour": "",
+          "size": "",
+          "status": "n/a",
+          "fn_status": "confirmed",
+          "function": "Not used"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ECU-None-17",
+      "a": "ECU",
+      "b": null,
+      "name": "ECU → None",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/17",
+          "to": null,
+          "colour": "",
+          "size": "",
+          "status": "n/a",
+          "fn_status": "confirmed",
+          "function": "Not used"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ECU-None-33",
+      "a": "ECU",
+      "b": null,
+      "name": "ECU → None",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/33",
+          "to": null,
+          "colour": "",
+          "size": "",
+          "status": "n/a",
+          "fn_status": "confirmed",
+          "function": "Not used"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ECU-None-37",
+      "a": "ECU",
+      "b": null,
+      "name": "ECU → None",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/37",
+          "to": null,
+          "colour": "",
+          "size": "",
+          "status": "n/a",
+          "fn_status": "confirmed",
+          "function": "Not used"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ECU-None-39",
+      "a": "ECU",
+      "b": null,
+      "name": "ECU → None",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/39",
+          "to": null,
+          "colour": "",
+          "size": "",
+          "status": "n/a",
+          "fn_status": "confirmed",
+          "function": "Not used"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ECU-None-40",
+      "a": "ECU",
+      "b": null,
+      "name": "ECU → None",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/40",
+          "to": null,
+          "colour": "",
+          "size": "",
+          "status": "n/a",
+          "fn_status": "confirmed",
+          "function": "Not used"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ECU-None-102",
+      "a": "ECU",
+      "b": null,
+      "name": "ECU → None",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/102",
+          "to": null,
+          "colour": "",
+          "size": "",
+          "status": "n/a",
+          "fn_status": "confirmed",
+          "function": "Not used"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ECU-None-111",
+      "a": "ECU",
+      "b": null,
+      "name": "ECU → None",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/111",
+          "to": null,
+          "colour": "",
+          "size": "",
+          "status": "n/a",
+          "fn_status": "confirmed",
+          "function": "Not used"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ECU-None-113",
+      "a": "ECU",
+      "b": null,
+      "name": "ECU → None",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/113",
+          "to": null,
+          "colour": "",
+          "size": "",
+          "status": "n/a",
+          "fn_status": "confirmed",
+          "function": "Not used"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ECU-None-115",
+      "a": "ECU",
+      "b": null,
+      "name": "ECU → None",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECU/115",
+          "to": null,
+          "colour": "",
+          "size": "",
+          "status": "n/a",
+          "fn_status": "confirmed",
+          "function": "Not used"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "fpcm-pump",
+      "a": "FPCM",
+      "b": "FPUMP",
+      "name": "FPCM → fuel pump",
+      "wires": [
+        {
+          "from": "FPCM/7",
+          "to": "FPUMP/+",
+          "colour": "",
+          "size": "",
+          "status": "estimated",
+          "fn_status": "confirmed",
+          "function": "Pump positive"
+        },
+        {
+          "from": "FPCM/4",
+          "to": "FPUMP/-",
+          "colour": "",
+          "size": "",
+          "status": "estimated",
+          "fn_status": "confirmed",
+          "function": "Pump negative"
+        }
+      ],
+      "note": "FPCM pins from the factory fuel-pump inspection sheet. Colours not indexed.",
+      "system": [],
+      "page": "",
+      "via": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "fprly-fpcm",
+      "a": "FPRLY",
+      "b": "FPCM",
+      "name": "FPRLY → FPCM",
+      "system": [],
+      "wires": [
+        {
+          "from": "FPRLY/5",
+          "to": "FPCM/5 power (+)",
+          "colour": "",
+          "size": "",
+          "status": "estimated",
+          "fn_status": "estimated",
+          "function": "Power (+) from fuel pump relay"
+        },
+        {
+          "from": "FPRLY/5",
+          "to": "FPCM/5 power (+)",
+          "colour": "",
+          "size": "",
+          "status": "estimated",
+          "fn_status": "estimated",
+          "function": "Contact out to FPCM pin 5"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "fpcm-gnd",
+      "a": "FPCM",
+      "b": "GND_ECU",
+      "name": "FPCM → GND_ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "FPCM/6",
+          "to": "Shield ground",
+          "colour": "",
+          "size": "",
+          "status": "estimated",
+          "fn_status": "estimated",
+          "function": "Shield ground"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "fuse8-fprly",
+      "a": "FUSE",
+      "b": "FPRLY",
+      "name": "FUSE → FPRLY",
+      "system": [],
+      "wires": [
+        {
+          "from": "Fuse 8",
+          "to": "FPRLY/2 coil + and FPRLY/3 contact",
+          "colour": "",
+          "size": "",
+          "status": "estimated",
+          "fn_status": "estimated",
+          "function": "Coil (+) from fuse 8 (IGN)"
+        },
+        {
+          "from": "Fuse 8",
+          "to": "FPRLY/2 coil + and FPRLY/3 contact",
+          "colour": "",
+          "size": "",
+          "status": "estimated",
+          "fn_status": "estimated",
+          "function": "Contact in from fuse 8 (IGN)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "PTU-ECU-1",
+      "a": "PTU",
+      "b": "ECU",
+      "name": "PTU → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "PTU/1",
+          "to": "ECU/1",
+          "colour": "L/O",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Ignition signal No. 1"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "PTU-ECU-2",
+      "a": "PTU",
+      "b": "ECU",
+      "name": "PTU → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "PTU/2",
+          "to": "ECU/2",
+          "colour": "L",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Ignition signal No. 5"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "PTU-ECU-3",
+      "a": "PTU",
+      "b": "ECU",
+      "name": "PTU → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "PTU/3",
+          "to": "ECU/3",
+          "colour": "L/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Ignition signal No. 3"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "PTU-ECU-4",
+      "a": "PTU",
+      "b": "ECU",
+      "name": "PTU → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "PTU/4",
+          "to": "ECU/11",
+          "colour": "L/W",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Ignition signal No. 6"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "PTU-ECU-5",
+      "a": "PTU",
+      "b": "ECU",
+      "name": "PTU → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "PTU/5",
+          "to": "ECU/12",
+          "colour": "L/B",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Ignition signal No. 2"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "PTU-ECU-6",
+      "a": "PTU",
+      "b": "ECU",
+      "name": "PTU → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "PTU/6",
+          "to": "ECU/13",
+          "colour": "L/Y",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Ignition signal No. 4"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "AAC-ECU-1",
+      "a": "AAC",
+      "b": "ECU",
+      "name": "AAC → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "AAC/1",
+          "to": "ECU/4",
+          "colour": "L/G",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "AAC valve (idle air control)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "FANRLY-ECU-1",
+      "a": "FANRLY",
+      "b": "ECU",
+      "name": "FANRLY → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "FANRLY/1",
+          "to": "ECU/6",
+          "colour": "B",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Sub electric fan relay (engine temperature)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "CLUSTER-ECU-1",
+      "a": "CLUSTER",
+      "b": "ECU",
+      "name": "CLUSTER → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "CLUSTER/1",
+          "to": "ECU/7",
+          "colour": "Y/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Tachometer signal"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "CLUSTER-ECU-2",
+      "a": "CLUSTER",
+      "b": "ECU",
+      "name": "CLUSTER → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "CLUSTER/2",
+          "to": "ECU/32",
+          "colour": "O/B",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Malfunction indicator lamp (check engine)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ACRLY-ECU-1",
+      "a": "ACRLY",
+      "b": "ECU",
+      "name": "ACRLY → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "ACRLY/1",
+          "to": "ECU/9",
+          "colour": "L/G",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Air conditioner relay (A/C cut)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ECCSRLY-ECU-1",
+      "a": "ECCSRLY",
+      "b": "ECU",
+      "name": "ECCSRLY → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECCSRLY/1",
+          "to": "ECU/16",
+          "colour": "O",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "ECCS relay control"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ECCSRLY-ECU-2",
+      "a": "ECCSRLY",
+      "b": "ECU",
+      "name": "ECCSRLY → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECCSRLY/2",
+          "to": "ECU/49",
+          "colour": "B/W",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Control unit power supply"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ECCSRLY-ECU-3",
+      "a": "ECCSRLY",
+      "b": "ECU",
+      "name": "ECCSRLY → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "ECCSRLY/3",
+          "to": "ECU/59",
+          "colour": "B/W",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Control unit power supply"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "INJ1-ECU-1",
+      "a": "INJ1",
+      "b": "ECU",
+      "name": "INJ1 → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "INJ1/1",
+          "to": "ECU/109",
+          "colour": "B/W",
+          "size": "",
+          "status": "estimated",
+          "fn_status": "confirmed",
+          "function": "Injector power supply (counter-EMF circuit)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "INJ1-ECU-2",
+      "a": "INJ1",
+      "b": "ECU",
+      "name": "INJ1 → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "INJ1/2",
+          "to": "ECU/101",
+          "colour": "W/L",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Injector No. 1 control"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "PSW-ECU-1",
+      "a": "PSW",
+      "b": "ECU",
+      "name": "PSW → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "PSW/1",
+          "to": "ECU/19",
+          "colour": "SB",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Power steering oil pressure switch"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "CONSULT-ECU-1",
+      "a": "CONSULT",
+      "b": "ECU",
+      "name": "CONSULT → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "CONSULT/1",
+          "to": "ECU/21",
+          "colour": "Y/G",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "CONSULT RX (data in)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "CONSULT-ECU-2",
+      "a": "CONSULT",
+      "b": "ECU",
+      "name": "CONSULT → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "CONSULT/2",
+          "to": "ECU/22",
+          "colour": "Y",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "CONSULT TX (data out)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "CONSULT-ECU-3",
+      "a": "CONSULT",
+      "b": "ECU",
+      "name": "CONSULT → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "CONSULT/3",
+          "to": "ECU/31",
+          "colour": "Y/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "CONSULT CLK (synchronisation)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "CONSULT-ECU-4",
+      "a": "CONSULT",
+      "b": "ECU",
+      "name": "CONSULT → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "CONSULT/4",
+          "to": "ECU/47",
+          "colour": "Y/PU",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "CONSULT CHK (diagnosis activation)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "KS1-ECU-1",
+      "a": "KS1",
+      "b": "ECU",
+      "name": "KS1 → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "KS1/1",
+          "to": "ECU/23",
+          "colour": "W/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Knock (detonation) sensor, cylinders 1-3"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "KS2-ECU-1",
+      "a": "KS2",
+      "b": "ECU",
+      "name": "KS2 → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "KS2/1",
+          "to": "ECU/24",
+          "colour": "W/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Knock (detonation) sensor, cylinders 4-6"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "WGS-ECU-1",
+      "a": "WGS",
+      "b": "ECU",
+      "name": "WGS → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "WGS/1",
+          "to": "ECU/25",
+          "colour": "L/Y",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Wastegate valve control solenoid (boost)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "AFM_R-ECU-1",
+      "a": "AFM_R",
+      "b": "ECU",
+      "name": "AFM_R → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "AFM_R/1",
+          "to": "ECU/26",
+          "colour": "W/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Air flow meter ground"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "AFM_R-ECU-2",
+      "a": "AFM_R",
+      "b": "ECU",
+      "name": "AFM_R → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "AFM_R/2",
+          "to": "ECU/27",
+          "colour": "B",
+          "size": "",
+          "status": "estimated",
+          "fn_status": "confirmed",
+          "function": "Air flow meter signal, rear"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "CTS-ECU-1",
+      "a": "CTS",
+      "b": "ECU",
+      "name": "CTS → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "CTS/1",
+          "to": "ECU/28",
+          "colour": "Y/G",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Engine coolant temperature sensor signal"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "O2F-ECU-1",
+      "a": "O2F",
+      "b": "ECU",
+      "name": "O2F → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "O2F/1",
+          "to": "ECU/29",
+          "colour": "",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Exhaust gas (O2) sensor signal, front"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "TPS-ECU-1",
+      "a": "TPS",
+      "b": "ECU",
+      "name": "TPS → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "TPS/1",
+          "to": "ECU/30",
+          "colour": "B",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Sensor ground (throttle sensor, coolant sensor)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "TPS-ECU-2",
+      "a": "TPS",
+      "b": "ECU",
+      "name": "TPS → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "TPS/2",
+          "to": "ECU/38",
+          "colour": "W",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Throttle sensor signal"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "TPS-ECU-3",
+      "a": "TPS",
+      "b": "ECU",
+      "name": "TPS → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "TPS/3",
+          "to": "ECU/48",
+          "colour": "Y",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Throttle sensor power supply (+5 V)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "AFM_F-ECU-1",
+      "a": "AFM_F",
+      "b": "ECU",
+      "name": "AFM_F → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "AFM_F/1",
+          "to": "ECU/34",
+          "colour": "W",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Air flow meter ground"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "AFM_F-ECU-2",
+      "a": "AFM_F",
+      "b": "ECU",
+      "name": "AFM_F → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "AFM_F/2",
+          "to": "ECU/35",
+          "colour": "O",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Air flow meter signal, front"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "IAT-ECU-1",
+      "a": "IAT",
+      "b": "ECU",
+      "name": "IAT → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "IAT/1",
+          "to": "ECU/36",
+          "colour": "SB",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Intake air temperature sensor signal"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "IGNSW-ECU-1",
+      "a": "IGNSW",
+      "b": "ECU",
+      "name": "IGNSW → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "IGNSW/1",
+          "to": "ECU/43",
+          "colour": "B/Y",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Ignition switch START signal"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "IGNSW-ECU-2",
+      "a": "IGNSW",
+      "b": "ECU",
+      "name": "IGNSW → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "IGNSW/2",
+          "to": "ECU/45",
+          "colour": "B/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Ignition switch IGN (R32)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "NSW-ECU-1",
+      "a": "NSW",
+      "b": "ECU",
+      "name": "NSW → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "NSW/1",
+          "to": "ECU/44",
+          "colour": "G/O",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Neutral position switch"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ACSW-ECU-1",
+      "a": "ACSW",
+      "b": "ECU",
+      "name": "ACSW → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "ACSW/1",
+          "to": "ECU/46",
+          "colour": "LG/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Air conditioner switch signal"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "VSS-ECU-1",
+      "a": "VSS",
+      "b": "ECU",
+      "name": "VSS → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "VSS/1",
+          "to": "ECU/53",
+          "colour": "Y/G",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Vehicle speed sensor"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "IDLESW-ECU-1",
+      "a": "IDLESW",
+      "b": "ECU",
+      "name": "IDLESW → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "IDLESW/1",
+          "to": "ECU/54",
+          "colour": "LG",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Throttle valve switch, idle contact"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "IDLESW-ECU-2",
+      "a": "IDLESW",
+      "b": "ECU",
+      "name": "IDLESW → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "IDLESW/2",
+          "to": "ECU/57",
+          "colour": "G/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Throttle valve switch power supply"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "O2R-ECU-1",
+      "a": "O2R",
+      "b": "ECU",
+      "name": "O2R → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "O2R/1",
+          "to": "ECU/55",
+          "colour": "",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Exhaust gas (O2) sensor signal, rear"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ATTESA-ECU-1",
+      "a": "ATTESA",
+      "b": "ECU",
+      "name": "ATTESA → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "ATTESA/1",
+          "to": "ECU/56",
+          "colour": "PU",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "estimated",
+          "function": "Throttle sensor output signal (to ATTESA / ABS)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "BAT-ECU-1",
+      "a": "BAT",
+      "b": "ECU",
+      "name": "BAT → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "BAT/1",
+          "to": "ECU/58",
+          "colour": "W/B",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Battery power supply (memory)"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "INJ3-ECU-1",
+      "a": "INJ3",
+      "b": "ECU",
+      "name": "INJ3 → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "INJ3/1",
+          "to": "ECU/103",
+          "colour": "W/R",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Injector No. 3 control"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "INJ2-ECU-1",
+      "a": "INJ2",
+      "b": "ECU",
+      "name": "INJ2 → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "INJ2/1",
+          "to": "ECU/105",
+          "colour": "Y",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Injector No. 2 control"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "INJ5-ECU-1",
+      "a": "INJ5",
+      "b": "ECU",
+      "name": "INJ5 → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "INJ5/1",
+          "to": "ECU/110",
+          "colour": "W/G",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Injector No. 5 control"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "INJ6-ECU-1",
+      "a": "INJ6",
+      "b": "ECU",
+      "name": "INJ6 → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "INJ6/1",
+          "to": "ECU/112",
+          "colour": "W/B",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Injector No. 6 control"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "INJ4-ECU-1",
+      "a": "INJ4",
+      "b": "ECU",
+      "name": "INJ4 → ECU",
+      "system": [],
+      "wires": [
+        {
+          "from": "INJ4/1",
+          "to": "ECU/114",
+          "colour": "W/L",
+          "size": "",
+          "status": "confirmed",
+          "fn_status": "confirmed",
+          "function": "Injector No. 4 control"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "FPUMP-FPCM-1",
+      "a": "FPUMP",
+      "b": "FPCM",
+      "name": "FPUMP → FPCM",
+      "system": [],
+      "wires": [
+        {
+          "from": "FPUMP/+",
+          "to": "FPCM/7",
+          "colour": "",
+          "size": "",
+          "status": "unindexed",
+          "fn_status": "confirmed",
+          "function": "Pump positive"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "FPUMP-FPCM-2",
+      "a": "FPUMP",
+      "b": "FPCM",
+      "name": "FPUMP → FPCM",
+      "system": [],
+      "wires": [
+        {
+          "from": "FPUMP/-",
+          "to": "FPCM/4",
+          "colour": "",
+          "size": "",
+          "status": "unindexed",
+          "fn_status": "confirmed",
+          "function": "Pump negative"
+        }
+      ],
+      "page": "",
+      "via": "",
+      "note": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "ptu-coils",
+      "a": "PTU",
+      "b": "COILS",
+      "name": "Power transistor unit → ignition coils",
+      "wires": [
+        {
+          "from": "PTU",
+          "to": "COILS 1-6",
+          "colour": "",
+          "size": "",
+          "status": "estimated",
+          "fn_status": "confirmed",
+          "function": "Coil drivers"
+        }
+      ],
+      "note": "FSM system figure shows the connection. Individual coil pins are not on the ECCS pin table.",
+      "system": [],
+      "page": "",
+      "via": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    },
+    {
+      "id": "bat-box",
+      "a": "BAT",
+      "b": "RELAYBOX",
+      "name": "Battery → engine relay box (link I MAIN 75A)",
+      "wires": [
+        {
+          "from": "BAT/+",
+          "to": "Fusible link I MAIN",
+          "colour": "",
+          "size": "",
+          "status": "estimated",
+          "fn_status": "confirmed",
+          "function": "Main feed"
+        }
+      ],
+      "note": "Factory fuse/relay label chart.",
+      "system": [],
+      "page": "",
+      "via": "",
+      "bus": null,
+      "variants": null,
+      "viaNodes": []
+    }
+  ],
+  "source": {
+    "name": "Nissan BNR32 FSM ECCS EN-171/EN-172 (PLMS reprint) plus dual-source location notes",
+    "url": "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+    "notes": "Unused ECU pins are factory-blank. Estimated items are labelled. Do not use estimated body-bolt grounds without a check on the car.",
+    "sheets": [
+      "EN-169",
+      "EN-171",
+      "EN-172"
+    ]
+  },
+  "variants": {}
+}

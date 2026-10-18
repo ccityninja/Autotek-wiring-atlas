@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8">
+<title>Autotek atlas — location and pinout audit</title>
+<style>
+body{font-family:ui-sans-serif,system-ui,sans-serif;background:#101418;color:#e8edf2;margin:0;padding:24px}
+h1,h2{font-weight:650} a{color:#8ec8ff}
+.cards{display:flex;gap:12px;flex-wrap:wrap}
+.card{background:#1b2229;border:1px solid #2c3640;border-radius:12px;padding:14px 16px;min-width:160px}
+.card b{display:block;font-size:28px}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{border-bottom:1px solid #2c3640;padding:6px 8px;text-align:left;vertical-align:top}
+tr.est{background:#3a2a12} tr.ok{background:#14261a}
+.note{color:#9aa8b4;max-width:70ch}
+</style>
+<h1>Autotek wiring atlas audit</h1>
+<p class="note">Golf Mk5 BLX / 09G and Nissan BNR32 RB26DETT. Estimated rows are in-harness splices or single-source items. Confirmed rows have a factory or dual source.</p>
+<div class="cards">
+  <div class="card"><b>110</b>Golf confirmed locations</div>
+  <div class="card"><b>29</b>Golf still estimated</div>
+  <div class="card"><b>530/1418</b>Golf indexed pins</div>
+  <div class="card"><b>40</b>R32 confirmed locations</div>
+  <div class="card"><b>3</b>R32 still estimated</div>
+  <div class="card"><b>76/76</b>R32 ECU pin positions</div>
+</div>
+<h2>Golf — promoted this pass</h2>
+<p>F125, F265, G182, G193_G194, G195, G40, G410, G61, G62, G66, G83, N18_G212, T8h, N70, N127, N291, N292, 642, T8i, N80, N205, N276, G131, G235, G299, C</p>
+<p>2D overlay filled for: —</p>
+<p>Pinout housings added: D (updated), D2 (updated), F120 (updated), C (updated), F241 (updated), R47 (updated)</p>
+<h2>Golf modules, sensors, wires</h2>
+<table><thead><tr><th>ID</th><th>Kind</th><th>Status</th><th>Location</th></tr></thead><tbody>
+<tr class='ok'><td>J533</td><td>module</td><td>confirmed</td><td>Driver footwell, above the pedal cluster behind the footwell trim (up on the pedal bracket. Exact pedal varies by model year: above clutch MY05–06, above accelerator later).</td></tr>
+<tr class='ok'><td>J220</td><td>module</td><td>confirmed</td><td>Centre of plenum chamber, behind the plenum bulkhead under the scuttle cover.</td></tr>
+<tr class='ok'><td>J217</td><td>module</td><td>confirmed</td><td>Behind the front-left wheel-housing liner (rear section).</td></tr>
+<tr class='ok'><td>J104</td><td>module</td><td>confirmed</td><td>On the ABS hydraulic unit, right side of the engine compartment near the bulkhead.</td></tr>
+<tr class='ok'><td>J500</td><td>module</td><td>confirmed</td><td>On the steering rack (EPS motor), on the front subframe.</td></tr>
+<tr class='ok'><td>J527</td><td>module</td><td>confirmed</td><td>Under the steering-column switch assembly (steering column electronics).</td></tr>
+<tr class='ok'><td>J519</td><td>module</td><td>confirmed</td><td>Under the dash panel, driver side (RHD: right), on its bracket beside fuse holder C. Forms one unit with the relay carrier.</td></tr>
+<tr class='ok'><td>J285</td><td>module</td><td>confirmed</td><td>Instrument cluster in dash panel insert, in front of the steering wheel.</td></tr>
+<tr class='ok'><td>T16</td><td>connector</td><td>confirmed</td><td>Diagnostic socket in the lower dash, driver side (RHD right).</td></tr>
+<tr class='ok'><td>J393</td><td>module</td><td>confirmed</td><td>Behind the glove compartment (RHD: left side of dash).</td></tr>
+<tr class='ok'><td>HVAC</td><td>module</td><td>confirmed</td><td>Centre of the dash panel, below the radio.</td></tr>
+<tr class='ok'><td>RADIO</td><td>module</td><td>confirmed</td><td>Centre of the dash panel.</td></tr>
+<tr class='ok'><td>J234</td><td>module</td><td>confirmed</td><td>Front of the centre tunnel under the console.</td></tr>
+<tr class='ok'><td>J386</td><td>module</td><td>confirmed</td><td>In the driver (front right, RHD) door.</td></tr>
+<tr class='ok'><td>J387</td><td>module</td><td>confirmed</td><td>In the front passenger (front left) door.</td></tr>
+<tr class='ok'><td>J388</td><td>module</td><td>confirmed</td><td>In the rear left door.</td></tr>
+<tr class='ok'><td>J389</td><td>module</td><td>confirmed</td><td>In the rear right door.</td></tr>
+<tr class='ok'><td>J446</td><td>module</td><td>confirmed</td><td>Rear right side panel (luggage compartment trim), if fitted.</td></tr>
+<tr class='ok'><td>J400</td><td>module</td><td>confirmed</td><td>On the wiper assembly under the plenum chamber cover.</td></tr>
+<tr class='ok'><td>G397</td><td>sensor</td><td>confirmed</td><td>On the windscreen near the rear-view mirror base, if fitted.</td></tr>
+<tr class='ok'><td>G47</td><td>sensor</td><td>confirmed</td><td>Front left wheel hub.</td></tr>
+<tr class='ok'><td>G45</td><td>sensor</td><td>confirmed</td><td>Front right wheel hub.</td></tr>
+<tr class='ok'><td>G46</td><td>sensor</td><td>confirmed</td><td>Rear left wheel hub.</td></tr>
+<tr class='ok'><td>G44</td><td>sensor</td><td>confirmed</td><td>Rear right wheel hub.</td></tr>
+<tr class='ok'><td>G419</td><td>sensor</td><td>confirmed</td><td>Under the front passenger seat (RHD: left).</td></tr>
+<tr class='ok'><td>G483</td><td>sensor</td><td>confirmed</td><td>On the brake servo (RHD: right side of the bulkhead).</td></tr>
+<tr class='ok'><td>F</td><td>sensor</td><td>confirmed</td><td>On the brake pedal bracket (driver footwell, RHD right).</td></tr>
+<tr class='ok'><td>EB</td><td>power</td><td>confirmed</td><td>Electronics box (E-box), left of the engine compartment beside the battery.</td></tr>
+<tr class='ok'><td>SC</td><td>power</td><td>confirmed</td><td>Fuse holder C at the driver-side end of the dash panel (RHD right), behind the side cover.</td></tr>
+<tr class='est'><td>EARTH</td><td>ground</td><td>estimated</td><td>Approx: ground network (several body earth points). Shown at the right A-pillar foot (earth 43).</td></tr>
+<tr class='ok'><td>BAT</td><td>power</td><td>confirmed</td><td>Battery, front left of the engine compartment.</td></tr>
+<tr class='ok'><td>LHL</td><td>lamp</td><td>confirmed</td><td>Left headlight.</td></tr>
+<tr class='ok'><td>RHL</td><td>lamp</td><td>confirmed</td><td>Right headlight.</td></tr>
+<tr class='ok'><td>F220</td><td>sensor</td><td>confirmed</td><td>Lock unit in the driver (front right) door.</td></tr>
+<tr class='ok'><td>F221</td><td>sensor</td><td>confirmed</td><td>Lock unit in the passenger (front left) door.</td></tr>
+<tr class='est'><td>PT</td><td>splice</td><td>estimated</td><td>Main wiring harness. Physical splice position unverified. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='est'><td>COM</td><td>splice</td><td>estimated</td><td>Main wiring harness. Physical splice position unverified. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='est'><td>INF</td><td>splice</td><td>estimated</td><td>Dashboard wiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='est'><td>LIN</td><td>splice</td><td>estimated</td><td>Main wiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='ok'><td>12</td><td>ground</td><td>confirmed</td><td>Earth point 12, left engine compartment below the battery tray.</td></tr>
+<tr class='est'><td>131</td><td>ground</td><td>estimated</td><td>Engine compartment wiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='est'><td>132</td><td>ground</td><td>estimated</td><td>Engine compartment wiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='est'><td>220</td><td>ground</td><td>estimated</td><td>Engine wiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='est'><td>327</td><td>ground</td><td>estimated</td><td>Engine compartment wiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='ok'><td>607</td><td>ground</td><td>confirmed</td><td>Earth point 607, left in the plenum chamber.</td></tr>
+<tr class='est'><td>A76</td><td>splice</td><td>estimated</td><td>Dash panel wiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='est'><td>B315</td><td>power</td><td>estimated</td><td>Main wiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='est'><td>D101</td><td>splice</td><td>estimated</td><td>Engine compartment wiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='est'><td>D107</td><td>splice</td><td>estimated</td><td>Engine compartment wiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='est'><td>D136</td><td>power</td><td>estimated</td><td>Engine compartment wiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='est'><td>D182</td><td>power</td><td>estimated</td><td>Engine compartment wiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='ok'><td>F125</td><td>sensor</td><td>confirmed</td><td>Multifunction range switch on the 09G selector shaft, gearbox housing.</td></tr>
+<tr class='ok'><td>F265</td><td>sensor</td><td>confirmed</td><td>Map-controlled cooling thermostat in the coolant distributor housing, gearbox end of the head.</td></tr>
+<tr class='ok'><td>G182</td><td>sensor</td><td>confirmed</td><td>Gearbox input speed sender on the 09G housing.</td></tr>
+<tr class='ok'><td>G193_G194</td><td>sensor</td><td>confirmed</td><td>Automatic gearbox hydraulic pressure senders 1 and 2 in the 09G valve body.</td></tr>
+<tr class='ok'><td>G195</td><td>sensor</td><td>confirmed</td><td>Gearbox output speed sender on the 09G housing.</td></tr>
+<tr class='ok'><td>G247</td><td>sensor</td><td>confirmed</td><td>Fuel pressure sender on the high-pressure fuel rail (access after removing the air filter on top of the engine).</td></tr>
+<tr class='ok'><td>G28</td><td>sensor</td><td>confirmed</td><td>Cylinder block, front side, between oil filter and gearbox flange.</td></tr>
+<tr class='ok'><td>G40</td><td>sensor</td><td>confirmed</td><td>Hall sender G40 in the cylinder head at the timing-belt end, behind / through the toothed-belt guard (BLR / BLX / BLY).</td></tr>
+<tr class='ok'><td>G410</td><td>sensor</td><td>confirmed</td><td>Fuel pressure sender for low pressure G410, on the fuel-rail / low-pressure pipe assembly (workshop item 1), engine codes BLR / BLX / BLY.</td></tr>
+<tr class='ok'><td>G42_G71</td><td>sensor</td><td>confirmed</td><td>Intake manifold pressure sender G71 with intake air temperature sender G42, on the intake manifold.</td></tr>
+<tr class='ok'><td>G61</td><td>sensor</td><td>confirmed</td><td>Knock sensor 1, timing-belt end of the cylinder block below the intake manifold (cylinders 1–2).</td></tr>
+<tr class='ok'><td>G62</td><td>sensor</td><td>confirmed</td><td>Coolant distributor housing, left (gearbox) end of the cylinder head.</td></tr>
+<tr class='ok'><td>G66</td><td>sensor</td><td>confirmed</td><td>Knock sensor 2, gearbox end of the cylinder block below the intake manifold (cylinders 3–4).</td></tr>
+<tr class='ok'><td>G79_G185</td><td>sensor</td><td>confirmed</td><td>Integral in the accelerator pedal module (driver footwell).</td></tr>
+<tr class='ok'><td>G83</td><td>sensor</td><td>confirmed</td><td>Radiator outlet hose, lower left (radiator-outlet coolant temperature sender).</td></tr>
+<tr class='ok'><td>G93</td><td>sensor</td><td>confirmed</td><td>ATF temperature sender inside the 09G valve body, on the internal 8-way sensor harness.</td></tr>
+<tr class='ok'><td>J338</td><td>sensor</td><td>confirmed</td><td>Throttle valve module on the intake manifold (BLX: coolant-heated).</td></tr>
+<tr class='ok'><td>N18_G212</td><td>sensor</td><td>confirmed</td><td>EGR valve and potentiometer, gearbox end of the cylinder head.</td></tr>
+<tr class='ok'><td>N282</td><td>sensor</td><td>confirmed</td><td>Inside the 09G gearbox, in the valve body (ATF sump, bottom of the gearbox). Reached through the 14-pin solenoid / 8-pin sensor harness connectors on the left of the gearbox.</td></tr>
+<tr class='ok'><td>N283</td><td>sensor</td><td>confirmed</td><td>Inside the 09G gearbox, in the valve body (ATF sump, bottom of the gearbox). Reached through the 14-pin solenoid / 8-pin sensor harness connectors on the left of the gearbox.</td></tr>
+<tr class='ok'><td>N88</td><td>sensor</td><td>confirmed</td><td>Inside the 09G gearbox, in the valve body (ATF sump, bottom of the gearbox). Reached through the 14-pin solenoid / 8-pin sensor harness connectors on the left of the gearbox.</td></tr>
+<tr class='ok'><td>N89</td><td>sensor</td><td>confirmed</td><td>Inside the 09G gearbox, in the valve body (ATF sump, bottom of the gearbox). Reached through the 14-pin solenoid / 8-pin sensor harness connectors on the left of the gearbox.</td></tr>
+<tr class='ok'><td>N90</td><td>sensor</td><td>confirmed</td><td>Inside the 09G gearbox, in the valve body (ATF sump, bottom of the gearbox). Reached through the 14-pin solenoid / 8-pin sensor harness connectors on the left of the gearbox.</td></tr>
+<tr class='ok'><td>N91</td><td>sensor</td><td>confirmed</td><td>Inside the 09G gearbox, in the valve body (ATF sump, bottom of the gearbox). Reached through the 14-pin solenoid / 8-pin sensor harness connectors on the left of the gearbox.</td></tr>
+<tr class='ok'><td>N92</td><td>sensor</td><td>confirmed</td><td>Inside the 09G gearbox, in the valve body (ATF sump, bottom of the gearbox). Reached through the 14-pin solenoid / 8-pin sensor harness connectors on the left of the gearbox.</td></tr>
+<tr class='ok'><td>N93</td><td>sensor</td><td>confirmed</td><td>Inside the 09G gearbox, in the valve body (ATF sump, bottom of the gearbox). Reached through the 14-pin solenoid / 8-pin sensor harness connectors on the left of the gearbox.</td></tr>
+<tr class='ok'><td>SB28</td><td>power</td><td>confirmed</td><td>Fuse 28 on fuse holder B, on top of the battery (left engine compartment).</td></tr>
+<tr class='ok'><td>SC14</td><td>power</td><td>confirmed</td><td>Fuse 14 on fuse holder C (dash end, driver side).</td></tr>
+<tr class='ok'><td>T10r</td><td>connector</td><td>confirmed</td><td>Left engine compartment.</td></tr>
+<tr class='ok'><td>T12c</td><td>connector</td><td>confirmed</td><td>Protective connector housing, left in the plenum chamber.</td></tr>
+<tr class='ok'><td>T14c</td><td>connector</td><td>confirmed</td><td>On the gearbox.</td></tr>
+<tr class='ok'><td>T4x</td><td>connector</td><td>confirmed</td><td>Lower left of the radiator fan.</td></tr>
+<tr class='ok'><td>T8h</td><td>connector</td><td>confirmed</td><td>8-pin gearbox pre-wiring harness connector at the 09G.</td></tr>
+<tr class='ok'><td>N70</td><td>sensor</td><td>confirmed</td><td>Ignition coil, cylinder 1, coil-on-plug on the valve cover (timing-belt end).</td></tr>
+<tr class='ok'><td>N127</td><td>sensor</td><td>confirmed</td><td>Ignition coil, cylinder 2, coil-on-plug on the valve cover.</td></tr>
+<tr class='ok'><td>N291</td><td>sensor</td><td>confirmed</td><td>Ignition coil, cylinder 3, coil-on-plug on the valve cover.</td></tr>
+<tr class='ok'><td>N292</td><td>sensor</td><td>confirmed</td><td>Ignition coil, cylinder 4, coil-on-plug on the valve cover (gearbox end).</td></tr>
+<tr class='ok'><td>N30</td><td>sensor</td><td>confirmed</td><td>injector cyl 1, intake side of the head. (in the fuel rail, intake side, under the airbox/engine cover)</td></tr>
+<tr class='ok'><td>N31</td><td>sensor</td><td>confirmed</td><td>injector cyl 2, intake side. (in the fuel rail, intake side, under the airbox/engine cover)</td></tr>
+<tr class='ok'><td>N32</td><td>sensor</td><td>confirmed</td><td>injector cyl 3, intake side. (in the fuel rail, intake side, under the airbox/engine cover)</td></tr>
+<tr class='ok'><td>N33</td><td>sensor</td><td>confirmed</td><td>injector cyl 4, intake side. (in the fuel rail, intake side, under the airbox/engine cover)</td></tr>
+<tr class='est'><td>D206</td><td>splice</td><td>estimated</td><td>Engine prewiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='est'><td>85</td><td>ground</td><td>estimated</td><td>Earth connection 1, engine compartment wiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='est'><td>281</td><td>ground</td><td>estimated</td><td>Earth point 1, engine prewiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='ok'><td>15</td><td>ground</td><td>confirmed</td><td>Earth point on the cylinder head.</td></tr>
+<tr class='ok'><td>642</td><td>ground</td><td>confirmed</td><td>Fan earth point at the radiator fan, lower left of the lock carrier.</td></tr>
+<tr class='ok'><td>T14a</td><td>connector</td><td>confirmed</td><td>Near the battery.</td></tr>
+<tr class='ok'><td>T8i</td><td>connector</td><td>confirmed</td><td>8-pin injector harness coupling, intake side of the head.</td></tr>
+<tr class='ok'><td>T12b</td><td>connector</td><td>confirmed</td><td>Protective connector housing, left in the plenum chamber.</td></tr>
+<tr class='ok'><td>V157_G336</td><td>sensor</td><td>confirmed</td><td>Intake-flap motor V157 / potentiometer G336 are part of the fuel-rail/flap assembly on the intake manifold (BLR/BLX/BLY).</td></tr>
+<tr class='ok'><td>N80</td><td>sensor</td><td>confirmed</td><td>EVAP purge valve on the intake air duct, left side of the engine bay.</td></tr>
+<tr class='ok'><td>N156</td><td>sensor</td><td>confirmed</td><td>Variable intake manifold change-over valve on the intake manifold.</td></tr>
+<tr class='ok'><td>N205</td><td>sensor</td><td>confirmed</td><td>Camshaft control valve, timing-belt end of the cylinder head.</td></tr>
+<tr class='ok'><td>N276</td><td>sensor</td><td>confirmed</td><td>Fuel pressure regulating valve on the high-pressure pump, gearbox end of the cylinder head.</td></tr>
+<tr class='est'><td>D180</td><td>splice</td><td>estimated</td><td>Connection 87a, engine compartment wiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='est'><td>D181</td><td>splice</td><td>estimated</td><td>Connection 2 (87a), engine compartment wiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='ok'><td>J317</td><td>module</td><td>confirmed</td><td>Relay position on the E-box, left in the engine compartment.</td></tr>
+<tr class='est'><td>D78</td><td>splice</td><td>estimated</td><td>Positive connection 1 (30a), engine compartment wiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='ok'><td>J538</td><td>module</td><td>confirmed</td><td>Under the rear seat, right side, on the fuel delivery unit cover (top of the fuel tank).</td></tr>
+<tr class='ok'><td>G6</td><td>sensor</td><td>confirmed</td><td>Fuel pump inside the fuel delivery unit in the tank, under the rear seat (J538 sits on its cover).</td></tr>
+<tr class='ok'><td>SC27</td><td>power</td><td>confirmed</td><td>Fuse 27 on fuse holder C (dash end, driver side).</td></tr>
+<tr class='est'><td>383</td><td>ground</td><td>estimated</td><td>Earth connection 18, main wiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='ok'><td>682</td><td>ground</td><td>confirmed</td><td>Earth point 682 (earth point 2), rear right side panel.</td></tr>
+<tr class='ok'><td>G39</td><td>sensor</td><td>confirmed</td><td>Exhaust manifold / close-coupled catalytic converter, bank 1 probe 1 (black connector), rear of the engine.</td></tr>
+<tr class='ok'><td>G108</td><td>sensor</td><td>confirmed</td><td>Exhaust manifold / close-coupled catalytic converter, bank 2 probe 1 (brown connector), beside G39.</td></tr>
+<tr class='ok'><td>G130</td><td>sensor</td><td>confirmed</td><td>After the close-coupled catalytic converter in the front exhaust pipe (BLX exhaust overview item 2).</td></tr>
+<tr class='ok'><td>G131</td><td>sensor</td><td>confirmed</td><td>Lambda probe 2 after the NOx storage catalyst, underbody.</td></tr>
+<tr class='est'><td>E30</td><td>splice</td><td>estimated</td><td>Connection 87a in engine wiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='est'><td>E7</td><td>splice</td><td>estimated</td><td>Connection 87a in Motronic wiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='ok'><td>J583</td><td>module</td><td>confirmed</td><td>Underbody, right side, behind the right underbody panel next to the NOx storage catalyst (cable to G295 fixed).</td></tr>
+<tr class='ok'><td>G235</td><td>sensor</td><td>confirmed</td><td>Exhaust temperature sender ahead of the NOx storage catalyst, underbody.</td></tr>
+<tr class='ok'><td>G299</td><td>sensor</td><td>confirmed</td><td>Intake temperature sender 2 in the intake air duct, left.</td></tr>
+<tr class='ok'><td>F189</td><td>sensor</td><td>confirmed</td><td>Under the selector lever cover.</td></tr>
+<tr class='ok'><td>F319</td><td>sensor</td><td>confirmed</td><td>In the selector lever mechanism.</td></tr>
+<tr class='ok'><td>T10s</td><td>connector</td><td>confirmed</td><td>Under the selector lever cover.</td></tr>
+<tr class='est'><td>372</td><td>ground</td><td>estimated</td><td>Earth connection 7 in main wiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='est'><td>374</td><td>ground</td><td>estimated</td><td>Earth connection 9 in main wiring harness. In-harness connection: approximately position along its harness.</td></tr>
+<tr class='ok'><td>B</td><td>power</td><td>confirmed</td><td>Starter on the gearbox flange, front-left of the engine below the airbox. Terminal 30/50 reached from above near the battery tray (09G: removed upwards).</td></tr>
+<tr class='ok'><td>C</td><td>power</td><td>confirmed</td><td>Alternator on the ancillaries / poly-V belt bracket at the timing end of the engine. Terminals: B+ stud and DF connector.</td></tr>
+<tr class='ok'><td>J682</td><td>power</td><td>confirmed</td><td>Relay on the electronics box (E-box), left of the engine compartment.</td></tr>
+<tr class='ok'><td>D</td><td>sensor</td><td>confirmed</td><td>Ignition lock on the steering column (driver side, RHD right).</td></tr>
+<tr class='ok'><td>D2</td><td>sensor</td><td>confirmed</td><td>Reader coil around the ignition lock cylinder. Cannot be renewed separately.</td></tr>
+<tr class='ok'><td>F120</td><td>sensor</td><td>confirmed</td><td>Contact switch in the bonnet lock (lock carrier, front centre).</td></tr>
+<tr class='ok'><td>H2</td><td>lamp</td><td>confirmed</td><td>Behind the front bumper, left (treble horn H2).</td></tr>
+<tr class='ok'><td>H7</td><td>lamp</td><td>confirmed</td><td>Behind the front bumper, right (bass horn H7).</td></tr>
+<tr class='est'><td>H8</td><td>lamp</td><td>estimated</td><td>Alarm horn — RHD manual shows H12 removed through the plenum chamber cover; 2005 diagram lists H8 near the right headlight connector.</td></tr>
+<tr class='est'><td>R47</td><td>sensor</td><td>estimated</td><td>Aerial with the onboard supply unit J519 (RHD), driver side of the dash.</td></tr>
+<tr class='est'><td>F241</td><td>sensor</td><td>estimated</td><td>Switch in the driver door lock unit / lock cylinder.</td></tr>
+</tbody></table>
+<h2>R32 ECU pinout (all 76 positions)</h2>
+<p class="note">Factory unused pins 5, 8, 14, 15, 17, 33, 37, 39, 40, 102, 111, 113, 115 are listed as Not used. Pin 109 is injector power, not the ECCS relay.</p>
+<table><thead><tr><th>Pin</th><th>Function</th><th>Colour</th><th>Goes to</th><th>Function status</th></tr></thead><tbody>
+<tr><td>1</td><td>Ignition signal No. 1</td><td>L/O</td><td>PTU</td><td>confirmed</td></tr>
+<tr><td>2</td><td>Ignition signal No. 5</td><td>L</td><td>PTU</td><td>confirmed</td></tr>
+<tr><td>3</td><td>Ignition signal No. 3</td><td>L/R</td><td>PTU</td><td>confirmed</td></tr>
+<tr><td>4</td><td>AAC valve (idle air control)</td><td>L/G</td><td>AAC</td><td>confirmed</td></tr>
+<tr><td>5</td><td>Not used</td><td>—</td><td>—</td><td>confirmed</td></tr>
+<tr><td>6</td><td>Sub electric fan relay (engine temperature)</td><td>B</td><td>FANRLY</td><td>confirmed</td></tr>
+<tr><td>7</td><td>Tachometer signal</td><td>Y/R</td><td>CLUSTER</td><td>confirmed</td></tr>
+<tr><td>8</td><td>Not used</td><td>—</td><td>—</td><td>confirmed</td></tr>
+<tr><td>9</td><td>Air conditioner relay (A/C cut)</td><td>L/G</td><td>ACRLY</td><td>confirmed</td></tr>
+<tr><td>10</td><td>Ignition signal system ground</td><td>B/Y</td><td>GND_IGN</td><td>confirmed</td></tr>
+<tr><td>11</td><td>Ignition signal No. 6</td><td>L/W</td><td>PTU</td><td>confirmed</td></tr>
+<tr><td>12</td><td>Ignition signal No. 2</td><td>L/B</td><td>PTU</td><td>confirmed</td></tr>
+<tr><td>13</td><td>Ignition signal No. 4</td><td>L/Y</td><td>PTU</td><td>confirmed</td></tr>
+<tr><td>14</td><td>Not used</td><td>—</td><td>—</td><td>confirmed</td></tr>
+<tr><td>15</td><td>Not used</td><td>—</td><td>—</td><td>confirmed</td></tr>
+<tr><td>16</td><td>ECCS relay control</td><td>O</td><td>ECCSRLY</td><td>confirmed</td></tr>
+<tr><td>17</td><td>Not used</td><td>—</td><td>—</td><td>confirmed</td></tr>
+<tr><td>18</td><td>Fuel pump relay control</td><td>B/P</td><td>FPRLY</td><td>confirmed</td></tr>
+<tr><td>19</td><td>Power steering oil pressure switch</td><td>SB</td><td>PSW</td><td>confirmed</td></tr>
+<tr><td>20</td><td>Ignition signal system ground</td><td>B/Y</td><td>GND_IGN</td><td>confirmed</td></tr>
+<tr><td>21</td><td>CONSULT RX (data in)</td><td>Y/G</td><td>CONSULT</td><td>confirmed</td></tr>
+<tr><td>22</td><td>CONSULT TX (data out)</td><td>Y</td><td>CONSULT</td><td>confirmed</td></tr>
+<tr><td>23</td><td>Knock (detonation) sensor, cylinders 1-3</td><td>W/R</td><td>KS1</td><td>confirmed</td></tr>
+<tr><td>24</td><td>Knock (detonation) sensor, cylinders 4-6</td><td>W/R</td><td>KS2</td><td>confirmed</td></tr>
+<tr><td>25</td><td>Wastegate valve control solenoid (boost)</td><td>L/Y</td><td>WGS</td><td>confirmed</td></tr>
+<tr><td>26</td><td>Air flow meter ground</td><td>W/R</td><td>AFM_R</td><td>confirmed</td></tr>
+<tr><td>27</td><td>Air flow meter signal, rear</td><td>B</td><td>AFM_R</td><td>confirmed</td></tr>
+<tr><td>28</td><td>Engine coolant temperature sensor signal</td><td>Y/G</td><td>CTS</td><td>confirmed</td></tr>
+<tr><td>29</td><td>Exhaust gas (O2) sensor signal, front</td><td>—</td><td>O2F</td><td>confirmed</td></tr>
+<tr><td>30</td><td>Sensor ground (throttle sensor, coolant sensor)</td><td>B</td><td>TPS</td><td>confirmed</td></tr>
+<tr><td>31</td><td>CONSULT CLK (synchronisation)</td><td>Y/R</td><td>CONSULT</td><td>confirmed</td></tr>
+<tr><td>32</td><td>Malfunction indicator lamp (check engine)</td><td>O/B</td><td>CLUSTER</td><td>confirmed</td></tr>
+<tr><td>33</td><td>Not used</td><td>—</td><td>—</td><td>confirmed</td></tr>
+<tr><td>34</td><td>Air flow meter ground</td><td>W</td><td>AFM_F</td><td>confirmed</td></tr>
+<tr><td>35</td><td>Air flow meter signal, front</td><td>O</td><td>AFM_F</td><td>confirmed</td></tr>
+<tr><td>36</td><td>Intake air temperature sensor signal</td><td>SB</td><td>IAT</td><td>confirmed</td></tr>
+<tr><td>37</td><td>Not used</td><td>—</td><td>—</td><td>confirmed</td></tr>
+<tr><td>38</td><td>Throttle sensor signal</td><td>W</td><td>TPS</td><td>confirmed</td></tr>
+<tr><td>39</td><td>Not used</td><td>—</td><td>—</td><td>confirmed</td></tr>
+<tr><td>40</td><td>Not used</td><td>—</td><td>—</td><td>confirmed</td></tr>
+<tr><td>41</td><td>Crank angle sensor, 120 degree signal</td><td>G/B</td><td>CAS</td><td>confirmed</td></tr>
+<tr><td>42</td><td>Crank angle sensor, 1 degree signal</td><td>G/Y</td><td>CAS</td><td>confirmed</td></tr>
+<tr><td>43</td><td>Ignition switch START signal</td><td>B/Y</td><td>IGNSW</td><td>confirmed</td></tr>
+<tr><td>44</td><td>Neutral position switch</td><td>G/O</td><td>NSW</td><td>confirmed</td></tr>
+<tr><td>45</td><td>Ignition switch IGN (R32)</td><td>B/R</td><td>IGNSW</td><td>confirmed</td></tr>
+<tr><td>46</td><td>Air conditioner switch signal</td><td>LG/R</td><td>ACSW</td><td>confirmed</td></tr>
+<tr><td>47</td><td>CONSULT CHK (diagnosis activation)</td><td>Y/PU</td><td>CONSULT</td><td>confirmed</td></tr>
+<tr><td>48</td><td>Throttle sensor power supply (+5 V)</td><td>Y</td><td>TPS</td><td>confirmed</td></tr>
+<tr><td>49</td><td>Control unit power supply</td><td>B/W</td><td>ECCSRLY</td><td>confirmed</td></tr>
+<tr><td>50</td><td>Ground (control unit)</td><td>B</td><td>GND_ECU</td><td>confirmed</td></tr>
+<tr><td>51</td><td>Crank angle sensor, 120 degree signal</td><td>G/B</td><td>CAS</td><td>confirmed</td></tr>
+<tr><td>52</td><td>Crank angle sensor, 1 degree signal</td><td>G/Y</td><td>CAS</td><td>confirmed</td></tr>
+<tr><td>53</td><td>Vehicle speed sensor</td><td>Y/G</td><td>VSS</td><td>confirmed</td></tr>
+<tr><td>54</td><td>Throttle valve switch, idle contact</td><td>LG</td><td>IDLESW</td><td>confirmed</td></tr>
+<tr><td>55</td><td>Exhaust gas (O2) sensor signal, rear</td><td>—</td><td>O2R</td><td>confirmed</td></tr>
+<tr><td>56</td><td>Throttle sensor output signal (to ATTESA / ABS)</td><td>PU</td><td>ATTESA</td><td>estimated</td></tr>
+<tr><td>57</td><td>Throttle valve switch power supply</td><td>G/R</td><td>IDLESW</td><td>confirmed</td></tr>
+<tr><td>58</td><td>Battery power supply (memory)</td><td>W/B</td><td>BAT</td><td>confirmed</td></tr>
+<tr><td>59</td><td>Control unit power supply</td><td>B/W</td><td>ECCSRLY</td><td>confirmed</td></tr>
+<tr><td>60</td><td>Ground (control unit)</td><td>B</td><td>GND_ECU</td><td>confirmed</td></tr>
+<tr><td>101</td><td>Injector No. 1 control</td><td>W/L</td><td>INJ1</td><td>confirmed</td></tr>
+<tr><td>102</td><td>Not used</td><td>—</td><td>—</td><td>confirmed</td></tr>
+<tr><td>103</td><td>Injector No. 3 control</td><td>W/R</td><td>INJ3</td><td>confirmed</td></tr>
+<tr><td>104</td><td>Fuel pump control module command 1 (FPCM)</td><td>LG</td><td>FPCM</td><td>confirmed</td></tr>
+<tr><td>105</td><td>Injector No. 2 control</td><td>Y</td><td>INJ2</td><td>confirmed</td></tr>
+<tr><td>106</td><td>Fuel pump control module command 2 (FPCM)</td><td>G/W</td><td>FPCM</td><td>confirmed</td></tr>
+<tr><td>107</td><td>Injector ground</td><td>B/R</td><td>GND_INJ</td><td>confirmed</td></tr>
+<tr><td>108</td><td>Injector ground</td><td>B/R</td><td>GND_INJ</td><td>confirmed</td></tr>
+<tr><td>109</td><td>Injector power supply (counter-EMF circuit)</td><td>B/W</td><td>INJ1</td><td>confirmed</td></tr>
+<tr><td>110</td><td>Injector No. 5 control</td><td>W/G</td><td>INJ5</td><td>confirmed</td></tr>
+<tr><td>111</td><td>Not used</td><td>—</td><td>—</td><td>confirmed</td></tr>
+<tr><td>112</td><td>Injector No. 6 control</td><td>W/B</td><td>INJ6</td><td>confirmed</td></tr>
+<tr><td>113</td><td>Not used</td><td>—</td><td>—</td><td>confirmed</td></tr>
+<tr><td>114</td><td>Injector No. 4 control</td><td>W/L</td><td>INJ4</td><td>confirmed</td></tr>
+<tr><td>115</td><td>Not used</td><td>—</td><td>—</td><td>confirmed</td></tr>
+<tr><td>116</td><td>Injector ground</td><td>B/R</td><td>GND_INJ</td><td>confirmed</td></tr>
+</tbody></table>
+<h2>R32 modules and sensors</h2>
+<table><thead><tr><th>ID</th><th>Kind</th><th>Status</th><th>Location</th></tr></thead><tbody>
+<tr class='ok'><td>ECU</td><td>module</td><td>confirmed</td><td>Behind the passenger (left) kick panel, in the front footwell.</td></tr>
+<tr class='ok'><td>ECCSRLY</td><td>module</td><td>confirmed</td><td>Engine-bay relay box (with the fusible links), not at the ECU.</td></tr>
+<tr class='ok'><td>FPRLY</td><td>module</td><td>confirmed</td><td>In the boot, near the boot lock (green relay on GT-R).</td></tr>
+<tr class='ok'><td>FPCM</td><td>module</td><td>confirmed</td><td>Behind the right (driver) rear quarter trim, beside the rear seat.</td></tr>
+<tr class='ok'><td>FPUMP</td><td>sensor</td><td>confirmed</td><td>In the fuel tank under the boot floor (in-tank pump).</td></tr>
+<tr class='ok'><td>PTU</td><td>module</td><td>confirmed</td><td>Engine bay, intake side of the RB26, driving the six coil-on-plug units.</td></tr>
+<tr class='ok'><td>ATTESA</td><td>module</td><td>confirmed</td><td>In the boot, under the parcel shelf (left side).</td></tr>
+<tr class='ok'><td>HICAS</td><td>module</td><td>confirmed</td><td>Under the rear parcel shelf.</td></tr>
+<tr class='ok'><td>CLUSTER</td><td>module</td><td>confirmed</td><td>Instrument panel, in front of the driver (RHD right).</td></tr>
+<tr class='ok'><td>CONSULT</td><td>connector</td><td>confirmed</td><td>Under the dashboard, driver (right) side. 14-pin CONSULT, not OBD-II.</td></tr>
+<tr class='ok'><td>IGNSW</td><td>sensor</td><td>confirmed</td><td>On the steering column, driver side.</td></tr>
+<tr class='ok'><td>AFM_F</td><td>sensor</td><td>confirmed</td><td>In the front-bank intake pipe after the front air cleaner, engine bay.</td></tr>
+<tr class='ok'><td>AFM_R</td><td>sensor</td><td>confirmed</td><td>In the rear-bank intake pipe after the rear air cleaner, engine bay.</td></tr>
+<tr class='ok'><td>CAS</td><td>sensor</td><td>confirmed</td><td>Front of the cylinder head, on the exhaust camshaft.</td></tr>
+<tr class='ok'><td>TPS</td><td>sensor</td><td>confirmed</td><td>On the throttle body (intake side of the plenum).</td></tr>
+<tr class='ok'><td>IDLESW</td><td>sensor</td><td>confirmed</td><td>On the throttle body, integral with the throttle sensor assembly.</td></tr>
+<tr class='ok'><td>CTS</td><td>sensor</td><td>confirmed</td><td>Front of the engine, coolant outlet / thermostat housing.</td></tr>
+<tr class='ok'><td>IAT</td><td>sensor</td><td>confirmed</td><td>In the intake tract (factory IAT; GT-R may use the AFM-integrated sensor).</td></tr>
+<tr class='ok'><td>O2F</td><td>sensor</td><td>confirmed</td><td>Front turbocharger outlet / front exhaust manifold collector.</td></tr>
+<tr class='ok'><td>O2R</td><td>sensor</td><td>confirmed</td><td>Rear turbocharger outlet / rear exhaust manifold collector.</td></tr>
+<tr class='ok'><td>KS1</td><td>sensor</td><td>confirmed</td><td>Left side of the cylinder block, under the intake manifold, front (cyl 1-3).</td></tr>
+<tr class='ok'><td>KS2</td><td>sensor</td><td>confirmed</td><td>Left side of the cylinder block, under the intake manifold, rear (cyl 4-6).</td></tr>
+<tr class='ok'><td>VSS</td><td>sensor</td><td>confirmed</td><td>On the transmission / transfer case.</td></tr>
+<tr class='ok'><td>NSW</td><td>sensor</td><td>confirmed</td><td>On the transmission (neutral switch).</td></tr>
+<tr class='ok'><td>PSW</td><td>sensor</td><td>confirmed</td><td>On the power-steering high-pressure line / pump, engine bay.</td></tr>
+<tr class='ok'><td>ACSW</td><td>sensor</td><td>confirmed</td><td>Heater / A/C control panel in the dashboard.</td></tr>
+<tr class='ok'><td>INJ1</td><td>sensor</td><td>confirmed</td><td>Intake side of cylinder 1 (front of engine).</td></tr>
+<tr class='ok'><td>INJ2</td><td>sensor</td><td>confirmed</td><td>Intake side of cylinder 2.</td></tr>
+<tr class='ok'><td>INJ3</td><td>sensor</td><td>confirmed</td><td>Intake side of cylinder 3.</td></tr>
+<tr class='ok'><td>INJ4</td><td>sensor</td><td>confirmed</td><td>Intake side of cylinder 4.</td></tr>
+<tr class='ok'><td>INJ5</td><td>sensor</td><td>confirmed</td><td>Intake side of cylinder 5.</td></tr>
+<tr class='ok'><td>INJ6</td><td>sensor</td><td>confirmed</td><td>Intake side of cylinder 6 (firewall end).</td></tr>
+<tr class='ok'><td>COILS</td><td>sensor</td><td>confirmed</td><td>Coil-on-plug on the cylinder head, one per cylinder.</td></tr>
+<tr class='ok'><td>AAC</td><td>sensor</td><td>confirmed</td><td>On the intake collector / AAC idle air path.</td></tr>
+<tr class='ok'><td>WGS</td><td>sensor</td><td>confirmed</td><td>Engine bay, boost-control solenoid on the wastegate pressure line.</td></tr>
+<tr class='ok'><td>FANRLY</td><td>module</td><td>confirmed</td><td>Engine-bay relay box.</td></tr>
+<tr class='ok'><td>ACRLY</td><td>module</td><td>confirmed</td><td>Engine-bay relay box (AIR CON on the lid chart).</td></tr>
+<tr class='ok'><td>BAT</td><td>power</td><td>confirmed</td><td>Engine bay, passenger (left) side next to the relay box.</td></tr>
+<tr class='ok'><td>FUSE</td><td>power</td><td>confirmed</td><td>Passenger-compartment fuse block, under the dash on the driver (right) side.</td></tr>
+<tr class='ok'><td>RELAYBOX</td><td>power</td><td>confirmed</td><td>Engine bay, passenger (left) side, beside the battery.</td></tr>
+<tr class='est'><td>GND_ECU</td><td>ground</td><td>estimated</td><td>ECU pins 50 and 60 are control-unit grounds. Body-bolt location is not on the indexed FSM pages.</td></tr>
+<tr class='est'><td>GND_IGN</td><td>ground</td><td>estimated</td><td>ECU pins 10 and 20, ignition-signal ground. Engine-bolt location not indexed.</td></tr>
+<tr class='est'><td>GND_INJ</td><td>ground</td><td>estimated</td><td>ECU pins 107, 108 and 116. Engine-bolt location not indexed.</td></tr>
+</tbody></table>
+</html>

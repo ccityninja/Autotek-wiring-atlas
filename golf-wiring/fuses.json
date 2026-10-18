@@ -1,0 +1,1164 @@
+{
+ "_meta": {
+  "retrieved": "2026-10-14",
+  "note": "VW source = fuse appears in the car's current-flow data (wins on conflicts). 'chart' = third-party Mk5 fuse chart transcribed from VW owner/workshop info. Allocations change at May/Nov 2005 and by equipment — VERIFY against the card in the fuse lid. SB chart used = engine-bay fuse box version 'up to May 2005' (matches the BLX data: SB11 25A Motronic, SB12 15A lambda BLX, SB24 gateway, SB28 20A gearbox, SB31 wiper).",
+  "locations": {
+   "SC": "Fuse holder C, driver-side end of the dash panel (behind end cap). RHD: right end — VERIFY.",
+   "SB": "Fuse holder B, engine compartment E-box on the battery, left side.",
+   "SA": "Pre-fuse holder A (high-current strip) on the battery/E-box.",
+   "R": "Relay carrier on J519 under the dash (driver side), plus additional carrier in the E-box."
+  },
+  "sources": [
+   "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay",
+   "https://fubox.net/volkswagen/golf-2004-2009/",
+   "https://www.volkspage.net/technik/ssp/ssp/SSP_319_d1.pdf"
+  ]
+ },
+ "SC": [
+  {
+   "id": "SC1",
+   "n": 1,
+   "amps": "10",
+   "feeds": "T16 - Diagnostic connection (T16/1) J623 - Engine control unit J757 - Engine component current supply relay (167) (from May 2005) J538 - Fuel pump control unit (from May 2005) J485 - Relay for auxiliary heater operation (from 2006) N79 - Heater element for cra",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC2",
+   "n": 2,
+   "amps": "5",
+   "feeds": "J104 - ABS control unit E132 - Traction control system switch E256 - TCS and ESP button E492 - Tyre pressure monitor display button F - Brake light switch (low; from November 2005)",
+   "alt": [
+    "10 A: J623 - Engine control unit (from 2006) V49 - Right headlight range control motor (from 2006) V48 - Left headlight range control motor (from 2006) E102 - Headlight range control regulator (from 2006) J538 - Fuel pump control unit (from 2006) J345 - Trailer dete"
+   ],
+   "edges": [
+    "abs-ign"
+   ],
+   "tag": "VW source",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC3",
+   "n": 3,
+   "amps": "10",
+   "feeds": "J500 - Power steering control unit (up to May 2005)",
+   "alt": [
+    "5 A: J234 - Airbag control unit (from May 2005)"
+   ],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC4",
+   "n": 4,
+   "amps": "5",
+   "feeds": "E16 - Heater/heat output switch G65 - High-pressure sender J131 - Heated driver seat control unit J132 - Heated front passenger seat control unit J255 - Climatronic control unit K216 - Stabilisation program warning lamp 2 (from May 2005) M17 - Reversing light ",
+   "alt": [
+    "10 A: G266 - Oil level and oil temperature sender (high; from November 2005) M17 - Reversing light (high; from November 2005) J255 - Climatronic control unit (high; from November 2005) G65 - High-pressure sender (high; from November 2005) E16 - Switch for heater and"
+   ],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC5",
+   "n": 5,
+   "amps": "5",
+   "feeds": "F47 - Cruise control system brake pedal switch (to May 2005) G476 - Clutch position sender J431 - Control unit for headlight range control (from May 2005) J500 - Power steering control unit (from May 2005) J745 - Cornering light and headlight range control uni",
+   "alt": [
+    "10 A: J745 - Cornering light and headlight range control unit, on right headlight (low; from May 2006), (high; from May 2007)"
+   ],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC6",
+   "n": 6,
+   "amps": "5",
+   "feeds": "J285 - Control unit in dash panel insert (up to May 2006) J538 - Fuel pump control unit (up to May 2006) J533 - Data bus diagnostic interface (up to May 2006) F125 - Multifunction switch (up to May 2006) J587 - Selector lever sensors control unit (up to May 20",
+   "alt": [
+    "10 A: J745 - Cornering light and headlight range control unit, on left headlight (low; from May 2006), (high; from May 2007)"
+   ],
+   "edges": [
+    "gateway-ign"
+   ],
+   "tag": "VW source",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC7",
+   "n": 7,
+   "amps": "5",
+   "feeds": "J431 - Control unit for headlight range control (to May 2005) Y7 - Automatic anti-dazzle interior mirror (from May 2005) Not assigned (from May 2006)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC8",
+   "n": 8,
+   "amps": "5",
+   "feeds": "Y7 - Automatic anti-dazzle interior mirror (to May 2005)",
+   "alt": [
+    "10 A: J345 - Trailer detector control unit (from May 2005) Not assigned (from May 2006)"
+   ],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC9",
+   "n": 9,
+   "amps": "5",
+   "feeds": "Not assigned (to May 2005) J503 - Control unit with display for radio and navigation system (only commercial navigation system unit) (from May 2005) Not assigned (from May 2006)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC10",
+   "n": 10,
+   "amps": "5",
+   "feeds": "J412 - Mobile telephone operating electronics control unit (to May 2005) J530 - Garage door operation control unit (from May 2005) J706 - Seat occupied recognition control unit (from May 2005) Not assigned (from May 2006)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC11",
+   "n": 11,
+   "amps": "5",
+   "feeds": "J345 - Trailer detector control unit (to May 2005) Not assigned (from May 2005)",
+   "alt": [
+    "10 A: J745 - Cornering light and headlight range control unit, on right headlight, (from May 2007)"
+   ],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC12",
+   "n": 12,
+   "amps": "10",
+   "feeds": "J386 - Driver door control unit J 387 - Front passenger door control unit",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC13",
+   "n": 13,
+   "amps": "10",
+   "feeds": "E1 - Light switch T16 - Diagnostic connection (T16/16) F47 - Brake pedal switch (from May 2005) G397 - Sensor for rain and light detection (from 2006) G197 - Magnetic field sender for compass (from 2006)",
+   "alt": [],
+   "edges": [
+    "obd-power"
+   ],
+   "tag": "VW source",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC14",
+   "n": 14,
+   "amps": "10",
+   "feeds": "F - Brake light switch (low; from May 2005) J217 - Automatic gearbox control unit",
+   "alt": [
+    "10 A: J587 - Selector lever sensors control unit (from 2006) R149 - Remote control receiver for auxiliary coolant heater (from 2006) J301 - Air conditioning system control unit (from 2006) J255 - Climatronic control unit (from 2006) E16 - Heater/heat output switch ("
+   ],
+   "edges": [
+    "trace-j217-terminal30",
+    "trace-sc14-feed"
+   ],
+   "tag": "VW source",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay",
+   "conflict": "Chart lists SC14 as 5 A (brake switch / J217); VW source sheet 21/2 shows 10 A to J217 via B315."
+  },
+  {
+   "id": "SC15",
+   "n": 15,
+   "amps": "7.5",
+   "feeds": "J519 - Onboard supply control unit (interior illumination)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC16",
+   "n": 16,
+   "amps": "10",
+   "feeds": "E16 - Heater/heat output switch J301 - Air conditioning system control unit J255 - Climatronic control unit R149 - Remote control receiver for auxiliary coolant heater Not assigned (from May 2006)",
+   "alt": [
+    "5 A: J515 - Aerial selection control unit (high; from November 2005)"
+   ],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC17",
+   "n": 17,
+   "amps": "5",
+   "feeds": "G397 - Rain and light detector sensor (up to May 2006) J515 - Aerial selection control unit (up to May 2006) G273 - Interior monitoring sensor (from 2006) G384 - Vehicle inclination sender (from 2006) H12 - Alarm horn (from 2006)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC18",
+   "n": 18,
+   "amps": "5",
+   "feeds": "J446 - Parking aid control unit J587 - Selector lever sensors control unit Not assigned (from 2006)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC19",
+   "n": 19,
+   "amps": "5",
+   "feeds": "J754 - Accident data memory",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC20",
+   "n": 20,
+   "amps": "5",
+   "feeds": "J104 - ABS with EDL control unit Not assigned (from 2006)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC21",
+   "n": 21,
+   "amps": "5",
+   "feeds": "J503 - Control unit with display for radio and navigation system (only commercial navigation system unit) (up to May 2005) Not assigned (from May 2005) J542 - Control unit for engine speed governor, in front left footwell (special vehicles) (high; from May 200",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC22",
+   "n": 22,
+   "amps": "40",
+   "feeds": "V2 - Fresh air blower (Climatronic) N253 - Battery isolation igniter (rear battery) (high; from May 2005)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC23",
+   "n": 23,
+   "amps": "30",
+   "feeds": "J386 - Driver door control unit (window regulator) J387 - Front passenger door control unit (window regulator)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC24",
+   "n": 24,
+   "amps": "25",
+   "feeds": "Ul - Cigarette lighter (up to May 2006) U9 - Rear cigarette lighter (up to May 2006) U5 -12 V socket (criminal investigation department)",
+   "alt": [
+    "20 A: J388 - Rear left door control unit (central locking) (from 2006) J389 - Rear right door control unit (central locking) (from 2006) J393 - Convenience system central control unit (from 2006)",
+    "25 A: J388 - Rear left door control unit (central locking) (high; from May 2007) J389 - Rear right door control unit (central locking) (high; from May 2007) J393 - Convenience system central control unit (high; from May 2007)"
+   ],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC25",
+   "n": 25,
+   "amps": "25",
+   "feeds": "Z1 - Heated rear window J301 - Air conditioning system control unit (only with auxiliary coolant heater) E16 - Heater/heat output switch (only with auxiliary coolant heater) N24 - Fresh air blower series resistor (only with auxiliary coolant heater)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC26",
+   "n": 26,
+   "amps": "20",
+   "feeds": "U5 -12 V socket (luggage compartment) (up to May 2006)",
+   "alt": [
+    "30 A: J388 - Rear left door control unit (window regulator) (from May 2006) J389 - Rear right door control unit (window regulator) (from May 2006)"
+   ],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC27",
+   "n": 27,
+   "amps": "15",
+   "feeds": "J538 - Fuel pump control unit G6 - Fuel system pressurisation pump 317 - Fuel pump control unit J643 - Fuel supply relay (from May 2006)",
+   "alt": [],
+   "edges": [
+    "more-pump-power"
+   ],
+   "tag": "VW source",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC28",
+   "n": 28,
+   "amps": "10",
+   "feeds": "Charging point for Mag- Lite electric torch (special vehicle interface) (up to May 2005)",
+   "alt": [
+    "30 A: U13 - Transformer with socket, 12V-230V (from May 2005) Not assigned (from May 2006)",
+    "25 A: Special vehicles socket (not for USA/Canada ) (high; from November 2005)"
+   ],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC29",
+   "n": 29,
+   "amps": "10",
+   "feeds": "J220/J623 - Motronic control unit J248/J623 - Diesel direct injection system control unit G70 - Air mass meter (AXX) N79 - Heater element for crankcase breather (BUB, BMJ) Not assigned (from 2006)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC30",
+   "n": 30,
+   "amps": "5",
+   "feeds": "J234 - Airbag control unit (to May 2005) K145 - Front passenger side airbag deactivated warning lamp (to May 2005)",
+   "alt": [
+    "10 A: N30 - Injector, cylinder 1 (from May 2005) N31 - Injector, cylinder 2 (from May 2005) N32 - Injector, cylinder 3 (from May 2005) N33 - Injector, cylinder 4 (from May 2005)",
+    "20 A: N30 - Injector, cylinder 1 N31 - Injector, cylinder 2 N32 - Injector, cylinder 3 N33 - Injector, cylinder 4 N83 - Injector, cylinder 5 N84 - Injector, cylinder 6 J217 - Automatic gearbox control unit (from 2006) J743 - Mechatronics for direct shift gearbox (fr"
+   ],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC31",
+   "n": 31,
+   "amps": "5",
+   "feeds": "F4 - Reversing light switch (up to May 2005) 1743 - Mechatronics for direct shift gearbox (up to May 2005)",
+   "alt": [
+    "20 A: V192 - Vacuum pump for brakes (from May 2005)"
+   ],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC32",
+   "n": 32,
+   "amps": "30",
+   "feeds": "J388 - Rear left door control unit (window regulator) (up to May 2006) J389 - Rear right door control unit (window regulator) (up to May 2006) U13 - Transformer with socket, 12V-230 V (from May 2006) U27 - Transformer with socket, 12V-15 V, (USA/Canada) (from ",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC33",
+   "n": 33,
+   "amps": "25",
+   "feeds": "J245 - Sliding sunroof adjustment control unit",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC34",
+   "n": 34,
+   "amps": "15",
+   "feeds": "V125 - Driver seat lumbar support longitudinal adjustment motor V126 - Front passenger seat lumbar support longitudinal adjustment motor V129 - Driver seat lumbar support height adjustment motor V130 - Front passenger seat lumbar support height adjustment moto",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC35",
+   "n": 35,
+   "amps": "5",
+   "feeds": "G273 - Interior monitoring sensor G384 - Vehicle inclination sender HP112 - Alarm horn Not assigned (from 2006)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC36",
+   "n": 36,
+   "amps": "20",
+   "feeds": "VI1 - Headlight washer system pump J39 - Headlight washer system relay",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC37",
+   "n": 37,
+   "amps": "30",
+   "feeds": "J131 - Fleated driver seat control unit J132 - Fleated front passenger seat control unit",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC38",
+   "n": 38,
+   "amps": "10",
+   "feeds": "J23 - Rotating light and siren system control unit (up to May 2005) Not assigned (from May 2005) J745 - Cornering light and headlight range control unit, on left headlight, (from May 2007)",
+   "alt": [
+    "20 A: J388 - Rear left door control unit (central locking), NAR, with alarm horn relay J641) (from May 2006) J389 - Rear right door control unit (central locking), NAR, with alarm horn relay J641) (from May 2006) J393 - Convenience system central control unit (only "
+   ],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC39",
+   "n": 39,
+   "amps": "20",
+   "feeds": "Not assigned (up to May 2005) J217 - Automatic gearbox control unit (from May 2005) Not assigned (from May 2006)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC40",
+   "n": 40,
+   "amps": "40",
+   "feeds": "E16 - Heater/heat output switch (fresh air blower) J301 - Air conditioning system control unit (fresh air blower)",
+   "alt": [
+    "5 A: E16 - Heater/heat output switch (fresh air blower) (high; from November 2005) J301 - Air conditioning system control unit (fresh air blower) (high; from November 2005)"
+   ],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC41",
+   "n": 41,
+   "amps": "15",
+   "feeds": "V12 - Rear window wiper motor (up to May 2006)",
+   "alt": [
+    "20 A: V12 - Rear window wiper motor (from May 2006) J519 - Onboard supply control unit (double washer pump) (BSG Jl) (from May 2006)"
+   ],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC42",
+   "n": 42,
+   "amps": "15",
+   "feeds": "J729 - Double washer pump relay 1 (to May 2005) J730 - Double washer pump relay 2 (to May 2005) J519 - Onboard supply control unit (double washer pump) (BSG Jl) (from May 2005)",
+   "alt": [
+    "20 A: U1 - Cigarette lighter (from May 2006) U9 - Rear cigarette lighter (from May 2006) U5 -12 V socket (criminal investigation department) (from May 2006)"
+   ],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC43",
+   "n": 43,
+   "amps": "15",
+   "feeds": "J345 - Trailer detector control unit",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC44",
+   "n": 44,
+   "amps": "20",
+   "feeds": "J345 - Trailer detector control unit",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC45",
+   "n": 45,
+   "amps": "15",
+   "feeds": "J345 - Trailer detector control unit",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC46",
+   "n": 46,
+   "amps": "5",
+   "feeds": "Z20 - Left washer jet heater element Z21 - Right washer jet heater element E94 - Heated driver seat regulator E95 - Heated front passenger seat regulator Not assigned (from May 2006)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC47",
+   "n": 47,
+   "amps": "5",
+   "feeds": "J485 - Auxiliary heater operation relay Not assigned (from May 2006)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC48",
+   "n": 48,
+   "amps": "10",
+   "feeds": "Not assigned (to May 2005) Charger for Mag-Lite and hand-held two-way radio (from May 2005)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  },
+  {
+   "id": "SC49",
+   "n": 49,
+   "amps": "5",
+   "feeds": "E1 - Lighting switch Not assigned (from May 2006)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fuse-box.info/volkswagen/volkswagen-golf-v-mk5-2004-2009-fuses-and-relay"
+  }
+ ],
+ "SB": [
+  {
+   "id": "SB1",
+   "n": 1,
+   "amps": "30",
+   "feeds": "ABS with EDL control unit",
+   "alt": [],
+   "edges": [
+    "abs-power"
+   ],
+   "tag": "VW source",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB2",
+   "n": 2,
+   "amps": "30",
+   "feeds": "ABS with EDL control unit",
+   "alt": [],
+   "edges": [
+    "abs-power"
+   ],
+   "tag": "VW source",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB3",
+   "n": 3,
+   "amps": "20",
+   "feeds": "Convenience system central control unit Front passenger side wiper motor (from May 2005) Not assigned (from November 2005)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB4",
+   "n": 4,
+   "amps": "5",
+   "feeds": "Onboard supply control unit",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB5",
+   "n": 5,
+   "amps": "20",
+   "feeds": "Treble tone horn (up to May 2005) Bass tone horn (up to May 2005)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB6",
+   "n": 6,
+   "amps": "5",
+   "feeds": "Fuel pressure regulating valve (up to May 2005)",
+   "alt": [],
+   "edges": [
+    "more-fuel-pressure-feed"
+   ],
+   "tag": "VW source",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB7",
+   "n": 7,
+   "amps": "5",
+   "feeds": "Cruise control system brake pedal switch Clutch position sender Not assigned (from November 2005)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB8",
+   "n": 8,
+   "amps": "10",
+   "feeds": "Map-controlled engine cooling system thermostat Inlet camshaft control valve 1 Activated charcoal filter solenoid valve 1 (pulsed) Exhaust gas recirculation valve Intake manifold flap air control valve Intake manifold flap motor Crankcase breather heater eleme",
+   "alt": [],
+   "edges": [
+    "more-engine-valve-supply"
+   ],
+   "tag": "VW source",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB9",
+   "n": 9,
+   "amps": "10",
+   "feeds": "NOx sensor control unit (up to May 2005) Automatic glow period control unit (up to May 2005) Fuel pump relay (up to May 2005) Turbocharger air recirculation valve (from May 2005) Activated charcoal filter solenoid valve 1 (from May 2005) Charge pressure contro",
+   "alt": [],
+   "edges": [
+    "more-nox-feed"
+   ],
+   "tag": "VW source",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB10",
+   "n": 10,
+   "amps": "10",
+   "feeds": "Lambda probe after catalytic converter (up to May 2005) Lambda probe 2 after catalytic converter (up to May 2005) Exhaust gas recirculation valve (up to May 2005) Charge pressure control solenoid valve (up to May 2005) Exhaust gas recirculation cooler changeov",
+   "alt": [],
+   "edges": [
+    "more-lambda-feed-2"
+   ],
+   "tag": "VW source",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB11",
+   "n": 11,
+   "amps": "25",
+   "feeds": "Motronic control unit (up to May 2005)",
+   "alt": [],
+   "edges": [
+    "more-ecu-relay-output"
+   ],
+   "tag": "VW source",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB12",
+   "n": 12,
+   "amps": "15",
+   "feeds": "Lambda probe (AXW, BAG, BCA, BKG, BLP, BLX and BLY) (up to May 2005) Lambda probe 2 (AXW, BLX and BLY) (up to May 2005) Lambda probe after catalytic converter (BCA) (up to May 2005) NOx sensor control unit (BAG, BKG and BLP) (up to May 2005)",
+   "alt": [],
+   "edges": [
+    "more-lambda-feed-1"
+   ],
+   "tag": "VW source",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB13",
+   "n": 13,
+   "amps": "15",
+   "feeds": "Automatic gearbox control unit (up to May 2005) Mechatronics for dual clutch gearbox",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB14",
+   "n": 14,
+   "amps": "–",
+   "feeds": "–",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB15",
+   "n": 15,
+   "amps": "40",
+   "feeds": "Starter (terminal 50) (up to May 2005)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB16",
+   "n": 16,
+   "amps": "15",
+   "feeds": "Steering column electronics control unit (up to May 2005)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB17",
+   "n": 17,
+   "amps": "10",
+   "feeds": "Display control unit in dash panel insert (up to May 2005)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB18",
+   "n": 18,
+   "amps": "30",
+   "feeds": "Special vehicle control unit (up to May 2005) Amplifier (from May 2005) Control unit for special vehicles (from May 2007)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB19",
+   "n": 19,
+   "amps": "15",
+   "feeds": "Radio Control unit with display for radio and navigation system (up to May 2005) Digital satellite radio (from May 2007)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB20",
+   "n": 20,
+   "amps": "10",
+   "feeds": "Mobile telephone operating electronics control unit (telephone /preparation for telephone) Control unit with display for radio navigation system (from May 2005)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB21",
+   "n": 21,
+   "amps": "–",
+   "feeds": "–",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB22",
+   "n": 22,
+   "amps": "–",
+   "feeds": "–",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB23",
+   "n": 23,
+   "amps": "10",
+   "feeds": "Not assigned (up to May 2005) Engine control unit (from May 2005) Motronic current supply relay (100) (from May 2005)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB24",
+   "n": 24,
+   "amps": "10",
+   "feeds": "Data bus diagnostic interface (up to May 2005)",
+   "alt": [],
+   "edges": [
+    "gateway-feeds"
+   ],
+   "tag": "VW source",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB25",
+   "n": 25,
+   "amps": "40",
+   "feeds": "Not assigned (up to May 2007) Onboard supply control unit (from May 2007)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB26",
+   "n": 26,
+   "amps": "10",
+   "feeds": "Motronic control unit (up to May 2005) Not assigned (from May 2005)",
+   "alt": [],
+   "edges": [
+    "more-ecu-permanent-feed"
+   ],
+   "tag": "VW source",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB27",
+   "n": 27,
+   "amps": "10",
+   "feeds": "Heater element for crankcase breather (up to May 2005) Not assigned (from May 2005)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB28",
+   "n": 28,
+   "amps": "20",
+   "feeds": "Automatic gearbox control unit (up to May 2005) Multifunction switch (up to May 2005)",
+   "alt": [],
+   "edges": [
+    "trace-sb28-d136"
+   ],
+   "tag": "VW source",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB29",
+   "n": 29,
+   "amps": "20",
+   "feeds": "Ignition coils 1-4 with output stage (up to May 2005) Injectors cylinders 1-4 (up to May 2005)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB30",
+   "n": 30,
+   "amps": "20",
+   "feeds": "Heater control unit (up to May 2005) Auxiliary heater operation relay (from May 2005)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB31",
+   "n": 31,
+   "amps": "25",
+   "feeds": "Windscreen wiper motor (up to May 2005)",
+   "alt": [],
+   "edges": [
+    "wiper-power"
+   ],
+   "tag": "VW source",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB32",
+   "n": 32,
+   "amps": "10",
+   "feeds": "Injectors (up to May 2005) Not assigned (from May 2005)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB33",
+   "n": 33,
+   "amps": "15",
+   "feeds": "Fuel system pressurisation pump (up to May 2005) Not assigned (from May 2005)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB34",
+   "n": 34,
+   "amps": "–",
+   "feeds": "–",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB35",
+   "n": 35,
+   "amps": "–",
+   "feeds": "–",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB36",
+   "n": 36,
+   "amps": "–",
+   "feeds": "–",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB37",
+   "n": 37,
+   "amps": "–",
+   "feeds": "–",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB38",
+   "n": 38,
+   "amps": "10",
+   "feeds": "Left headlight range control motor (up to May 2005) Right headlight range control motor (up to May 2005) Radiator fan control unit (from May 2005) Exhaust camshaft control valve 1 (from November 2005) Secondary air inlet valve (from May 2007) Exhaust flap 1 va",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB39",
+   "n": 39,
+   "amps": "5",
+   "feeds": "Oil level and oil temperature sender (up to November 2005) Brake light switch (up to November 2005) Brake pedal switch (from November 2005) Clutch position sender (from November 2005)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB40",
+   "n": 40,
+   "amps": "20",
+   "feeds": "Dash panel fuse holder (SC1-SC6, SC7-SC11, SC29-SC31) (up to May 2005) Ignition coil 1 with output stage (from May 2005) Ignition coil 2 with output stage (from May 2005) Ignition coil 3 with output stage (from May 2005) Ignition coil 4 with output stage (from",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB41",
+   "n": 41,
+   "amps": "–",
+   "feeds": "–",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB42",
+   "n": 42,
+   "amps": "10",
+   "feeds": "Air mass meter (AZV, BKC, BKD, BDK, BJB) Engine component current supply relay (from November 2005)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB43",
+   "n": 43,
+   "amps": "30",
+   "feeds": "Not assigned (up to May 2005) Ignition coil 1 with output stage (from May 2005) Ignition coil 2 with output stage (from May 2005) Ignition coil 3 with output stage (from May 2005) Ignition coil 4 with output stage (from May 2005) Ignition coil 5 with output st",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB44",
+   "n": 44,
+   "amps": "–",
+   "feeds": "–",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB45",
+   "n": 45,
+   "amps": "–",
+   "feeds": "–",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB46",
+   "n": 46,
+   "amps": "–",
+   "feeds": "–",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB47",
+   "n": 47,
+   "amps": "40",
+   "feeds": "Onboard supply control unit (up to November 2005) – Backup lights – Brake light right – Turn signal – Fog lights – Headlight left",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB48",
+   "n": 48,
+   "amps": "40",
+   "feeds": "Onboard supply control unit (up to November 2005) – Backup light – Brake light left – Turn signal – Fog lights – Headlight right",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB49",
+   "n": 49,
+   "amps": "40",
+   "feeds": "Not assigned (up to May 2005) Terminal 15 voltage supply relay 2 (from May 2005) Fuse in fuse holder F (rear battery) (from November 2005) Onboard supply control unit (LI) (from November 2005)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB50",
+   "n": 50,
+   "amps": "–",
+   "feeds": "–",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB51",
+   "n": 51,
+   "amps": "50",
+   "feeds": "Glow plug 1 (up to May 2005) Glow plug 2 (up to May 2005) Glow plug 3 (up to May 2005) Glow plug 4 (up to May 2005)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB52",
+   "n": 52,
+   "amps": "50",
+   "feeds": "Onboard supply control unit SC40-SC42, SC46, SC47, SC49 (up to May 2005)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB53",
+   "n": 53,
+   "amps": "50",
+   "feeds": "Safety cutout for seat adjustment Seat adjustment thermal fuse 1, Positive connection 1 (30a) (from November 2005)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  },
+  {
+   "id": "SB54",
+   "n": 54,
+   "amps": "50",
+   "feeds": "Radiator fan control unit (up to May 2005) Not assigned (from May 2005)",
+   "alt": [],
+   "edges": [],
+   "tag": "chart",
+   "chartUrl": "https://fubox.net/volkswagen/golf-2004-2009/"
+  }
+ ],
+ "relays": [
+  [
+   "1",
+   "Fresh air blower relay J13 / Terminal 15 supply relay 2 J681"
+  ],
+  [
+   "2",
+   "Heated exterior mirror relay J99"
+  ],
+  [
+   "3",
+   "Heated rear window relay J9"
+  ],
+  [
+   "4",
+   "Horn relay J413"
+  ],
+  [
+   "5",
+   "X-contact relief relay J59"
+  ],
+  [
+   "6",
+   "Double washer pump relay 2 J730"
+  ],
+  [
+   "7",
+   "Double washer pump relay 1 J729"
+  ],
+  [
+   "8",
+   "Not assigned"
+  ],
+  [
+   "9",
+   "Terminal 30 supply relay 2 J689"
+  ]
+ ]
+}
