@@ -1,0 +1,3510 @@
+{
+  "connectors": [
+    {
+      "id": "ECU",
+      "label": "ECU connector (76 pins: 1-60, 101-116)",
+      "count": 76,
+      "owners": [
+        "ECU"
+      ],
+      "pins": {
+        "1": [
+          {
+            "edge": "ecu-ptu-ignition",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/1",
+            "toPin": "Power transistor unit (ignition)",
+            "fromNode": "ECU",
+            "toNode": "PTU",
+            "colour": "L/O",
+            "size": "",
+            "via": "",
+            "function": "Ignition signal No. 1",
+            "page": "",
+            "note": "Function: confirmed (4 sources). Colour L/O: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "2": [
+          {
+            "edge": "ecu-ptu-ignition",
+            "variant": null,
+            "wireIndex": 1,
+            "fromPin": "ECU/2",
+            "toPin": "Power transistor unit (ignition)",
+            "fromNode": "ECU",
+            "toNode": "PTU",
+            "colour": "L",
+            "size": "",
+            "via": "",
+            "function": "Ignition signal No. 5",
+            "page": "",
+            "note": "Function: confirmed (4 sources). Colour L: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "3": [
+          {
+            "edge": "ecu-ptu-ignition",
+            "variant": null,
+            "wireIndex": 2,
+            "fromPin": "ECU/3",
+            "toPin": "Power transistor unit (ignition)",
+            "fromNode": "ECU",
+            "toNode": "PTU",
+            "colour": "L/R",
+            "size": "",
+            "via": "",
+            "function": "Ignition signal No. 3",
+            "page": "",
+            "note": "Function: confirmed (4 sources). Colour L/R: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "11": [
+          {
+            "edge": "ecu-ptu-ignition",
+            "variant": null,
+            "wireIndex": 3,
+            "fromPin": "ECU/11",
+            "toPin": "Power transistor unit (ignition)",
+            "fromNode": "ECU",
+            "toNode": "PTU",
+            "colour": "L/W",
+            "size": "",
+            "via": "",
+            "function": "Ignition signal No. 6",
+            "page": "",
+            "note": "Function: confirmed (4 sources). Colour L/W: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "12": [
+          {
+            "edge": "ecu-ptu-ignition",
+            "variant": null,
+            "wireIndex": 4,
+            "fromPin": "ECU/12",
+            "toPin": "Power transistor unit (ignition)",
+            "fromNode": "ECU",
+            "toNode": "PTU",
+            "colour": "L/B",
+            "size": "",
+            "via": "",
+            "function": "Ignition signal No. 2",
+            "page": "",
+            "note": "Function: confirmed (4 sources). Colour L/B: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "13": [
+          {
+            "edge": "ecu-ptu-ignition",
+            "variant": null,
+            "wireIndex": 5,
+            "fromPin": "ECU/13",
+            "toPin": "Power transistor unit (ignition)",
+            "fromNode": "ECU",
+            "toNode": "PTU",
+            "colour": "L/Y",
+            "size": "",
+            "via": "",
+            "function": "Ignition signal No. 4",
+            "page": "",
+            "note": "Function: confirmed (4 sources). Colour L/Y: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "4": [
+          {
+            "edge": "ecu-aac-eccs",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/4",
+            "toPin": "AAC valve (idle air control)",
+            "fromNode": "ECU",
+            "toNode": "AAC",
+            "colour": "L/G",
+            "size": "",
+            "via": "",
+            "function": "AAC valve (idle air control)",
+            "page": "",
+            "note": "Function: confirmed (4 sources). Colour L/G: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "6": [
+          {
+            "edge": "ecu-fanrly-cooling",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/6",
+            "toPin": "Sub electric fan relay",
+            "fromNode": "ECU",
+            "toNode": "FANRLY",
+            "colour": "B",
+            "size": "",
+            "via": "",
+            "function": "Sub electric fan relay (engine temperature)",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour B: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "7": [
+          {
+            "edge": "ecu-cluster-eccs",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/7",
+            "toPin": "Combination meter",
+            "fromNode": "ECU",
+            "toNode": "CLUSTER",
+            "colour": "Y/R",
+            "size": "",
+            "via": "",
+            "function": "Tachometer signal",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour Y/R: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "32": [
+          {
+            "edge": "ecu-cluster-eccs",
+            "variant": null,
+            "wireIndex": 1,
+            "fromPin": "ECU/32",
+            "toPin": "Combination meter",
+            "fromNode": "ECU",
+            "toNode": "CLUSTER",
+            "colour": "O/B",
+            "size": "",
+            "via": "",
+            "function": "Malfunction indicator lamp (check engine)",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour O/B: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "9": [
+          {
+            "edge": "ecu-acrly-hvac",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/9",
+            "toPin": "Air conditioner relay",
+            "fromNode": "ECU",
+            "toNode": "ACRLY",
+            "colour": "L/G",
+            "size": "",
+            "via": "",
+            "function": "Air conditioner relay (A/C cut)",
+            "page": "",
+            "note": "Function: confirmed (4 sources). Colour L/G: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "10": [
+          {
+            "edge": "ecu-gnd_ign-ground",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/10",
+            "toPin": "Ignition system ground",
+            "fromNode": "ECU",
+            "toNode": "GND_IGN",
+            "colour": "B/Y",
+            "size": "",
+            "via": "",
+            "function": "Ignition signal system ground",
+            "page": "",
+            "note": "Function: confirmed (2 sources). Colour B/Y: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "20": [
+          {
+            "edge": "ecu-gnd_ign-ground",
+            "variant": null,
+            "wireIndex": 1,
+            "fromPin": "ECU/20",
+            "toPin": "Ignition system ground",
+            "fromNode": "ECU",
+            "toNode": "GND_IGN",
+            "colour": "B/Y",
+            "size": "",
+            "via": "",
+            "function": "Ignition signal system ground",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour B/Y: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "16": [
+          {
+            "edge": "ecu-eccsrly-power",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/16",
+            "toPin": "ECCS relay",
+            "fromNode": "ECU",
+            "toNode": "ECCSRLY",
+            "colour": "O",
+            "size": "",
+            "via": "",
+            "function": "ECCS relay control",
+            "page": "",
+            "note": "Function: confirmed (5 sources). Colour O: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "49": [
+          {
+            "edge": "ecu-eccsrly-power",
+            "variant": null,
+            "wireIndex": 1,
+            "fromPin": "ECU/49",
+            "toPin": "ECCS relay",
+            "fromNode": "ECU",
+            "toNode": "ECCSRLY",
+            "colour": "B/W",
+            "size": "",
+            "via": "",
+            "function": "Control unit power supply",
+            "page": "",
+            "note": "Function: confirmed (4 sources). Colour B/W: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "59": [
+          {
+            "edge": "ecu-eccsrly-power",
+            "variant": null,
+            "wireIndex": 2,
+            "fromPin": "ECU/59",
+            "toPin": "ECCS relay",
+            "fromNode": "ECU",
+            "toNode": "ECCSRLY",
+            "colour": "B/W",
+            "size": "",
+            "via": "",
+            "function": "Control unit power supply",
+            "page": "",
+            "note": "Function: confirmed (4 sources). Colour B/W: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "109": [
+          {
+            "edge": null,
+            "variant": null,
+            "wireIndex": 3,
+            "fromPin": "ECU/109",
+            "toPin": "Injector power / counter-EMF bus",
+            "fromNode": "ECU",
+            "toNode": "INJ1",
+            "colour": "B/W",
+            "size": "",
+            "via": "",
+            "function": "Injector power supply (counter-EMF circuit)",
+            "page": "",
+            "note": "Factory EN-172: pin 109 is injector power / counter-EMF, not the ECCS relay. Colour B/W remains single-sourced.",
+            "status_fn": "confirmed",
+            "status_col": "estimated",
+            "src": [
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "Nissan BNR32 FSM ECCS EN-171 / EN-172 pin layout (RB26DETT)"
+            ]
+          }
+        ],
+        "18": [
+          {
+            "edge": "ecu-fprly-fuel",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/18",
+            "toPin": "Fuel pump relay",
+            "fromNode": "ECU",
+            "toNode": "FPRLY",
+            "colour": "B/P",
+            "size": "",
+            "via": "",
+            "function": "Fuel pump relay control",
+            "page": "",
+            "note": "Function: confirmed (5 sources). Colour B/P: confirmed. colB shows \"Blue/Purple\". colA and an SAU member say black with pink (B/P). Nissan code B = black, L = blue.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.sau.com.au/forums/topic/238599-rb25det-fuel-pump-ecuwiring-problems/",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "19": [
+          {
+            "edge": "ecu-psw-eccs",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/19",
+            "toPin": "Power steering oil pressure switch",
+            "fromNode": "ECU",
+            "toNode": "PSW",
+            "colour": "SB",
+            "size": "",
+            "via": "",
+            "function": "Power steering oil pressure switch",
+            "page": "",
+            "note": "Function: confirmed (2 sources). Colour SB: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "21": [
+          {
+            "edge": "ecu-consult-diag",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/21",
+            "toPin": "CONSULT diagnosis connector",
+            "fromNode": "ECU",
+            "toNode": "CONSULT",
+            "colour": "Y/G",
+            "size": "",
+            "via": "",
+            "function": "CONSULT RX (data in)",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour Y/G: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "22": [
+          {
+            "edge": "ecu-consult-diag",
+            "variant": null,
+            "wireIndex": 1,
+            "fromPin": "ECU/22",
+            "toPin": "CONSULT diagnosis connector",
+            "fromNode": "ECU",
+            "toNode": "CONSULT",
+            "colour": "Y",
+            "size": "",
+            "via": "",
+            "function": "CONSULT TX (data out)",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour Y: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "31": [
+          {
+            "edge": "ecu-consult-diag",
+            "variant": null,
+            "wireIndex": 2,
+            "fromPin": "ECU/31",
+            "toPin": "CONSULT diagnosis connector",
+            "fromNode": "ECU",
+            "toNode": "CONSULT",
+            "colour": "Y/R",
+            "size": "",
+            "via": "",
+            "function": "CONSULT CLK (synchronisation)",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour Y/R: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "47": [
+          {
+            "edge": "ecu-consult-diag",
+            "variant": null,
+            "wireIndex": 3,
+            "fromPin": "ECU/47",
+            "toPin": "CONSULT diagnosis connector",
+            "fromNode": "ECU",
+            "toNode": "CONSULT",
+            "colour": "Y/PU",
+            "size": "",
+            "via": "",
+            "function": "CONSULT CHK (diagnosis activation)",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour Y/PU: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "23": [
+          {
+            "edge": "ecu-ks1-eccs",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/23",
+            "toPin": "Knock sensor, cylinders 1-3",
+            "fromNode": "ECU",
+            "toNode": "KS1",
+            "colour": "W/R",
+            "size": "",
+            "via": "",
+            "function": "Knock (detonation) sensor, cylinders 1-3",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour W/R: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "24": [
+          {
+            "edge": "ecu-ks2-eccs",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/24",
+            "toPin": "Knock sensor, cylinders 4-6",
+            "fromNode": "ECU",
+            "toNode": "KS2",
+            "colour": "W/R",
+            "size": "",
+            "via": "",
+            "function": "Knock (detonation) sensor, cylinders 4-6",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour W/R: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "25": [
+          {
+            "edge": "ecu-wgs-boost",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/25",
+            "toPin": "Wastegate valve control solenoid (boost)",
+            "fromNode": "ECU",
+            "toNode": "WGS",
+            "colour": "L/Y",
+            "size": "",
+            "via": "",
+            "function": "Wastegate valve control solenoid (boost)",
+            "page": "",
+            "note": "Function: confirmed (4 sources). Colour L/Y: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "26": [
+          {
+            "edge": "ecu-afm_r-eccs",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/26",
+            "toPin": "Air flow meter, rear",
+            "fromNode": "ECU",
+            "toNode": "AFM_R",
+            "colour": "W/R",
+            "size": "",
+            "via": "",
+            "function": "Air flow meter ground",
+            "page": "",
+            "note": "Function: confirmed (2 sources). Colour W/R: confirmed. Which meter (front or rear) uses 26 and which uses 34 is not confirmed. Do a check on the car.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "27": [
+          {
+            "edge": "ecu-afm_r-eccs",
+            "variant": null,
+            "wireIndex": 1,
+            "fromPin": "ECU/27",
+            "toPin": "Air flow meter, rear",
+            "fromNode": "ECU",
+            "toNode": "AFM_R",
+            "colour": "B",
+            "size": "",
+            "via": "",
+            "function": "Air flow meter signal, rear",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour B: estimated. colA gives B (black). colB gives Blue. Do a check on the car. JPJDM labels 35 as rear; 3 other sources give 27 = rear, 35 = front.",
+            "status_fn": "confirmed",
+            "status_col": "estimated",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "28": [
+          {
+            "edge": "ecu-cts-eccs",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/28",
+            "toPin": "Engine coolant temperature sensor",
+            "fromNode": "ECU",
+            "toNode": "CTS",
+            "colour": "Y/G",
+            "size": "",
+            "via": "",
+            "function": "Engine coolant temperature sensor signal",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour Y/G: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "29": [
+          {
+            "edge": "ecu-o2f-eccs",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/29",
+            "toPin": "Exhaust gas (O2) sensor, front",
+            "fromNode": "ECU",
+            "toNode": "O2F",
+            "colour": "",
+            "size": "",
+            "via": "",
+            "function": "Exhaust gas (O2) sensor signal, front",
+            "page": "",
+            "note": "Function: confirmed (2 sources). Colour shielded: confirmed. Both colour sources show \"clear\" (a shielded lead).",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "30": [
+          {
+            "edge": "ecu-tps-ground",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/30",
+            "toPin": "Throttle sensor",
+            "fromNode": "ECU",
+            "toNode": "TPS",
+            "colour": "B",
+            "size": "",
+            "via": "",
+            "function": "Sensor ground (throttle sensor, coolant sensor)",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour B: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "34": [
+          {
+            "edge": "ecu-afm_f-eccs",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/34",
+            "toPin": "Air flow meter, front",
+            "fromNode": "ECU",
+            "toNode": "AFM_F",
+            "colour": "W",
+            "size": "",
+            "via": "",
+            "function": "Air flow meter ground",
+            "page": "",
+            "note": "Function: confirmed (2 sources). Colour W: confirmed. Which meter (front or rear) uses 26 and which uses 34 is not confirmed. Do a check on the car.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "35": [
+          {
+            "edge": "ecu-afm_f-eccs",
+            "variant": null,
+            "wireIndex": 1,
+            "fromPin": "ECU/35",
+            "toPin": "Air flow meter, front",
+            "fromNode": "ECU",
+            "toNode": "AFM_F",
+            "colour": "O",
+            "size": "",
+            "via": "",
+            "function": "Air flow meter signal, front",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour O: confirmed. JPJDM labels 35 as rear; 3 other sources give 35 = front.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "36": [
+          {
+            "edge": "ecu-iat-eccs",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/36",
+            "toPin": "Intake air temperature sensor",
+            "fromNode": "ECU",
+            "toNode": "IAT",
+            "colour": "SB",
+            "size": "",
+            "via": "",
+            "function": "Intake air temperature sensor signal",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour SB: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "38": [
+          {
+            "edge": "ecu-tps-eccs",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/38",
+            "toPin": "Throttle sensor",
+            "fromNode": "ECU",
+            "toNode": "TPS",
+            "colour": "W",
+            "size": "",
+            "via": "",
+            "function": "Throttle sensor signal",
+            "page": "",
+            "note": "Function: confirmed (4 sources). Colour W: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "48": [
+          {
+            "edge": "ecu-tps-eccs",
+            "variant": null,
+            "wireIndex": 1,
+            "fromPin": "ECU/48",
+            "toPin": "Throttle sensor",
+            "fromNode": "ECU",
+            "toNode": "TPS",
+            "colour": "Y",
+            "size": "",
+            "via": "",
+            "function": "Throttle sensor power supply (+5 V)",
+            "page": "",
+            "note": "Function: confirmed (2 sources). Colour Y: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "41": [
+          {
+            "edge": "ecu-cas-eccs",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/41",
+            "toPin": "Crank angle sensor (CAS)",
+            "fromNode": "ECU",
+            "toNode": "CAS",
+            "colour": "G/B",
+            "size": "",
+            "via": "",
+            "function": "Crank angle sensor, 120 degree signal",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour G/B: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "42": [
+          {
+            "edge": "ecu-cas-eccs",
+            "variant": null,
+            "wireIndex": 1,
+            "fromPin": "ECU/42",
+            "toPin": "Crank angle sensor (CAS)",
+            "fromNode": "ECU",
+            "toNode": "CAS",
+            "colour": "G/Y",
+            "size": "",
+            "via": "",
+            "function": "Crank angle sensor, 1 degree signal",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour G/Y: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "51": [
+          {
+            "edge": "ecu-cas-eccs",
+            "variant": null,
+            "wireIndex": 2,
+            "fromPin": "ECU/51",
+            "toPin": "Crank angle sensor (CAS)",
+            "fromNode": "ECU",
+            "toNode": "CAS",
+            "colour": "G/B",
+            "size": "",
+            "via": "",
+            "function": "Crank angle sensor, 120 degree signal",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour G/B: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "52": [
+          {
+            "edge": "ecu-cas-eccs",
+            "variant": null,
+            "wireIndex": 3,
+            "fromPin": "ECU/52",
+            "toPin": "Crank angle sensor (CAS)",
+            "fromNode": "ECU",
+            "toNode": "CAS",
+            "colour": "G/Y",
+            "size": "",
+            "via": "",
+            "function": "Crank angle sensor, 1 degree signal",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour G/Y: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "43": [
+          {
+            "edge": "ecu-ignsw-start",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/43",
+            "toPin": "Ignition switch",
+            "fromNode": "ECU",
+            "toNode": "IGNSW",
+            "colour": "B/Y",
+            "size": "",
+            "via": "",
+            "function": "Ignition switch START signal",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour B/Y: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "45": [
+          {
+            "edge": "ecu-ignsw-start",
+            "variant": null,
+            "wireIndex": 1,
+            "fromPin": "ECU/45",
+            "toPin": "Ignition switch",
+            "fromNode": "ECU",
+            "toNode": "IGNSW",
+            "colour": "B/R",
+            "size": "",
+            "via": "",
+            "function": "Ignition switch IGN (R32)",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour B/R: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "44": [
+          {
+            "edge": "ecu-nsw-start",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/44",
+            "toPin": "Neutral position switch",
+            "fromNode": "ECU",
+            "toNode": "NSW",
+            "colour": "G/O",
+            "size": "",
+            "via": "",
+            "function": "Neutral position switch",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour G/O: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "46": [
+          {
+            "edge": "ecu-acsw-hvac",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/46",
+            "toPin": "Air conditioner switch",
+            "fromNode": "ECU",
+            "toNode": "ACSW",
+            "colour": "LG/R",
+            "size": "",
+            "via": "",
+            "function": "Air conditioner switch signal",
+            "page": "",
+            "note": "Function: confirmed (4 sources). Colour LG/R: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "50": [
+          {
+            "edge": "ecu-gnd_ecu-ground",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/50",
+            "toPin": "ECU ground point",
+            "fromNode": "ECU",
+            "toNode": "GND_ECU",
+            "colour": "B",
+            "size": "",
+            "via": "",
+            "function": "Ground (control unit)",
+            "page": "",
+            "note": "Function: confirmed (4 sources). Colour B: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "60": [
+          {
+            "edge": "ecu-gnd_ecu-ground",
+            "variant": null,
+            "wireIndex": 1,
+            "fromPin": "ECU/60",
+            "toPin": "ECU ground point",
+            "fromNode": "ECU",
+            "toNode": "GND_ECU",
+            "colour": "B",
+            "size": "",
+            "via": "",
+            "function": "Ground (control unit)",
+            "page": "",
+            "note": "Function: confirmed (4 sources). Colour B: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "53": [
+          {
+            "edge": "ecu-vss-eccs",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/53",
+            "toPin": "Vehicle speed sensor",
+            "fromNode": "ECU",
+            "toNode": "VSS",
+            "colour": "Y/G",
+            "size": "",
+            "via": "",
+            "function": "Vehicle speed sensor",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour Y/G: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "54": [
+          {
+            "edge": "ecu-idlesw-eccs",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/54",
+            "toPin": "Throttle valve switch (idle)",
+            "fromNode": "ECU",
+            "toNode": "IDLESW",
+            "colour": "LG",
+            "size": "",
+            "via": "",
+            "function": "Throttle valve switch, idle contact",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour LG: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "57": [
+          {
+            "edge": "ecu-idlesw-eccs",
+            "variant": null,
+            "wireIndex": 1,
+            "fromPin": "ECU/57",
+            "toPin": "Throttle valve switch (idle)",
+            "fromNode": "ECU",
+            "toNode": "IDLESW",
+            "colour": "G/R",
+            "size": "",
+            "via": "",
+            "function": "Throttle valve switch power supply",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour G/R: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "55": [
+          {
+            "edge": "ecu-o2r-eccs",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/55",
+            "toPin": "Exhaust gas (O2) sensor, rear",
+            "fromNode": "ECU",
+            "toNode": "O2R",
+            "colour": "",
+            "size": "",
+            "via": "",
+            "function": "Exhaust gas (O2) sensor signal, rear",
+            "page": "",
+            "note": "Function: confirmed (2 sources). Colour shielded: confirmed. Both colour sources show \"clear\" (a shielded lead).",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "56": [
+          {
+            "edge": "ecu-attesa-attesa",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/56",
+            "toPin": "ATTESA E-TS 4WD control unit",
+            "fromNode": "ECU",
+            "toNode": "ATTESA",
+            "colour": "PU",
+            "size": "",
+            "via": "",
+            "function": "Throttle sensor output signal (to ATTESA / ABS)",
+            "page": "",
+            "note": "Function: estimated (2 sources). Colour PU: confirmed. JPJDM calls 56 \"throttle sensor input\". The direction is not confirmed.",
+            "status_fn": "estimated",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "58": [
+          {
+            "edge": "ecu-bat-power",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/58",
+            "toPin": "Battery",
+            "fromNode": "ECU",
+            "toNode": "BAT",
+            "colour": "W/B",
+            "size": "",
+            "via": "",
+            "function": "Battery power supply (memory)",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour W/B: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "101": [
+          {
+            "edge": "ecu-inj1-fuel",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/101",
+            "toPin": "Injector No. 1",
+            "fromNode": "ECU",
+            "toNode": "INJ1",
+            "colour": "W/L",
+            "size": "",
+            "via": "",
+            "function": "Injector No. 1 control",
+            "page": "",
+            "note": "Function: confirmed (5 sources). Colour W/L: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "103": [
+          {
+            "edge": "ecu-inj3-fuel",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/103",
+            "toPin": "Injector No. 3",
+            "fromNode": "ECU",
+            "toNode": "INJ3",
+            "colour": "W/R",
+            "size": "",
+            "via": "",
+            "function": "Injector No. 3 control",
+            "page": "",
+            "note": "Function: confirmed (5 sources). Colour W/R: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "104": [
+          {
+            "edge": "ecu-fpcm-fuel",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/104",
+            "toPin": "Fuel pump control module (FPCM)",
+            "fromNode": "ECU",
+            "toNode": "FPCM",
+            "colour": "LG",
+            "size": "",
+            "via": "",
+            "function": "Fuel pump control module command 1 (FPCM)",
+            "page": "",
+            "note": "Function: confirmed (4 sources). Colour LG: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "106": [
+          {
+            "edge": "ecu-fpcm-fuel",
+            "variant": null,
+            "wireIndex": 1,
+            "fromPin": "ECU/106",
+            "toPin": "Fuel pump control module (FPCM)",
+            "fromNode": "ECU",
+            "toNode": "FPCM",
+            "colour": "G/W",
+            "size": "",
+            "via": "",
+            "function": "Fuel pump control module command 2 (FPCM)",
+            "page": "",
+            "note": "Function: confirmed (4 sources). Colour G/W: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "105": [
+          {
+            "edge": "ecu-inj2-fuel",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/105",
+            "toPin": "Injector No. 2",
+            "fromNode": "ECU",
+            "toNode": "INJ2",
+            "colour": "Y",
+            "size": "",
+            "via": "",
+            "function": "Injector No. 2 control",
+            "page": "",
+            "note": "Function: confirmed (5 sources). Colour Y: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "107": [
+          {
+            "edge": "ecu-gnd_inj-ground",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/107",
+            "toPin": "Injector ground",
+            "fromNode": "ECU",
+            "toNode": "GND_INJ",
+            "colour": "B/R",
+            "size": "",
+            "via": "",
+            "function": "Injector ground",
+            "page": "",
+            "note": "Function: confirmed (2 sources). Colour B/R: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "108": [
+          {
+            "edge": "ecu-gnd_inj-ground",
+            "variant": null,
+            "wireIndex": 1,
+            "fromPin": "ECU/108",
+            "toPin": "Injector ground",
+            "fromNode": "ECU",
+            "toNode": "GND_INJ",
+            "colour": "B/R",
+            "size": "",
+            "via": "",
+            "function": "Injector ground",
+            "page": "",
+            "note": "Function: confirmed (2 sources). Colour B/R: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "116": [
+          {
+            "edge": "ecu-gnd_inj-ground",
+            "variant": null,
+            "wireIndex": 2,
+            "fromPin": "ECU/116",
+            "toPin": "Injector ground",
+            "fromNode": "ECU",
+            "toNode": "GND_INJ",
+            "colour": "B/R",
+            "size": "",
+            "via": "",
+            "function": "Injector ground",
+            "page": "",
+            "note": "Function: confirmed (3 sources). Colour B/R: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "110": [
+          {
+            "edge": "ecu-inj5-fuel",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/110",
+            "toPin": "Injector No. 5",
+            "fromNode": "ECU",
+            "toNode": "INJ5",
+            "colour": "W/G",
+            "size": "",
+            "via": "",
+            "function": "Injector No. 5 control",
+            "page": "",
+            "note": "Function: confirmed (5 sources). Colour W/G: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "112": [
+          {
+            "edge": "ecu-inj6-fuel",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/112",
+            "toPin": "Injector No. 6",
+            "fromNode": "ECU",
+            "toNode": "INJ6",
+            "colour": "W/B",
+            "size": "",
+            "via": "",
+            "function": "Injector No. 6 control",
+            "page": "",
+            "note": "Function: confirmed (5 sources). Colour W/B: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "114": [
+          {
+            "edge": "ecu-inj4-fuel",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/114",
+            "toPin": "Injector No. 4",
+            "fromNode": "ECU",
+            "toNode": "INJ4",
+            "colour": "W/L",
+            "size": "",
+            "via": "",
+            "function": "Injector No. 4 control",
+            "page": "",
+            "note": "Function: confirmed (5 sources). Colour W/L: confirmed.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "5": [
+          {
+            "fromPin": "ECU/5",
+            "toPin": "",
+            "fromNode": "ECU",
+            "toNode": null,
+            "colour": "",
+            "function": "Not used",
+            "status_fn": "confirmed",
+            "status_col": "n/a",
+            "note": "Blank terminal on Nissan BNR32 FSM ECCS pin layout (RB26DETT).",
+            "src": [
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "Nissan BNR32 FSM ECCS EN-171 / EN-172 pin layout (RB26DETT)"
+            ],
+            "factory_unused": true
+          }
+        ],
+        "8": [
+          {
+            "fromPin": "ECU/8",
+            "toPin": "",
+            "fromNode": "ECU",
+            "toNode": null,
+            "colour": "",
+            "function": "Not used",
+            "status_fn": "confirmed",
+            "status_col": "n/a",
+            "note": "Blank terminal on Nissan BNR32 FSM ECCS pin layout (RB26DETT).",
+            "src": [
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "Nissan BNR32 FSM ECCS EN-171 / EN-172 pin layout (RB26DETT)"
+            ],
+            "factory_unused": true
+          }
+        ],
+        "14": [
+          {
+            "fromPin": "ECU/14",
+            "toPin": "",
+            "fromNode": "ECU",
+            "toNode": null,
+            "colour": "",
+            "function": "Not used",
+            "status_fn": "confirmed",
+            "status_col": "n/a",
+            "note": "Blank terminal on Nissan BNR32 FSM ECCS pin layout (RB26DETT).",
+            "src": [
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "Nissan BNR32 FSM ECCS EN-171 / EN-172 pin layout (RB26DETT)"
+            ],
+            "factory_unused": true
+          }
+        ],
+        "15": [
+          {
+            "fromPin": "ECU/15",
+            "toPin": "",
+            "fromNode": "ECU",
+            "toNode": null,
+            "colour": "",
+            "function": "Not used",
+            "status_fn": "confirmed",
+            "status_col": "n/a",
+            "note": "Blank terminal on Nissan BNR32 FSM ECCS pin layout (RB26DETT).",
+            "src": [
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "Nissan BNR32 FSM ECCS EN-171 / EN-172 pin layout (RB26DETT)"
+            ],
+            "factory_unused": true
+          }
+        ],
+        "17": [
+          {
+            "fromPin": "ECU/17",
+            "toPin": "",
+            "fromNode": "ECU",
+            "toNode": null,
+            "colour": "",
+            "function": "Not used",
+            "status_fn": "confirmed",
+            "status_col": "n/a",
+            "note": "Blank terminal on Nissan BNR32 FSM ECCS pin layout (RB26DETT).",
+            "src": [
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "Nissan BNR32 FSM ECCS EN-171 / EN-172 pin layout (RB26DETT)"
+            ],
+            "factory_unused": true
+          }
+        ],
+        "33": [
+          {
+            "fromPin": "ECU/33",
+            "toPin": "",
+            "fromNode": "ECU",
+            "toNode": null,
+            "colour": "",
+            "function": "Not used",
+            "status_fn": "confirmed",
+            "status_col": "n/a",
+            "note": "Blank terminal on Nissan BNR32 FSM ECCS pin layout (RB26DETT).",
+            "src": [
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "Nissan BNR32 FSM ECCS EN-171 / EN-172 pin layout (RB26DETT)"
+            ],
+            "factory_unused": true
+          }
+        ],
+        "37": [
+          {
+            "fromPin": "ECU/37",
+            "toPin": "",
+            "fromNode": "ECU",
+            "toNode": null,
+            "colour": "",
+            "function": "Not used",
+            "status_fn": "confirmed",
+            "status_col": "n/a",
+            "note": "Blank terminal on Nissan BNR32 FSM ECCS pin layout (RB26DETT).",
+            "src": [
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "Nissan BNR32 FSM ECCS EN-171 / EN-172 pin layout (RB26DETT)"
+            ],
+            "factory_unused": true
+          }
+        ],
+        "39": [
+          {
+            "fromPin": "ECU/39",
+            "toPin": "",
+            "fromNode": "ECU",
+            "toNode": null,
+            "colour": "",
+            "function": "Not used",
+            "status_fn": "confirmed",
+            "status_col": "n/a",
+            "note": "Blank terminal on Nissan BNR32 FSM ECCS pin layout (RB26DETT).",
+            "src": [
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "Nissan BNR32 FSM ECCS EN-171 / EN-172 pin layout (RB26DETT)"
+            ],
+            "factory_unused": true
+          }
+        ],
+        "40": [
+          {
+            "fromPin": "ECU/40",
+            "toPin": "",
+            "fromNode": "ECU",
+            "toNode": null,
+            "colour": "",
+            "function": "Not used",
+            "status_fn": "confirmed",
+            "status_col": "n/a",
+            "note": "Blank terminal on Nissan BNR32 FSM ECCS pin layout (RB26DETT).",
+            "src": [
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "Nissan BNR32 FSM ECCS EN-171 / EN-172 pin layout (RB26DETT)"
+            ],
+            "factory_unused": true
+          }
+        ],
+        "102": [
+          {
+            "fromPin": "ECU/102",
+            "toPin": "",
+            "fromNode": "ECU",
+            "toNode": null,
+            "colour": "",
+            "function": "Not used",
+            "status_fn": "confirmed",
+            "status_col": "n/a",
+            "note": "Blank terminal on Nissan BNR32 FSM ECCS pin layout (RB26DETT).",
+            "src": [
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "Nissan BNR32 FSM ECCS EN-171 / EN-172 pin layout (RB26DETT)"
+            ],
+            "factory_unused": true
+          }
+        ],
+        "111": [
+          {
+            "fromPin": "ECU/111",
+            "toPin": "",
+            "fromNode": "ECU",
+            "toNode": null,
+            "colour": "",
+            "function": "Not used",
+            "status_fn": "confirmed",
+            "status_col": "n/a",
+            "note": "Blank terminal on Nissan BNR32 FSM ECCS pin layout (RB26DETT).",
+            "src": [
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "Nissan BNR32 FSM ECCS EN-171 / EN-172 pin layout (RB26DETT)"
+            ],
+            "factory_unused": true
+          }
+        ],
+        "113": [
+          {
+            "fromPin": "ECU/113",
+            "toPin": "",
+            "fromNode": "ECU",
+            "toNode": null,
+            "colour": "",
+            "function": "Not used",
+            "status_fn": "confirmed",
+            "status_col": "n/a",
+            "note": "Blank terminal on Nissan BNR32 FSM ECCS pin layout (RB26DETT).",
+            "src": [
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "Nissan BNR32 FSM ECCS EN-171 / EN-172 pin layout (RB26DETT)"
+            ],
+            "factory_unused": true
+          }
+        ],
+        "115": [
+          {
+            "fromPin": "ECU/115",
+            "toPin": "",
+            "fromNode": "ECU",
+            "toNode": null,
+            "colour": "",
+            "function": "Not used",
+            "status_fn": "confirmed",
+            "status_col": "n/a",
+            "note": "Blank terminal on Nissan BNR32 FSM ECCS pin layout (RB26DETT).",
+            "src": [
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "Nissan BNR32 FSM ECCS EN-171 / EN-172 pin layout (RB26DETT)"
+            ],
+            "factory_unused": true
+          }
+        ]
+      },
+      "caption": "Pin numbers as printed on the ECU housing.",
+      "componentNames": [
+        "ECCS engine control unit (ECU)"
+      ],
+      "mappedPins": 76,
+      "note": "No face drawing. Pin numbers are from public sources. Full 76-position layout including factory-unused pins from EN-171/EN-172. Full 76-position layout including factory-unused pins from EN-171/EN-172. Full 76-position layout including factory-unused pins from EN-171/EN-172. Full 76-position layout including factory-unused pins from EN-171/EN-172. Full 76-position layout including factory-unused pins from EN-171/EN-172. Full 76-position layout including factory-unused pins from EN-171/EN-172.",
+      "view": "",
+      "kind": "component",
+      "pinList": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116
+      ]
+    },
+    {
+      "id": "FPCM",
+      "label": "FPCM connector",
+      "count": 7,
+      "owners": [
+        "FPCM"
+      ],
+      "pins": {
+        "7": [
+          {
+            "edge": "fpcm-pump",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "FPCM/7",
+            "toPin": "Pump (+)",
+            "fromNode": "FPCM",
+            "toNode": "FPUMP",
+            "colour": "",
+            "size": "",
+            "via": "",
+            "function": "Pump (+)",
+            "page": "",
+            "note": "Estimated: one source (factory sheet on GTR USA).",
+            "status_fn": "estimated",
+            "status_col": "estimated",
+            "src": [
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html"
+            ]
+          }
+        ],
+        "4": [
+          {
+            "edge": "fpcm-pump",
+            "variant": null,
+            "wireIndex": 1,
+            "fromPin": "FPCM/4",
+            "toPin": "Pump (−)",
+            "fromNode": "FPCM",
+            "toNode": "FPUMP",
+            "colour": "",
+            "size": "",
+            "via": "",
+            "function": "Pump (−)",
+            "page": "",
+            "note": "Estimated: one source (factory sheet on GTR USA).",
+            "status_fn": "estimated",
+            "status_col": "estimated",
+            "src": [
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html"
+            ]
+          }
+        ],
+        "5": [
+          {
+            "edge": "fprly-fpcm",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "FPRLY/5",
+            "toPin": "FPCM/5 power (+)",
+            "fromNode": "FPRLY",
+            "toNode": "FPCM",
+            "colour": "",
+            "size": "",
+            "via": "",
+            "function": "Power (+) from fuel pump relay",
+            "page": "",
+            "note": "Estimated: one source (factory sheet on GTR USA).",
+            "status_fn": "estimated",
+            "status_col": "estimated",
+            "src": [
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html"
+            ]
+          }
+        ],
+        "6": [
+          {
+            "edge": "fpcm-gnd",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "FPCM/6",
+            "toPin": "Shield ground",
+            "fromNode": "FPCM",
+            "toNode": "GND_ECU",
+            "colour": "",
+            "size": "",
+            "via": "",
+            "function": "Shield ground",
+            "page": "",
+            "note": "Estimated: one source (factory sheet on GTR USA).",
+            "status_fn": "estimated",
+            "status_col": "estimated",
+            "src": [
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html"
+            ]
+          }
+        ],
+        "1": [
+          {
+            "edge": "ecu-fpcm-fuel",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/104",
+            "toPin": "Fuel pump control module (FPCM)",
+            "fromNode": "ECU",
+            "toNode": "FPCM",
+            "colour": "LG",
+            "size": "",
+            "via": "",
+            "function": "FPC1 command from ECU pin 104",
+            "page": "",
+            "note": "FPCM pin: estimated (one source). ECU pin and colour: see ECU/104.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ],
+        "2": [
+          {
+            "edge": "ecu-fpcm-fuel",
+            "variant": null,
+            "wireIndex": 1,
+            "fromPin": "ECU/106",
+            "toPin": "Fuel pump control module (FPCM)",
+            "fromNode": "ECU",
+            "toNode": "FPCM",
+            "colour": "G/W",
+            "size": "",
+            "via": "",
+            "function": "FPC2 command from ECU pin 106",
+            "page": "",
+            "note": "FPCM pin: estimated (one source). ECU pin and colour: see ECU/106.",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.1jzmerc.com/files/pdf/pinout-nissan-rb26dett.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf"
+            ]
+          }
+        ]
+      },
+      "caption": "FPCM pins (one source).",
+      "componentNames": [
+        "Fuel pump control module (FPCM)"
+      ],
+      "mappedPins": 6,
+      "note": "No face drawing. Pin numbers are from public sources.",
+      "view": "",
+      "kind": "component"
+    },
+    {
+      "id": "FPRLY",
+      "label": "Fuel pump relay",
+      "count": 5,
+      "owners": [
+        "FPRLY"
+      ],
+      "pins": {
+        "1": [
+          {
+            "edge": "ecu-fprly-fuel",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "ECU/18",
+            "toPin": "Fuel pump relay",
+            "fromNode": "ECU",
+            "toNode": "FPRLY",
+            "colour": "B/P",
+            "size": "",
+            "via": "",
+            "function": "Coil (−), controlled by ECU pin 18",
+            "page": "",
+            "note": "Terminal number: estimated (one source).",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "src": [
+              "https://pdfcoffee.com/r32-rb26dett-ecu-pinout-pdf-free.html",
+              "https://www.plmsdevelopments.com/files/R32%20GTR%20ECCS.pdf",
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html",
+              "https://jpjdm.com/jdmfiles/RB26DETT%20ECU%20Pinout.pdf",
+              "https://nistune.com/docs/Nistune%20GTR%20ECU%20options.pdf",
+              "https://www.sau.com.au/forums/topic/238599-rb25det-fuel-pump-ecuwiring-problems/",
+              "https://www.syvecs.com/downloads/Skyline_R32-R34_Manual.pdf"
+            ]
+          }
+        ],
+        "2": [
+          {
+            "edge": "fuse8-fprly",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "Fuse 8",
+            "toPin": "FPRLY/2 coil + and FPRLY/3 contact",
+            "fromNode": "FUSE",
+            "toNode": "FPRLY",
+            "colour": "",
+            "size": "",
+            "via": "",
+            "function": "Coil (+) from fuse 8 (IGN)",
+            "page": "",
+            "note": "Estimated: one source (factory sheet on GTR USA).",
+            "status_fn": "estimated",
+            "status_col": "estimated",
+            "src": [
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html"
+            ]
+          }
+        ],
+        "3": [
+          {
+            "edge": "fuse8-fprly",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "Fuse 8",
+            "toPin": "FPRLY/2 coil + and FPRLY/3 contact",
+            "fromNode": "FUSE",
+            "toNode": "FPRLY",
+            "colour": "",
+            "size": "",
+            "via": "",
+            "function": "Contact in from fuse 8 (IGN)",
+            "page": "",
+            "note": "Estimated: one source (factory sheet on GTR USA).",
+            "status_fn": "estimated",
+            "status_col": "estimated",
+            "src": [
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html"
+            ]
+          }
+        ],
+        "5": [
+          {
+            "edge": "fprly-fpcm",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "FPRLY/5",
+            "toPin": "FPCM/5 power (+)",
+            "fromNode": "FPRLY",
+            "toNode": "FPCM",
+            "colour": "",
+            "size": "",
+            "via": "",
+            "function": "Contact out to FPCM pin 5",
+            "page": "",
+            "note": "Estimated: one source (factory sheet on GTR USA).",
+            "status_fn": "estimated",
+            "status_col": "estimated",
+            "src": [
+              "https://www.gtrusablog.com/2016/06/nissan-skyline-gt-r-eccs-wiring-diagram.html"
+            ]
+          }
+        ]
+      },
+      "caption": "Relay terminals 1, 2, 3, 5 (one source).",
+      "componentNames": [
+        "Fuel pump relay"
+      ],
+      "mappedPins": 4,
+      "note": "No face drawing. Pin numbers are from public sources.",
+      "view": "",
+      "kind": "component"
+    },
+    {
+      "id": "CAS",
+      "label": "Crank angle sensor plug (4 pins)",
+      "count": 4,
+      "owners": [
+        "CAS"
+      ],
+      "pins": {
+        "1": [
+          {
+            "edge": "ecu-cas-eccs",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "CAS/1",
+            "toPin": "not in source data",
+            "fromNode": "CAS",
+            "toNode": "ECU",
+            "colour": "",
+            "size": "",
+            "via": "",
+            "function": "Ground",
+            "page": "",
+            "note": "Estimated: one source (Haltech).",
+            "status_fn": "estimated",
+            "status_col": "estimated",
+            "src": [
+              "https://support.haltech.com/portal/en/kb/articles/rb-engine"
+            ]
+          }
+        ],
+        "2": [
+          {
+            "edge": "ecu-cas-eccs",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "CAS/2",
+            "toPin": "not in source data",
+            "fromNode": "CAS",
+            "toNode": "ECU",
+            "colour": "",
+            "size": "",
+            "via": "",
+            "function": "12 V supply",
+            "page": "",
+            "note": "Estimated: one source (Haltech).",
+            "status_fn": "estimated",
+            "status_col": "estimated",
+            "src": [
+              "https://support.haltech.com/portal/en/kb/articles/rb-engine"
+            ]
+          }
+        ],
+        "3": [
+          {
+            "edge": "ecu-cas-eccs",
+            "variant": null,
+            "wireIndex": 1,
+            "fromPin": "CAS/3",
+            "toPin": "ECU 42/52",
+            "fromNode": "CAS",
+            "toNode": "ECU",
+            "colour": "",
+            "size": "",
+            "via": "",
+            "function": "1 degree signal",
+            "page": "",
+            "note": "Estimated: one source (Haltech).",
+            "status_fn": "estimated",
+            "status_col": "estimated",
+            "src": [
+              "https://support.haltech.com/portal/en/kb/articles/rb-engine"
+            ]
+          }
+        ],
+        "4": [
+          {
+            "edge": "ecu-cas-eccs",
+            "variant": null,
+            "wireIndex": 0,
+            "fromPin": "CAS/4",
+            "toPin": "ECU 41/51",
+            "fromNode": "CAS",
+            "toNode": "ECU",
+            "colour": "",
+            "size": "",
+            "via": "",
+            "function": "120 degree signal",
+            "page": "",
+            "note": "Estimated: one source (Haltech).",
+            "status_fn": "estimated",
+            "status_col": "estimated",
+            "src": [
+              "https://support.haltech.com/portal/en/kb/articles/rb-engine"
+            ]
+          }
+        ]
+      },
+      "caption": "One source (Haltech RB engine page). Estimated.",
+      "componentNames": [
+        "Crank angle sensor (CAS)"
+      ],
+      "mappedPins": 4,
+      "note": "No face drawing. Pin numbers are from public sources.",
+      "view": "",
+      "kind": "component"
+    },
+    {
+      "id": "PTU",
+      "label": "Power transistor unit (ignition) (from ECCS pins)",
+      "count": 6,
+      "owners": [
+        "PTU"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "PTU/1",
+            "toPin": "ECU/1",
+            "fromNode": "PTU",
+            "toNode": "ECU",
+            "colour": "L/O",
+            "function": "Ignition signal No. 1",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 1.",
+            "ecu_pin": 1
+          }
+        ],
+        "2": [
+          {
+            "fromPin": "PTU/2",
+            "toPin": "ECU/2",
+            "fromNode": "PTU",
+            "toNode": "ECU",
+            "colour": "L",
+            "function": "Ignition signal No. 5",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 2.",
+            "ecu_pin": 2
+          }
+        ],
+        "3": [
+          {
+            "fromPin": "PTU/3",
+            "toPin": "ECU/3",
+            "fromNode": "PTU",
+            "toNode": "ECU",
+            "colour": "L/R",
+            "function": "Ignition signal No. 3",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 3.",
+            "ecu_pin": 3
+          }
+        ],
+        "4": [
+          {
+            "fromPin": "PTU/4",
+            "toPin": "ECU/11",
+            "fromNode": "PTU",
+            "toNode": "ECU",
+            "colour": "L/W",
+            "function": "Ignition signal No. 6",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 11.",
+            "ecu_pin": 11
+          }
+        ],
+        "5": [
+          {
+            "fromPin": "PTU/5",
+            "toPin": "ECU/12",
+            "fromNode": "PTU",
+            "toNode": "ECU",
+            "colour": "L/B",
+            "function": "Ignition signal No. 2",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 12.",
+            "ecu_pin": 12
+          }
+        ],
+        "6": [
+          {
+            "fromPin": "PTU/6",
+            "toPin": "ECU/13",
+            "fromNode": "PTU",
+            "toNode": "ECU",
+            "colour": "L/Y",
+            "function": "Ignition signal No. 4",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 13.",
+            "ecu_pin": 13
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "AAC",
+      "label": "AAC valve (idle air control) (from ECCS pins)",
+      "count": 1,
+      "owners": [
+        "AAC"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "AAC/1",
+            "toPin": "ECU/4",
+            "fromNode": "AAC",
+            "toNode": "ECU",
+            "colour": "L/G",
+            "function": "AAC valve (idle air control)",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 4.",
+            "ecu_pin": 4
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "FANRLY",
+      "label": "Sub electric fan relay (from ECCS pins)",
+      "count": 1,
+      "owners": [
+        "FANRLY"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "FANRLY/1",
+            "toPin": "ECU/6",
+            "fromNode": "FANRLY",
+            "toNode": "ECU",
+            "colour": "B",
+            "function": "Sub electric fan relay (engine temperature)",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 6.",
+            "ecu_pin": 6
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "CLUSTER",
+      "label": "Combination meter (from ECCS pins)",
+      "count": 2,
+      "owners": [
+        "CLUSTER"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "CLUSTER/1",
+            "toPin": "ECU/7",
+            "fromNode": "CLUSTER",
+            "toNode": "ECU",
+            "colour": "Y/R",
+            "function": "Tachometer signal",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 7.",
+            "ecu_pin": 7
+          }
+        ],
+        "2": [
+          {
+            "fromPin": "CLUSTER/2",
+            "toPin": "ECU/32",
+            "fromNode": "CLUSTER",
+            "toNode": "ECU",
+            "colour": "O/B",
+            "function": "Malfunction indicator lamp (check engine)",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 32.",
+            "ecu_pin": 32
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "ACRLY",
+      "label": "Air conditioner relay (from ECCS pins)",
+      "count": 1,
+      "owners": [
+        "ACRLY"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "ACRLY/1",
+            "toPin": "ECU/9",
+            "fromNode": "ACRLY",
+            "toNode": "ECU",
+            "colour": "L/G",
+            "function": "Air conditioner relay (A/C cut)",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 9.",
+            "ecu_pin": 9
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "ECCSRLY",
+      "label": "ECCS relay (from ECCS pins)",
+      "count": 3,
+      "owners": [
+        "ECCSRLY"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "ECCSRLY/1",
+            "toPin": "ECU/16",
+            "fromNode": "ECCSRLY",
+            "toNode": "ECU",
+            "colour": "O",
+            "function": "ECCS relay control",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 16.",
+            "ecu_pin": 16
+          }
+        ],
+        "2": [
+          {
+            "fromPin": "ECCSRLY/2",
+            "toPin": "ECU/49",
+            "fromNode": "ECCSRLY",
+            "toNode": "ECU",
+            "colour": "B/W",
+            "function": "Control unit power supply",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 49.",
+            "ecu_pin": 49
+          }
+        ],
+        "3": [
+          {
+            "fromPin": "ECCSRLY/3",
+            "toPin": "ECU/59",
+            "fromNode": "ECCSRLY",
+            "toNode": "ECU",
+            "colour": "B/W",
+            "function": "Control unit power supply",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 59.",
+            "ecu_pin": 59
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "INJ1",
+      "label": "Injector No. 1 (from ECCS pins)",
+      "count": 2,
+      "owners": [
+        "INJ1"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "INJ1/1",
+            "toPin": "ECU/109",
+            "fromNode": "INJ1",
+            "toNode": "ECU",
+            "colour": "B/W",
+            "function": "Injector power supply (counter-EMF circuit)",
+            "status_fn": "confirmed",
+            "status_col": "estimated",
+            "note": "Same circuit as ECCS pin 109.",
+            "ecu_pin": 109
+          }
+        ],
+        "2": [
+          {
+            "fromPin": "INJ1/2",
+            "toPin": "ECU/101",
+            "fromNode": "INJ1",
+            "toNode": "ECU",
+            "colour": "W/L",
+            "function": "Injector No. 1 control",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 101.",
+            "ecu_pin": 101
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "PSW",
+      "label": "Power steering oil pressure switch (from ECCS pins)",
+      "count": 1,
+      "owners": [
+        "PSW"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "PSW/1",
+            "toPin": "ECU/19",
+            "fromNode": "PSW",
+            "toNode": "ECU",
+            "colour": "SB",
+            "function": "Power steering oil pressure switch",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 19.",
+            "ecu_pin": 19
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "CONSULT",
+      "label": "CONSULT diagnosis connector (from ECCS pins)",
+      "count": 4,
+      "owners": [
+        "CONSULT"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "CONSULT/1",
+            "toPin": "ECU/21",
+            "fromNode": "CONSULT",
+            "toNode": "ECU",
+            "colour": "Y/G",
+            "function": "CONSULT RX (data in)",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 21.",
+            "ecu_pin": 21
+          }
+        ],
+        "2": [
+          {
+            "fromPin": "CONSULT/2",
+            "toPin": "ECU/22",
+            "fromNode": "CONSULT",
+            "toNode": "ECU",
+            "colour": "Y",
+            "function": "CONSULT TX (data out)",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 22.",
+            "ecu_pin": 22
+          }
+        ],
+        "3": [
+          {
+            "fromPin": "CONSULT/3",
+            "toPin": "ECU/31",
+            "fromNode": "CONSULT",
+            "toNode": "ECU",
+            "colour": "Y/R",
+            "function": "CONSULT CLK (synchronisation)",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 31.",
+            "ecu_pin": 31
+          }
+        ],
+        "4": [
+          {
+            "fromPin": "CONSULT/4",
+            "toPin": "ECU/47",
+            "fromNode": "CONSULT",
+            "toNode": "ECU",
+            "colour": "Y/PU",
+            "function": "CONSULT CHK (diagnosis activation)",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 47.",
+            "ecu_pin": 47
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "KS1",
+      "label": "Knock sensor, cylinders 1-3 (from ECCS pins)",
+      "count": 1,
+      "owners": [
+        "KS1"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "KS1/1",
+            "toPin": "ECU/23",
+            "fromNode": "KS1",
+            "toNode": "ECU",
+            "colour": "W/R",
+            "function": "Knock (detonation) sensor, cylinders 1-3",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 23.",
+            "ecu_pin": 23
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "KS2",
+      "label": "Knock sensor, cylinders 4-6 (from ECCS pins)",
+      "count": 1,
+      "owners": [
+        "KS2"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "KS2/1",
+            "toPin": "ECU/24",
+            "fromNode": "KS2",
+            "toNode": "ECU",
+            "colour": "W/R",
+            "function": "Knock (detonation) sensor, cylinders 4-6",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 24.",
+            "ecu_pin": 24
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "WGS",
+      "label": "Wastegate valve control solenoid (boost) (from ECCS pins)",
+      "count": 1,
+      "owners": [
+        "WGS"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "WGS/1",
+            "toPin": "ECU/25",
+            "fromNode": "WGS",
+            "toNode": "ECU",
+            "colour": "L/Y",
+            "function": "Wastegate valve control solenoid (boost)",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 25.",
+            "ecu_pin": 25
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "AFM_R",
+      "label": "Air flow meter, rear (from ECCS pins)",
+      "count": 2,
+      "owners": [
+        "AFM_R"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "AFM_R/1",
+            "toPin": "ECU/26",
+            "fromNode": "AFM_R",
+            "toNode": "ECU",
+            "colour": "W/R",
+            "function": "Air flow meter ground",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 26.",
+            "ecu_pin": 26
+          }
+        ],
+        "2": [
+          {
+            "fromPin": "AFM_R/2",
+            "toPin": "ECU/27",
+            "fromNode": "AFM_R",
+            "toNode": "ECU",
+            "colour": "B",
+            "function": "Air flow meter signal, rear",
+            "status_fn": "confirmed",
+            "status_col": "estimated",
+            "note": "Same circuit as ECCS pin 27.",
+            "ecu_pin": 27
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "CTS",
+      "label": "Engine coolant temperature sensor (from ECCS pins)",
+      "count": 1,
+      "owners": [
+        "CTS"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "CTS/1",
+            "toPin": "ECU/28",
+            "fromNode": "CTS",
+            "toNode": "ECU",
+            "colour": "Y/G",
+            "function": "Engine coolant temperature sensor signal",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 28.",
+            "ecu_pin": 28
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "O2F",
+      "label": "Exhaust gas (O2) sensor, front (from ECCS pins)",
+      "count": 1,
+      "owners": [
+        "O2F"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "O2F/1",
+            "toPin": "ECU/29",
+            "fromNode": "O2F",
+            "toNode": "ECU",
+            "colour": "",
+            "function": "Exhaust gas (O2) sensor signal, front",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 29.",
+            "ecu_pin": 29
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "TPS",
+      "label": "Throttle sensor (from ECCS pins)",
+      "count": 3,
+      "owners": [
+        "TPS"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "TPS/1",
+            "toPin": "ECU/30",
+            "fromNode": "TPS",
+            "toNode": "ECU",
+            "colour": "B",
+            "function": "Sensor ground (throttle sensor, coolant sensor)",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 30.",
+            "ecu_pin": 30
+          }
+        ],
+        "2": [
+          {
+            "fromPin": "TPS/2",
+            "toPin": "ECU/38",
+            "fromNode": "TPS",
+            "toNode": "ECU",
+            "colour": "W",
+            "function": "Throttle sensor signal",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 38.",
+            "ecu_pin": 38
+          }
+        ],
+        "3": [
+          {
+            "fromPin": "TPS/3",
+            "toPin": "ECU/48",
+            "fromNode": "TPS",
+            "toNode": "ECU",
+            "colour": "Y",
+            "function": "Throttle sensor power supply (+5 V)",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 48.",
+            "ecu_pin": 48
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "AFM_F",
+      "label": "Air flow meter, front (from ECCS pins)",
+      "count": 2,
+      "owners": [
+        "AFM_F"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "AFM_F/1",
+            "toPin": "ECU/34",
+            "fromNode": "AFM_F",
+            "toNode": "ECU",
+            "colour": "W",
+            "function": "Air flow meter ground",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 34.",
+            "ecu_pin": 34
+          }
+        ],
+        "2": [
+          {
+            "fromPin": "AFM_F/2",
+            "toPin": "ECU/35",
+            "fromNode": "AFM_F",
+            "toNode": "ECU",
+            "colour": "O",
+            "function": "Air flow meter signal, front",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 35.",
+            "ecu_pin": 35
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "IAT",
+      "label": "Intake air temperature sensor (from ECCS pins)",
+      "count": 1,
+      "owners": [
+        "IAT"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "IAT/1",
+            "toPin": "ECU/36",
+            "fromNode": "IAT",
+            "toNode": "ECU",
+            "colour": "SB",
+            "function": "Intake air temperature sensor signal",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 36.",
+            "ecu_pin": 36
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "IGNSW",
+      "label": "Ignition switch (from ECCS pins)",
+      "count": 2,
+      "owners": [
+        "IGNSW"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "IGNSW/1",
+            "toPin": "ECU/43",
+            "fromNode": "IGNSW",
+            "toNode": "ECU",
+            "colour": "B/Y",
+            "function": "Ignition switch START signal",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 43.",
+            "ecu_pin": 43
+          }
+        ],
+        "2": [
+          {
+            "fromPin": "IGNSW/2",
+            "toPin": "ECU/45",
+            "fromNode": "IGNSW",
+            "toNode": "ECU",
+            "colour": "B/R",
+            "function": "Ignition switch IGN (R32)",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 45.",
+            "ecu_pin": 45
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "NSW",
+      "label": "Neutral position switch (from ECCS pins)",
+      "count": 1,
+      "owners": [
+        "NSW"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "NSW/1",
+            "toPin": "ECU/44",
+            "fromNode": "NSW",
+            "toNode": "ECU",
+            "colour": "G/O",
+            "function": "Neutral position switch",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 44.",
+            "ecu_pin": 44
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "ACSW",
+      "label": "Air conditioner switch (from ECCS pins)",
+      "count": 1,
+      "owners": [
+        "ACSW"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "ACSW/1",
+            "toPin": "ECU/46",
+            "fromNode": "ACSW",
+            "toNode": "ECU",
+            "colour": "LG/R",
+            "function": "Air conditioner switch signal",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 46.",
+            "ecu_pin": 46
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "VSS",
+      "label": "Vehicle speed sensor (from ECCS pins)",
+      "count": 1,
+      "owners": [
+        "VSS"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "VSS/1",
+            "toPin": "ECU/53",
+            "fromNode": "VSS",
+            "toNode": "ECU",
+            "colour": "Y/G",
+            "function": "Vehicle speed sensor",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 53.",
+            "ecu_pin": 53
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "IDLESW",
+      "label": "Throttle valve switch (idle) (from ECCS pins)",
+      "count": 2,
+      "owners": [
+        "IDLESW"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "IDLESW/1",
+            "toPin": "ECU/54",
+            "fromNode": "IDLESW",
+            "toNode": "ECU",
+            "colour": "LG",
+            "function": "Throttle valve switch, idle contact",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 54.",
+            "ecu_pin": 54
+          }
+        ],
+        "2": [
+          {
+            "fromPin": "IDLESW/2",
+            "toPin": "ECU/57",
+            "fromNode": "IDLESW",
+            "toNode": "ECU",
+            "colour": "G/R",
+            "function": "Throttle valve switch power supply",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 57.",
+            "ecu_pin": 57
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "O2R",
+      "label": "Exhaust gas (O2) sensor, rear (from ECCS pins)",
+      "count": 1,
+      "owners": [
+        "O2R"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "O2R/1",
+            "toPin": "ECU/55",
+            "fromNode": "O2R",
+            "toNode": "ECU",
+            "colour": "",
+            "function": "Exhaust gas (O2) sensor signal, rear",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 55.",
+            "ecu_pin": 55
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "ATTESA",
+      "label": "ATTESA E-TS 4WD control unit (from ECCS pins)",
+      "count": 1,
+      "owners": [
+        "ATTESA"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "ATTESA/1",
+            "toPin": "ECU/56",
+            "fromNode": "ATTESA",
+            "toNode": "ECU",
+            "colour": "PU",
+            "function": "Throttle sensor output signal (to ATTESA / ABS)",
+            "status_fn": "estimated",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 56.",
+            "ecu_pin": 56
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "BAT",
+      "label": "Battery (from ECCS pins)",
+      "count": 1,
+      "owners": [
+        "BAT"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "BAT/1",
+            "toPin": "ECU/58",
+            "fromNode": "BAT",
+            "toNode": "ECU",
+            "colour": "W/B",
+            "function": "Battery power supply (memory)",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 58.",
+            "ecu_pin": 58
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "INJ3",
+      "label": "Injector No. 3 (from ECCS pins)",
+      "count": 1,
+      "owners": [
+        "INJ3"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "INJ3/1",
+            "toPin": "ECU/103",
+            "fromNode": "INJ3",
+            "toNode": "ECU",
+            "colour": "W/R",
+            "function": "Injector No. 3 control",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 103.",
+            "ecu_pin": 103
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "INJ2",
+      "label": "Injector No. 2 (from ECCS pins)",
+      "count": 1,
+      "owners": [
+        "INJ2"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "INJ2/1",
+            "toPin": "ECU/105",
+            "fromNode": "INJ2",
+            "toNode": "ECU",
+            "colour": "Y",
+            "function": "Injector No. 2 control",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 105.",
+            "ecu_pin": 105
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "INJ5",
+      "label": "Injector No. 5 (from ECCS pins)",
+      "count": 1,
+      "owners": [
+        "INJ5"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "INJ5/1",
+            "toPin": "ECU/110",
+            "fromNode": "INJ5",
+            "toNode": "ECU",
+            "colour": "W/G",
+            "function": "Injector No. 5 control",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 110.",
+            "ecu_pin": 110
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "INJ6",
+      "label": "Injector No. 6 (from ECCS pins)",
+      "count": 1,
+      "owners": [
+        "INJ6"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "INJ6/1",
+            "toPin": "ECU/112",
+            "fromNode": "INJ6",
+            "toNode": "ECU",
+            "colour": "W/B",
+            "function": "Injector No. 6 control",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 112.",
+            "ecu_pin": 112
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "INJ4",
+      "label": "Injector No. 4 (from ECCS pins)",
+      "count": 1,
+      "owners": [
+        "INJ4"
+      ],
+      "kind": "derived from ECU",
+      "faceStatus": "Indexed from factory ECCS pin table; housing shape not in source",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "INJ4/1",
+            "toPin": "ECU/114",
+            "fromNode": "INJ4",
+            "toNode": "ECU",
+            "colour": "W/L",
+            "function": "Injector No. 4 control",
+            "status_fn": "confirmed",
+            "status_col": "confirmed",
+            "note": "Same circuit as ECCS pin 114.",
+            "ecu_pin": 114
+          }
+        ]
+      },
+      "note": "Pin numbers are local indices. ECU pin is in each entry."
+    },
+    {
+      "id": "HICAS",
+      "label": "HICAS control unit (rear steer) (not on ECCS pin table)",
+      "count": 0,
+      "owners": [
+        "HICAS"
+      ],
+      "kind": "missing factory terminals",
+      "faceStatus": "No ECCS terminal assignment in EN-171/EN-172",
+      "pins": {},
+      "note": "This control unit is on the car. Its connector is not in the indexed ECCS pinout. Do not invent terminals."
+    },
+    {
+      "id": "FPUMP",
+      "label": "In-tank fuel pump (from FPCM fuel-pump sheet)",
+      "count": 2,
+      "owners": [
+        "FPUMP"
+      ],
+      "kind": "pump",
+      "faceStatus": "Two-wire pump; colours not indexed",
+      "pins": {
+        "1": [
+          {
+            "fromPin": "FPUMP/+",
+            "toPin": "FPCM/7",
+            "fromNode": "FPUMP",
+            "toNode": "FPCM",
+            "colour": "",
+            "function": "Pump positive",
+            "status_fn": "confirmed",
+            "status_col": "unindexed",
+            "note": "FPCM pin 7 on the factory fuel-pump inspection sheet. Colour not indexed."
+          }
+        ],
+        "2": [
+          {
+            "fromPin": "FPUMP/-",
+            "toPin": "FPCM/4",
+            "fromNode": "FPUMP",
+            "toNode": "FPCM",
+            "colour": "",
+            "function": "Pump negative",
+            "status_fn": "confirmed",
+            "status_col": "unindexed",
+            "note": "FPCM pin 4 on the factory fuel-pump inspection sheet. Colour not indexed."
+          }
+        ]
+      },
+      "note": "Physical pump in the tank. Colours stay blank rather than guessed."
+    }
+  ],
+  "sheets": [],
+  "notes": "R32 connectors from public sources. Factory face drawings: not in this project."
+}

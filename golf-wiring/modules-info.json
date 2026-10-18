@@ -1,0 +1,441 @@
+{
+ "_meta": {
+  "source": "Ross-Tech wiki (wiki.ross-tech.com), summarised, not copied",
+  "retrieved": "2026-10-14",
+  "vehicle": "VW Golf Mk5 1K1 2004 RHD, BLX 2.0 FSI, 09G",
+  "note": "Separate from VW-source wiring data. Always save an Auto-Scan and the original coding before changing anything. Coding varies by part number/index; VCDS Long Coding Helper is authoritative for your actual module."
+ },
+ "modules": {
+  "J519": {
+   "address": "09",
+   "desc": "Central electrics / body computer (BCM). Switches the exterior lights (headlights, side lights, indicators, fogs), wipers (LIN master to the wiper motor), heated rear window, interior lighting and load shedding, and talks on convenience CAN.",
+   "rt": {
+    "url": "https://wiki.ross-tech.com/wiki/index.php/VW_Golf_(1K)_Central_Electronics",
+    "coding": {
+     "type": "Long coding (17/21/23 byte on 1K0 937 049 x; 30 byte on later 3C8/1K0 replacements)",
+     "summary": [
+      "Ross-Tech's 1K page does not publish a byte-by-byte table; byte/bit meanings are shown by the VCDS Long Coding Helper with label files 17/21/23-byte Basis/Midline/Highline.",
+      "Replacement: copy the original coding from the Auto-Scan. A 23-byte (46-digit) code moved to a 30-byte module needs 14 zeros appended.",
+      "Tweakable bits documented (Tweaks page): Daytime running lights (Scandinavia = all lights / North America = headlights only), DRL via fog lights, DRL dimming % (halogen only), front fogs off with high beam, rear fog off with trailer, cornering via fog lights (with internal turn-light algorithm), comfort turn signals on/off, emergency brake flash, Coming-Home active / logic / via light sensor, Leaving-Home variant, Rain/Light sensor installed, RLS subsystem 'Rain closing'."
+     ],
+     "tweaksUrl": "https://wiki.ross-tech.com/wiki/index.php/VW_Golf/Jetta/Bora_(1K/5M)_Tweaks"
+    },
+    "adaptations": [
+     [
+      "000",
+      "Reset all adaptation channels to factory values"
+     ],
+     [
+      "001",
+      "Coming-Home time 10–60 s (needs coding byte 00 bit 7)"
+     ],
+     [
+      "002",
+      "Leaving-Home time 10–60 s (byte 00 bit 5)"
+     ],
+     [
+      "003",
+      "Rear window & mirror heater on-time 1–254 min"
+     ],
+     [
+      "004",
+      "Headlight washer time 50–10000 ms (byte 01 bit 1)"
+     ],
+     [
+      "005",
+      "Footwell light dimming 20–100 % (byte 00 bit 1)"
+     ],
+     [
+      "006",
+      "Load management 0–3 (byte 02 bit 3)"
+     ],
+     [
+      "007",
+      "High beam with assistance driving light 0/1"
+     ],
+     [
+      "008",
+      "Assistance driving light on/off delay 0–10200 ms"
+     ]
+    ],
+    "other": [
+     "Subsystems on the same address: wiper (J400) and rain/light sensor (G397) have their own coding pages on Ross-Tech."
+    ]
+   }
+  },
+  "J533": {
+   "address": "19",
+   "desc": "CAN gateway. Joins the five separate CAN buses (drivetrain 500k, convenience 100k, infotainment 100k, instruments, diagnostics) and passes messages between them. VCDS talks to every module through it through OBD pins 6/14. Its installation list tells it which modules to expect.",
+   "rt": {
+    "url": "https://wiki.ross-tech.com/wiki/index.php/VW_Golf_(1K)_CAN-Gateway",
+    "coding": {
+     "type": "Long coding = installation list (layout changes by gateway index: up to F, F–K, L+)",
+     "summary": [
+      "Up to index F: Byte 00 bits 0–7 = 01 Engine, 02 Gearbox, 03 ABS, 00 Steering angle G85, 15 Airbag, 44 Steering assist, 55 Xenon range, 22 AWD.",
+      "Byte 01 = 09 Central elec, 46 Convenience, 42/52/62/72 doors, 36 Seat memory, 65 TPMS.",
+      "Byte 02 = 16 Steering wheel, 08 Climate, 76 Park aid, 7D/18 Aux heat, 26 Auto roof, 69 Trailer, 06 Seat mem pass.",
+      "Byte 03 = 3D Special, 47 Sound, 75 Telematics, 37 Nav, 57 TV, 0F DAB, 56 Radio, 77 Phone.",
+      "Byte 04 = 17 Cluster, 25 Immobiliser, 19 Gateway, 1C Position sensing, 5D Operations (F–K adds 14, 4C, 11; byte 05 adds 10, 63, 73).",
+      "Then Manufacturer/Model byte and Options byte.",
+      "For this BLX/09G car expect at least 01, 02, 03, 15, 44, 09, 46, 42, 52, (62, 72 if 5-door), 16, 08, 56, 17, 25, 19 ticked — verify against your Auto-Scan."
+     ],
+     "extraUrl": "https://www.ross-tech.com/vcds/tour/installation-list.php"
+    },
+    "adaptations": [],
+    "other": [
+     "Early 1K0 907 530 gateways (A–J, K sw 0021/0170, P) are listed by Ross-Tech as incompatible with RNS510 retrofit and can keep the bus awake (battery drain); K sw 0178 is compatible. Source: https://wiki.ross-tech.com/wiki/index.php/Navigation_System_%28RNS510%29_Retrofitting"
+    ]
+   }
+  },
+  "J220": {
+   "address": "01",
+   "desc": "BLX engine ECU (Bosch MED9.5.10). Runs FSI direct injection, ignition, throttle, lambda/NOx, cooling fan request and immobiliser check.",
+   "rt": {
+    "url": "https://wiki.ross-tech.com/wiki/index.php/VW_Golf/Jetta/Bora_(1K/5M)",
+    "none": "Ross-Tech wiki has no BLX/2.0 FSI engine page (only BLG, AXX/BWA TFSI, TDI). Kick-down basic setting is done in 02 after throttle alignment (see 09G page).",
+    "adaptations": []
+   }
+  },
+  "J217": {
+   "address": "02",
+   "desc": "09G 6-speed automatic (Aisin) gearbox control. Reads range switch, speed/temp sensors and drives the shift/pressure solenoids.",
+   "rt": {
+    "url": "https://wiki.ross-tech.com/wiki/index.php/6-Speed_Automatic_Transmission_(09G)",
+    "coding": {
+     "type": "Short coding (many variants)",
+     "summary": [
+      "Use the coding from the original TCM when replacing; VCDS shows the chart as a pop-up."
+     ]
+    },
+    "adaptations": [],
+    "other": [
+     "Basic setting 04 group 001 = kick-down adjustment (ignition on, engine off, foot off pedal, throttle alignment done first, no throttle faults)."
+    ]
+   }
+  },
+  "J104": {
+   "address": "03",
+   "desc": "ABS / ESP (MK60). Wheel speed sensors, hydraulic unit, ESP sensor cluster, brake pressure.",
+   "rt": {
+    "url": "https://wiki.ross-tech.com/wiki/index.php/VW_Golf_(1K)_Brake_Electronics_(MK60)",
+    "coding": {
+     "type": "Short coding (additive)",
+     "summary": [
+      "Model +0 = Golf 1K; front brakes FS III 54 15\" +1 / FN III 54 15–16\" +2 / FRNG 57 17\" +8 (new sensor cluster).",
+      "Suspension +640 standard/sport, +1152 rough road.",
+      "Engine +4096 = 2.0 FSI / all automatics (applies to BLX 09G).",
+      "TPMS +0 with ABS-based TPMS, +16384 without.",
+      "Replacing 1K0 907 379 D with K or newer: build a new coding, don't copy."
+     ]
+    },
+    "adaptations": [],
+    "other": [
+     "Basic settings (login 40168): G85 steering angle (MB 004 f1 within ±1.5°, then group 060), G200 lateral accel (group 063), G201 brake pressure (group 066), G251 long. accel (group 069) — check MB 004/005/006 before and after."
+    ]
+   }
+  },
+  "J285": {
+   "address": "17",
+   "desc": "Instrument cluster. Gauges, warnings, service reminder, and on Mk5 the immobiliser (25) lives inside it.",
+   "rt": {
+    "url": "https://wiki.ross-tech.com/wiki/index.php/VW_Golf_(1K)_Instrument_Cluster",
+    "coding": {
+     "type": "Short coding 00??x0x",
+     "summary": [
+      "Digits 3–4 options: +01 brake pad warning, +02 seatbelt warning, +04 washer fluid, +16 Jetta sedan.",
+      "Digit 5 country: 1 EU, 2 US, 3 CDN, 4 GB, 5 JP, 6 SA, 7 AUS.",
+      "Digit 7 distance impulse number 1–7."
+     ]
+    },
+    "adaptations": [
+     [
+      "002",
+      "Service reminder (0 = not due)"
+     ],
+     [
+      "003",
+      "Consumption correction 85–115 %"
+     ],
+     [
+      "004",
+      "Language (2 = English)"
+     ],
+     [
+      "009",
+      "Odometer (one change only, under 100 km)"
+     ],
+     [
+      "030",
+      "Fuel gauge adaptation"
+     ],
+     [
+      "040–049",
+      "Service interval distances/times, oil quality (fixed vs LongLife)"
+     ]
+    ],
+    "other": [
+     "Security access 13861 enables adaptation."
+    ]
+   }
+  },
+  "J393": {
+   "address": "46",
+   "desc": "Convenience/comfort control module: central locking, remote keys, alarm, windows/sunroof comfort functions. Master for the door modules.",
+   "rt": {
+    "url": "https://wiki.ross-tech.com/wiki/index.php/VW_Golf_(1K)_Comfort_System",
+    "coding": {
+     "type": "Long coding (Long Coding Helper)",
+     "summary": [
+      "Byte table not published; use Long Coding Helper. Save original coding before replacement.",
+      "Tweaks: comfort open/close windows via remote, rain closing (with RLS), lock/unlock confirmation horn/blink, auto-lock 15 km/h, auto-unlock."
+     ]
+    },
+    "adaptations": [
+     [
+      "000",
+      "Clear all remotes"
+     ],
+     [
+      "001",
+      "Match remotes (enter 1, save, hold unlock ≥1 s each, max 4, within 15 s)"
+     ],
+     [
+      "003",
+      "Selective door locking"
+     ],
+     [
+      "004",
+      "Auto-lock"
+     ],
+     [
+      "005",
+      "Auto-unlock on key out"
+     ],
+     [
+      "007/008",
+      "Unlock confirmation remote/key: 0 off,1 blink,2 horn,3 both"
+     ],
+     [
+      "010/011",
+      "Lock confirmation remote/key"
+     ],
+     [
+      "013",
+      "Alarm horn country"
+     ],
+     [
+      "017",
+      "Comfort function"
+     ],
+     [
+      "018",
+      "Alarm delay"
+     ],
+     [
+      "019",
+      "Factory mode (disable on new module)"
+     ]
+    ]
+   }
+  },
+  "J386": {
+   "address": "42",
+   "desc": "Driver door module (RHD: right front). Window, mirror, lock motor, door switches. On convenience CAN.",
+   "rt": {
+    "url": "https://wiki.ross-tech.com/wiki/index.php/VW_Golf_(1K)_Door_Electronics_Driver",
+    "coding": {
+     "type": "Short coding 7 digits (additive)",
+     "summary": [
+      "+1 rear lid button, +2 ambient mirror light, +4 mirror indicators, +8 handle illumination, +16 auto run, +32 mirror heater, +64 exit light, +128 5-door, +256 seat memory, +512 right-hand drive (set for your NZ car), +1024 no safe motor, +2048 pinch protection off, +4096 folding mirrors."
+     ]
+    },
+    "adaptations": [],
+    "other": [
+     "After replacement run each window fully up/down to learn pinch limits (clears 00932).",
+     "Common fault: broken wires in the door-to-A-pillar harness; 1K0 959 701 P known for battery drain."
+    ]
+   }
+  },
+  "J387": {
+   "address": "52",
+   "desc": "Front passenger door module.",
+   "rt": {
+    "url": "https://wiki.ross-tech.com/wiki/index.php/VW_Golf_(1K)_Door_Electronics_Passenger",
+    "coding": {
+     "type": "Short coding 7 digits (additive)",
+     "summary": [
+      "Same scheme as 42; set the RHD bit (+512) to match the driver side."
+     ]
+    },
+    "adaptations": []
+   }
+  },
+  "J388": {
+   "address": "62",
+   "desc": "Rear left door module.",
+   "rt": {
+    "url": "https://wiki.ross-tech.com/wiki/index.php/VW_Golf_(1K)_Door_Electronics_Rear",
+    "coding": {
+     "type": "Short coding 7 digits",
+     "summary": [
+      "+8 handle light, +16 auto run, +64 exit light, +128 5-door, +256 seat memory, +512 RHD, +1024 no safe motor, +2048 pinch off. Run windows to clear 00934/00935."
+     ]
+    },
+    "adaptations": []
+   }
+  },
+  "J389": {
+   "address": "72",
+   "desc": "Rear right door module.",
+   "rt": {
+    "url": "https://wiki.ross-tech.com/wiki/index.php/VW_Golf_(1K)_Door_Electronics_Rear",
+    "coding": {
+     "type": "Short coding 7 digits",
+     "summary": [
+      "Same as 62."
+     ]
+    },
+    "adaptations": []
+   }
+  },
+  "HVAC": {
+   "address": "08",
+   "desc": "Climatic / Climatronic heating and A/C control.",
+   "rt": {
+    "url": "https://wiki.ross-tech.com/wiki/index.php/VW_Golf_(1K)_Climatronic",
+    "coding": {
+     "type": "Not documented on Ross-Tech 1K page",
+     "summary": []
+    },
+    "adaptations": [],
+    "other": [
+     "Basic setting 04 group 001 after replacing the head unit or a flap motor (≈20 s Climatic, ≈40 s Climatronic)."
+    ]
+   }
+  },
+  "RADIO": {
+   "address": "56 / 37",
+   "desc": "Radio / navigation head unit on infotainment CAN.",
+   "rt": {
+    "url": "https://wiki.ross-tech.com/wiki/index.php/VW_Radio_Systems_Generation_6",
+    "coding": {
+     "type": "Short coding 00xxxxx (RCD300/500 gen 6)",
+     "summary": [
+      "Digit 3 tweeter monitoring, digit 4 +2 CAN phone, digit 5 speaker channels, digit 6 sound-system correction, digit 7 +1 active antenna, +2 CD-changer/iPod, +4 secondary display."
+     ]
+    },
+    "adaptations": [
+     [
+      "001",
+      "Reception optimisation"
+     ],
+     [
+      "010–014",
+      "Remote test playback (resets on exit)"
+     ]
+    ]
+   }
+  },
+  "J234": {
+   "address": "15",
+   "desc": "Airbag control module.",
+   "rt": {
+    "url": "https://wiki.ross-tech.com/wiki/index.php/VW_Golf_(1K)_Airbag",
+    "coding": {
+     "type": "Suggested by VCDS",
+     "summary": [
+      "VCDS proposes the coding (HEX interface)."
+     ]
+    },
+    "adaptations": [
+     [
+      "—",
+      "Deactivate individual airbag components (see repair manual)"
+     ]
+    ],
+    "other": [
+     "Login 20324 for J706 seat-occupancy basic setting/reset."
+    ]
+   }
+  },
+  "J527": {
+   "address": "16",
+   "desc": "Steering column electronics: stalks, multifunction wheel, horn, clock spring.",
+   "rt": {
+    "url": "https://wiki.ross-tech.com/wiki/index.php/VW_Golf_(1K)_Steering_Wheel",
+    "coding": {
+     "type": "Short coding (two tables by software version 0101 or lower / 0110+)",
+     "summary": [
+      "≤0101: digit 2 vehicle type, digit 3 gearbox (1 = automatic for 09G), digit 4 wheel type, digit 5 +1 tiptronic paddles, digit 6 trip computer/cruise, digit 7 rear wiper 1 no/2 yes."
+     ]
+    },
+    "adaptations": []
+   }
+  },
+  "J500": {
+   "address": "44",
+   "desc": "Electro-mechanical power steering.",
+   "rt": {
+    "url": "https://wiki.ross-tech.com/wiki/index.php/VW_Golf_(1K)_Steering_Assist",
+    "coding": {
+     "type": "See page (steering limit stop / basic settings)",
+     "summary": [
+      "Ross-Tech page covers coding and the steering limit-stop adaptation after G85 calibration."
+     ]
+    },
+    "adaptations": []
+   }
+  },
+  "IMMO": {
+   "address": "25",
+   "desc": "Immobiliser IV, integrated in the instrument cluster J285.",
+   "rt": {
+    "url": "https://wiki.ross-tech.com/wiki/index.php/Immobilizer_IV_Key_Matching",
+    "coding": {
+     "type": "n/a",
+     "summary": []
+    },
+    "adaptations": [
+     [
+      "001",
+      "Number of keys to match (up to 8) after login with 0+4-digit PIN"
+     ]
+    ],
+    "other": [
+     "MB 081 shows VIN + 14-digit IMMO-ID; MB 001 field 3 must be 'Yes' for the key; MB 003 lock times must be 0."
+    ]
+   }
+  },
+  "J446": {
+   "address": "76",
+   "desc": "Parking aid.",
+   "rt": {
+    "url": "https://wiki.ross-tech.com/wiki/index.php/VW_Golf_(1K)_Parking_Aid",
+    "none": "Page exists; not summarised in this mockup."
+   }
+  },
+  "J400": {
+   "address": "",
+   "desc": "Wiper motor control, LIN slave of J519.",
+   "rt": {
+    "url": "https://wiki.ross-tech.com/wiki/index.php/VW_Golf_(1K)_Wiper_Electronics",
+    "none": "Coded as a subsystem of 09; not summarised in this mockup."
+   }
+  },
+  "J317": {
+   "address": "",
+   "desc": "ECU supply relay (relay 458) on the E-box.",
+   "rt": null
+  },
+  "J538": {
+   "address": "",
+   "desc": "Fuel pump controller: runs the in-tank pump at demand speed for the FSI low-pressure side.",
+   "rt": null
+  },
+  "J583": {
+   "address": "",
+   "desc": "NOx sensor controller for the FSI storage catalyst.",
+   "rt": null
+  }
+ }
+}

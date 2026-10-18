@@ -1,0 +1,295 @@
+{
+ "_meta": {
+  "note": "From VW current-flow data. Map positions are schematic. 'Earth connection' (in-harness splice) entries have no body bolt location. They end at a body earth point not always named in the indexed sheets. No external Mk5 earth-point location chart was found/cited in this mockup — VERIFY on vehicle."
+ },
+ "earths": [
+  {
+   "id": "EARTH",
+   "name": "Ground network",
+   "location": "Multiple body earth points.",
+   "located": false,
+   "on": [
+    "J104",
+    "J400",
+    "J533",
+    "T16"
+   ],
+   "edges": [
+    "abs-earth",
+    "gateway-earth",
+    "obd-earth",
+    "wiper-earth"
+   ],
+   "pages": [
+    15,
+    325,
+    326,
+    386
+   ]
+  },
+  {
+   "id": "12",
+   "name": "Earth point",
+   "location": "Left in engine compartment",
+   "located": true,
+   "on": [
+    "132"
+   ],
+   "edges": [
+    "trace-132-earth12"
+   ],
+   "pages": [
+    240
+   ]
+  },
+  {
+   "id": "131",
+   "name": "Earth connection 2",
+   "location": "Engine compartment wiring harness",
+   "located": false,
+   "on": [
+    "607",
+    "J220"
+   ],
+   "edges": [
+    "trace-j220-earth-1",
+    "trace-131-earth607"
+   ],
+   "pages": [
+    568
+   ]
+  },
+  {
+   "id": "132",
+   "name": "Earth connection 3",
+   "location": "Engine compartment wiring harness",
+   "located": false,
+   "on": [
+    "12",
+    "F125",
+    "J217"
+   ],
+   "edges": [
+    "trace-j217-ground-1",
+    "trace-132-earth12",
+    "trace-f125-ground-3"
+   ],
+   "pages": [
+    240
+   ]
+  },
+  {
+   "id": "220",
+   "name": "Sender earth connection",
+   "location": "Engine wiring harness",
+   "located": false,
+   "on": [
+    "G247",
+    "G40",
+    "G410",
+    "G42_G71",
+    "G62",
+    "J220",
+    "N18_G212",
+    "V157_G336"
+   ],
+   "edges": [
+    "trace-g62-return",
+    "trace-sender220-ecu",
+    "trace-g410-return",
+    "trace-egr-return",
+    "trace-g247-return",
+    "trace-g42g71-return",
+    "trace-g40-return",
+    "more-flap-return"
+   ],
+   "pages": [
+    570,
+    571,
+    572,
+    573
+   ]
+  },
+  {
+   "id": "327",
+   "name": "Sender earth connection",
+   "location": "Engine compartment wiring harness",
+   "located": false,
+   "on": [
+    "G235",
+    "G299",
+    "G83",
+    "J220",
+    "T12c"
+   ],
+   "edges": [
+    "trace-g83-return",
+    "more-sender-return-327",
+    "more-sensor-return-G235",
+    "more-sensor-return-G299"
+   ],
+   "pages": [
+    577,
+    578
+   ]
+  },
+  {
+   "id": "607",
+   "name": "Earth point",
+   "location": "Left in plenum chamber",
+   "located": true,
+   "on": [
+    "131",
+    "J583"
+   ],
+   "edges": [
+    "trace-131-earth607",
+    "more-nox-earth"
+   ],
+   "pages": [
+    568,
+    577
+   ]
+  },
+  {
+   "id": "85",
+   "name": "Ignition ground splice",
+   "location": "Earth connection 1, engine compartment wiring harness.",
+   "located": false,
+   "on": [
+    "642",
+    "N127",
+    "N291",
+    "N292",
+    "N70",
+    "T14a"
+   ],
+   "edges": [
+    "more-coil-earth-N70",
+    "more-coil-earth-N127",
+    "more-coil-earth-N291",
+    "more-coil-earth-N292",
+    "more-coil-earth-front"
+   ],
+   "pages": [
+    569
+   ]
+  },
+  {
+   "id": "281",
+   "name": "Ignition signal ground",
+   "location": "Earth point 1, engine prewiring harness.",
+   "located": false,
+   "on": [
+    "15",
+    "N127",
+    "N291",
+    "N292",
+    "N70"
+   ],
+   "edges": [
+    "more-coil-sender-earth-N70",
+    "more-coil-sender-earth-N127",
+    "more-coil-sender-earth-N291",
+    "more-coil-sender-earth-N292",
+    "more-coil-earth-head"
+   ],
+   "pages": [
+    569
+   ]
+  },
+  {
+   "id": "15",
+   "name": "Cylinder-head earth",
+   "location": "Earth point on cylinder head.",
+   "located": true,
+   "on": [
+    "281"
+   ],
+   "edges": [
+    "more-coil-earth-head"
+   ],
+   "pages": [
+    569
+   ]
+  },
+  {
+   "id": "642",
+   "name": "Fan earth point",
+   "location": "Earth point for electronically controlled fan. Precise body mounting not mapped.",
+   "located": false,
+   "on": [
+    "85",
+    "T14a"
+   ],
+   "edges": [
+    "more-coil-earth-front"
+   ],
+   "pages": [
+    569
+   ]
+  },
+  {
+   "id": "383",
+   "name": "Fuel-pump earth splice",
+   "location": "Earth connection 18, main wiring harness.",
+   "located": false,
+   "on": [
+    "682",
+    "J538"
+   ],
+   "edges": [
+    "more-pump-earth",
+    "more-pump-body-earth"
+   ],
+   "pages": [
+    566
+   ]
+  },
+  {
+   "id": "682",
+   "name": "Rear-right earth point",
+   "location": "Earth point 2 in rear right side panel.",
+   "located": true,
+   "on": [
+    "383"
+   ],
+   "edges": [
+    "more-pump-body-earth"
+   ],
+   "pages": [
+    566
+   ]
+  },
+  {
+   "id": "372",
+   "name": "Main-harness earth 7",
+   "location": "Earth connection 7 in main wiring harness.",
+   "located": false,
+   "on": [
+    "F319"
+   ],
+   "edges": [
+    "more-selector-p-earth"
+   ],
+   "pages": [
+    243
+   ]
+  },
+  {
+   "id": "374",
+   "name": "Main-harness earth 9",
+   "location": "Earth connection 9 in main wiring harness.",
+   "located": false,
+   "on": [
+    "F189"
+   ],
+   "edges": [
+    "more-selector-earth"
+   ],
+   "pages": [
+    243
+   ]
+  }
+ ]
+}
