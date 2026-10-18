@@ -149,6 +149,10 @@ function match(c,q,make,ready){
 
 let cars=[], make='All', ready='All', showAllWorkspace=false;
 
+function specLine(c){
+  const engine=/confirm engine/i.test(c.engine||'')?'':c.engine;
+  return [c.chassis,c.years,engine].filter(Boolean).join(' · ');
+}
 function card(c, featured){
   const s=badge(c);
   const stats=[
@@ -159,7 +163,7 @@ function card(c, featured){
     <div class="top"><div>
       <div class="make">${esc(c.make)}</div>
       <h3>${esc(c.name)}</h3>
-      <div class="spec">${esc([c.chassis,c.engine].filter(Boolean).join(' · '))}</div>
+      <div class="spec">${esc(specLine(c))}</div>
     </div><span class="badge ${s[0]}">${s[1]}</span></div>
     <p>${esc(c.line||'')}</p>
     ${c.note?`<p class="note">${esc(c.note)}</p>`:''}
@@ -187,13 +191,13 @@ function draw(){
   const betaCars=list.filter(c=>band(c)==='beta');
   const workCars=list.filter(c=>band(c)==='workspace');
   const makes=['All',...new Set(cars.map(c=>c.make))];
-  const readiness=[['All','All'],['ready','Ready'],['beta','In progress'],['workspace','Workspace']];
+  const readiness=[['All','Any status'],['ready','Ready'],['beta','In progress'],['workspace','Workspace']];
   document.getElementById('makes').innerHTML=makes.map(m=>`<button class="chip ${m===make?'on':''}" data-m="${esc(m)}">${esc(m)}</button>`).join('');
   document.getElementById('readiness').innerHTML=readiness.map(([k,l])=>`<button class="chip ${k===ready?'on':''}" data-r="${k}">${l}</button>`).join('');
   document.getElementById('mastMeta').textContent=`${readyCars.length} ready · ${betaCars.length} in progress · ${workCars.length} workspace`;
 
   if(!list.length){
-    document.getElementById('board').innerHTML='<div class="empty">No car agrees with the search. Clear the search and try again.</div>';
+    document.getElementById('board').innerHTML='<div class="empty">No car agrees with the filters. Clear the search or select All.</div>';
     return;
   }
   let html='';
